@@ -2,7 +2,7 @@
 Author URI: https://themezee.com
 Theme URI: https://themezee.com/themes/napoli/
 Contributors: themezee
-Tags: two-columns, light, purple, custom-background, custom-header, custom-menu, editor-style, blog, entertainment, news, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, fluid-layout, responsive-layout, one-column, left-sidebar, right-sidebar, three-columns, black, red, blue, silver, white, green, gray
+Tags: two-columns, custom-background, custom-header, custom-menu, editor-style, grid-layout, blog, food-and-drink, news, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, one-column, left-sidebar, right-sidebar, three-columns
 Requires at least: 4.4
 Tested up to: 4.6
 License: GPLv2 or later
@@ -68,24 +68,32 @@ Copyright: 2015 WooThemes, http://www.woothemes.com
 License: Distributed under the terms of the Apache License 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
 Copyright: 2012 Steve Matteson
 
-6. Montserrat Font - https://www.google.com/fonts/specimen/Titillium+Web
+6. Montserrat Font - https://www.google.com/fonts/specimen/Montserrat
 License: Distributed under the terms of the SIL Open Font License (http://scripts.sil.org/OFL)
-Copyright: 2013 Accademia di Belle Arti di Urbino
+Copyright: 2016 Julieta Ulanovsky
 
 7. Images used in screenshot.jpg are all from Pixabay - http://pixabay.com
 
-Image 1: https://pixabay.com/en/martinique-sunset-boat-twilight-844982/
+Image 1: https://pixabay.com/en/burger-sandwich-food-snack-meal-1015438/
 License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-Copyright: 2009 Agnès alias agnesti (https://pixabay.com/en/users/agnesti-1137469/)
+Copyright: 2015 Shanice Garcia (https://pixabay.com/en/users/kur0shiro-463354/)
 
-Image 2: https://pixabay.com/en/pirate-port-harbour-festival-1101524/
+Image 2: https://pixabay.com/en/croissants-jelly-breakfast-569075/
 License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-Copyright: 2012 Petra (https://pixabay.com/en/users/ptra-359668/)
+Copyright: 2014 Jan Vašek (https://pixabay.com/en/users/JESHOOTS-264599/)
 
-Image 3: https://pixabay.com/en/thailand-longtail-boat-sea-1195997/
+Image 3: https://pixabay.com/en/asparagus-green-green-asparagus-1307604/
 License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-Copyright: 2008 kod88 (https://pixabay.com/en/users/kod88-2044225/)
+Copyright: 2016 Rita Eisenkolb (https://pixabay.com/en/users/Romi-19628/)
 
-Image 4: https://pixabay.com/en/garda-sunset-mountains-mood-dusk-202068/
+Image 4: https://pixabay.com/en/vegetables-paprika-573958/
 License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-Copyright: 2012 Sabrina Schlich (https://pixabay.com/en/users/sabrinaschlich-77730/)
+Copyright: 2014 condesign (https://pixabay.com/en/users/condesign-509903/)
+
+Image 5: https://pixabay.com/en/culinary-food-healthy-eating-meal-1004857/
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: 2012 dioz (https://pixabay.com/en/users/dioz-1558621/)
+
+Image 6: https://pixabay.com/en/bananas-dessert-ice-cream-fruit-282313/
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: 2012 Michal Jarmoluk (https://pixabay.com/en/users/jarmoluk-143740/)
