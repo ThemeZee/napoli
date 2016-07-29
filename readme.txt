@@ -1,0 +1,91 @@
+=== Napoli ===
+Author URI: https://themezee.com
+Theme URI: https://themezee.com/themes/napoli/
+Contributors: themezee
+Tags: two-columns, light, purple, custom-background, custom-header, custom-menu, editor-style, blog, entertainment, news, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, fluid-layout, responsive-layout, one-column, left-sidebar, right-sidebar, three-columns, black, red, blue, silver, white, green, gray
+Requires at least: 4.4
+Tested up to: 4.6
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Napoli is a highly flexible and adventurous WordPress theme for your pirate magazine or any news related website.
+
+== Description ==
+
+Napoli is a highly flexible and adventurous WordPress theme for your pirate magazine or any news related website. It supports three different post layouts, two sidebar schemes and a Magazine Homepage template based on widgets. Other highlights of Napoli are the beautiful post slider and header widgets area. Arrr!
+
+For more information about Napoli please go to https://themezee.com/themes/napoli/
+
+== Installation ==
+
+1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
+2. Type in Napoli in the search form and press the 'Enter' key on your keyboard.
+3. Click on the 'Activate' button to use your new theme right away.
+4. Go to https://themezee.com/docs/napoli-documentation/ for a guide on how to customize this theme.
+5. Navigate to Appearance > Customize in your admin panel and customize to taste.
+
+== Changelog ==
+
+= 1.0 =
+Initial Release
+
+== Copyright ==
+
+Napoli WordPress Theme, Copyright 2016 ThemeZee.com
+Napoli is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+== Ressources ==
+
+Napoli bundles the following third-party resources:
+
+1. Genericons Icon Font - http://genericons.com
+License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
+Copyright: 2015 Automattic, Inc., https://automattic.com/
+
+2. Underscores - http://underscores.me/
+License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
+Copyright: 2012-2015 Automattic, Inc., https://automattic.com/
+
+3. normalize.css - http://necolas.github.io/normalize.css/
+License: Distributed under the terms of the MIT License (http://opensource.org/licenses/MIT)
+Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
+
+4. FlexSlider - https://github.com/woothemes/FlexSlider
+License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
+Copyright: 2015 WooThemes, http://www.woothemes.com
+
+5. Open Sans Font - https://www.google.com/fonts/specimen/Open+Sans
+License: Distributed under the terms of the Apache License 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
+Copyright: 2012 Steve Matteson
+
+6. Montserrat Font - https://www.google.com/fonts/specimen/Titillium+Web
+License: Distributed under the terms of the SIL Open Font License (http://scripts.sil.org/OFL)
+Copyright: 2013 Accademia di Belle Arti di Urbino
+
+7. Images used in screenshot.jpg are all from Pixabay - http://pixabay.com
+
+Image 1: https://pixabay.com/en/martinique-sunset-boat-twilight-844982/
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: 2009 Agnès alias agnesti (https://pixabay.com/en/users/agnesti-1137469/)
+
+Image 2: https://pixabay.com/en/pirate-port-harbour-festival-1101524/
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: 2012 Petra (https://pixabay.com/en/users/ptra-359668/)
+
+Image 3: https://pixabay.com/en/thailand-longtail-boat-sea-1195997/
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: 2008 kod88 (https://pixabay.com/en/users/kod88-2044225/)
+
+Image 4: https://pixabay.com/en/garda-sunset-mountains-mood-dusk-202068/
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: 2012 Sabrina Schlich (https://pixabay.com/en/users/sabrinaschlich-77730/)

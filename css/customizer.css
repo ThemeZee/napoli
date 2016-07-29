@@ -1,0 +1,37 @@
+/*
+ * Customizer CSS
+ *
+ * Adjusts styling for theme option controls in the Customizer
+ *
+ * @package Napoli
+ */
+
+.customize-control-checkbox {
+	margin-bottom: 4px;
+}
+
+#customize-control-napoli_theme_options-blog_title,
+#customize-control-napoli_theme_options-blog_description,
+#customize-control-napoli_theme_options-excerpt_length,
+#customize-control-napoli_theme_options-post_meta_headline,
+#customize-control-napoli_theme_options-single_post_meta_headline,
+#customize-control-napoli_theme_options-single_post_headline,
+#customize-control-napoli_theme_options-slider_category,
+#customize-control-napoli_theme_options-slider_limit,
+#customize-control-napoli_theme_options-slider_animation {
+	margin-top: 16px;
+}
+
+#customize-control-napoli_theme_options-post_meta_headline,
+#customize-control-napoli_theme_options-single_post_meta_headline,
+#customize-control-napoli_theme_options-single_post_headline,
+#customize-control-napoli_theme_options-slider_activate {
+	margin-bottom: 0;
+}
+
+#customize-control-napoli_theme_options-upgrade div {
+	margin: 4px 0 32px;
+}
+#customize-control-napoli_theme_options-upgrade div .customize-control-title {
+	margin-bottom: 4px;
+}
