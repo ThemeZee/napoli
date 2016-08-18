@@ -129,8 +129,8 @@ dfn {
 }
 
 h1 {
-	font-size: 2em;
 	margin: 0.67em 0;
+	font-size: 2em;
 }
 
 mark {
@@ -144,10 +144,10 @@ small {
 
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
 }
 
 sup {
@@ -183,8 +183,8 @@ code,
 kbd,
 pre,
 samp {
-	font-family: monospace, monospace;
 	font-size: 1em;
+	font-family: monospace, monospace;
 }
 
 button,
@@ -192,9 +192,9 @@ input,
 optgroup,
 select,
 textarea {
+	margin: 0;
 	color: inherit;
 	font: inherit;
-	margin: 0;
 }
 
 button {
@@ -210,8 +210,8 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	-webkit-appearance: button;
 	cursor: pointer;
+	-webkit-appearance: button;
 }
 
 button[disabled],
@@ -221,8 +221,8 @@ html input[disabled] {
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-	border: 0;
 	padding: 0;
+	border: 0;
 }
 
 input {
@@ -241,8 +241,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="search"] {
-	-webkit-appearance: textfield;
 	box-sizing: content-box;
+	-webkit-appearance: textfield;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -251,14 +251,14 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 fieldset {
-	border: 1px solid #c0c0c0;
 	margin: 0 2px;
 	padding: 0.35em 0.625em 0.75em;
+	border: 1px solid #c0c0c0;
 }
 
 legend {
-	border: 0;
 	padding: 0;
+	border: 0;
 }
 
 textarea {
@@ -270,8 +270,8 @@ optgroup {
 }
 
 table {
-	border-collapse: collapse;
 	border-spacing: 0;
+	border-collapse: collapse;
 }
 
 td,
@@ -288,9 +288,9 @@ input,
 select,
 textarea {
 	color: #303030;
-	font-family: 'Open Sans', Tahoma, Arial;
 	font-size: 17px;
 	font-size: 1.0625rem;
+	font-family: 'Open Sans', Tahoma, Arial;
 	line-height: 1.75;
 }
 
@@ -323,25 +323,25 @@ address {
 }
 
 pre {
-	background: #fff;
+	overflow: auto;
+	margin-bottom: 1.6em;
+	padding: 1.6em;
+	max-width: 100%;
 	border: 1px solid #ddd;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	background: #fff;
 	font-size: 15px;
 	font-size: 0.9375rem;
+	font-family: "Courier 10 Pitch", Courier, monospace;
 	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
 }
 
 code,
 kbd,
 tt,
 var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
 abbr,
@@ -378,22 +378,22 @@ body {
 
 blockquote {
 	margin: 0 0 1.5em;
-	border-left: 6px solid #ee4455;
 	padding: 0 1.25em 1em;
+	border-left: 6px solid #ee4455;
+	color: #777;
+	font-style: italic;
 	font-size: 18px;
 	font-size: 1.125rem;
-	font-style: italic;
-	color: #777;
 }
 
 blockquote cite,
 blockquote small {
-	margin-top: 1em;
 	display: block;
+	margin-top: 1em;
+	color: #404040;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.75;
-	color: #404040;
 }
 
 blockquote cite:before,
@@ -412,10 +412,10 @@ blockquote > :last-child {
 }
 
 hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
 	margin-bottom: 1.5em;
+	height: 1px;
+	border: 0;
+	background-color: #ccc;
 }
 
 ul,
@@ -447,21 +447,21 @@ dd {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
+	height: auto; /* Make sure images are scaled correctly. */
 }
 
 table {
 	margin: 0 0 1.5em;
+	width: 100%;
 	border: none;
 	table-layout: fixed;
-	width: 100%;
 }
 
 th,
 td {
-	border: 1px solid #ddd;
 	padding: 0.3em 0.6em;
+	border: 1px solid #ddd;
 }
 
 a {
@@ -498,12 +498,12 @@ input[type="reset"],
 input[type="submit"] {
 	margin: 0;
 	padding: 0.6em 1em;
+	border: none;
+	background: #ee4455;
+	color: #fff;
+	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
-	color: #fff;
-	background: #ee4455;
-	border: none;
-	text-decoration: none;
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
@@ -529,10 +529,10 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	max-width: 100%;
 	padding: 0.3em 0.6em;
-	color: #666;
+	max-width: 100%;
 	border: 1px solid #ddd;
+	color: #666;
 }
 
 input[type="text"]:focus,
@@ -541,8 +541,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	color: #111;
 	border: 1px solid #ccc;
+	color: #111;
 }
 
 textarea {
@@ -554,33 +554,33 @@ textarea {
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
-	height: 1px;
-	width: 1px;
 	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
 }
 
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
+	top: 5px;
+	left: 5px;
+	z-index: 100000; /* Above WP toolbar. */
 	display: block;
+	clip: auto !important;
+	padding: 15px 23px 14px;
+	width: auto;
+	height: auto;
+	border-radius: 3px;
+	background-color: #f1f1f1;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	color: #21759b;
+	text-decoration: none;
+	font-weight: bold;
 	font-size: 14px;
 	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
 	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
 }
 
 /*--------------------------------------------------------------
@@ -599,10 +599,10 @@ textarea {
 }
 
 .aligncenter {
-	clear: both;
 	display: block;
-	margin-left: auto;
+	clear: both;
 	margin-right: auto;
+	margin-left: auto;
 }
 
 /*--------------------------------------------------------------
@@ -614,8 +614,8 @@ textarea {
 .post-navigation .nav-links:after,
 .comment-navigation:before,
 .comment-navigation:after {
-	content: "";
 	display: table;
+	content: "";
 }
 
 .clearfix:after,
@@ -628,15 +628,15 @@ textarea {
 # 8.0 - Layout Structure
 --------------------------------------------------------------*/
 .site {
-	width: 100%;
 	margin: 0;
+	width: 100%;
 }
 
 .container {
-	max-width: 1220px;
-	width: 100%;
 	margin: 0 auto;
 	padding: 0 2em;
+	max-width: 1220px;
+	width: 100%;
 }
 
 .site-content {
@@ -645,9 +645,9 @@ textarea {
 
 .content-area {
 	float: left;
-	width: 73%;
-	padding-right: 2em;
 	box-sizing: border-box;
+	padding-right: 2em;
+	width: 73%;
 }
 
 .sidebar {
@@ -658,40 +658,40 @@ textarea {
 /* Fullwidth Template */
 .site-content .content-fullwidth {
 	float: none;
-	width: 100%;
 	padding: 0;
+	width: 100%;
 }
 
 /* No Sidebar Singular Layout */
 .no-sidebar .content-single {
 	float: none;
-	width: 100%;
-	max-width: 900px;
-	padding: 0;
 	margin: 0 auto;
+	padding: 0;
+	max-width: 900px;
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
 # 9.0 - Header
 --------------------------------------------------------------*/
 .site-header {
-	color: #fff;
 	background: #ee4455;
+	color: #fff;
 }
 
 .site-branding {
 	float: left;
-	max-width: 100%;
 	margin: 1em 3em 1em 0;
 	padding: 0;
+	max-width: 100%;
 }
 
 .site-branding a:link,
 .site-branding a:visited,
 .site-branding a:hover {
-	text-decoration: none;
 	padding: 0;
 	border: none;
+	text-decoration: none;
 }
 
 .site-title {
@@ -699,11 +699,11 @@ textarea {
 	margin: 0.25rem 0 0;
 	padding: 0;
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	font-weight: normal;
 	font-size: 32px;
 	font-size: 2rem;
-	font-weight: normal;
-	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .site-title a:link,
@@ -721,10 +721,10 @@ textarea {
 .site-branding .custom-logo {
 	margin: 0.25em 1em 0 0;
 	padding: 0;
-	border: none;
-	vertical-align: top;
 	max-width: 100%;
 	height: auto;
+	border: none;
+	vertical-align: top;
 }
 
 .site-description {
@@ -740,9 +740,9 @@ textarea {
 
 .header-image img {
 	max-width: 2500px;
-	vertical-align: top;
 	width: 100%;
 	height: auto;
+	vertical-align: top;
 }
 
 /*--------------------------------------------------------------
@@ -762,13 +762,13 @@ textarea {
 }
 
 .main-navigation-menu {
+	position: relative;
 	float: left;
-	width: 100%;
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
+	width: 100%;
 	list-style-position: outside;
-	position: relative;
+	list-style-type: none;
 }
 
 .main-navigation-menu li {
@@ -777,13 +777,13 @@ textarea {
 
 .main-navigation-menu a {
 	display: block;
-	font-family: 'Montserrat', Tahoma, Arial;
-	font-size: 15px;
-	font-size: 0.9375rem;
-	font-weight: normal;
 	padding: 1.2em;
 	text-decoration: none;
 	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-family: 'Montserrat', Tahoma, Arial;
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
@@ -791,15 +791,15 @@ textarea {
 .main-navigation-menu > .menu-item-has-children > a:after {
 	display: inline-block;
 	margin: 0.4em 0 0 0.3em;
+	color: #fff;
+	content: '\f431';
+	vertical-align: top;
+	text-decoration: none;
 	font-size: 16px;
-	line-height: 1;
 	font-family: 'Genericons';
+	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-decoration: none;
-	vertical-align: top;
-	content: '\f431';
-	color: #fff;
 }
 
 .main-navigation-menu a:link,
@@ -815,29 +815,29 @@ textarea {
 
 .main-navigation-menu ul {
 	position: absolute;
-	display: none;
 	z-index: 99;
+	display: none;
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
-	list-style-position: outside;
-	color: #444;
 	background: #fff;
 	box-shadow: 0 1px 2px #bbb;
+	color: #444;
+	list-style-position: outside;
+	list-style-type: none;
 }
 
 .main-navigation-menu ul li {
-	float: none;
 	position: relative;
+	float: none;
 }
 
 .main-navigation-menu ul a {
+	padding: 1em;
 	min-width: 250px;
 	min-width: 16rem;
-	padding: 1em;
+	border-bottom: 1px solid #eee;
 	font-size: 13px;
 	font-size: 0.8125rem;
-	border-bottom: 1px solid #eee;
 	-webkit-transition: none;
 	transition: none;
 }
@@ -859,19 +859,19 @@ textarea {
 .main-navigation-menu ul .menu-item-has-children > a:after {
 	display: inline-block;
 	margin: 0.3em 0 0 0.3em;
-	font-size: 14px;
-	line-height: 1;
-	font-family: 'Genericons';
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-decoration: none;
-	vertical-align: top;
-	content: '\f431';
 	color: #444;
+	content: '\f431';
+	vertical-align: top;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Genericons';
+	line-height: 1;
 	-webkit-transform:rotate(270deg);
 	-moz-transform:rotate(270deg);
 	-o-transform:rotate(270deg);
 	-ms-transform:rotate(270deg);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .main-navigation-menu li ul ul {
@@ -922,8 +922,8 @@ textarea {
 .mega-menu-content .widget_pages ul li a:hover,
 .mega-menu-content .widget_categories ul li a:hover,
 .mega-menu-content .widget_archive ul li a:hover {
-	color: #fff;
 	background: #ee4455;
+	color: #fff;
 }
 
 .mega-menu-content .mega-menu-widget .entry-meta,
@@ -937,8 +937,8 @@ textarea {
 .social-icons-menu {
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
 	list-style-position: outside;
+	list-style-type: none;
 	line-height: 1;
 }
 
@@ -961,15 +961,15 @@ textarea {
 
 /* Add Genericons */
 .social-icons-menu li a:before {
-	color: #fff;
 	display: inline-block;
+	color: #fff;
+	vertical-align: top;
+	text-decoration: inherit;
+	font-size: 16px;
+	font-family: 'Genericons';
+	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-size: 16px;
-	line-height: 1;
-	font-family: 'Genericons';
-	text-decoration: inherit;
-	vertical-align: top;
 }
 
 .social-icons-menu li a:before { content: '\f408'; } /* Default Icon */
@@ -1029,13 +1029,13 @@ textarea {
 .widget {
 	margin: 0 0 2em 0;
 	padding: 1rem 1.5rem 1.5rem;
+	max-width: 100%;
 	background: #fff;
 	box-shadow: 0 1px 2px #bbb;
-	max-width: 100%;
-	font-size: 16px;
-	font-size: 1rem;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
+	font-size: 16px;
+	font-size: 1rem;
 }
 
 .widget-header {
@@ -1046,13 +1046,13 @@ textarea {
 	display: block;
 	margin: 0;
 	padding: 0.75em 1em;
-	font-family: 'Montserrat', Tahoma, Arial;
+	background: #ee4455;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	font-weight: normal;
-	text-transform: uppercase;
-	color: #fff;
-	background: #ee4455;
+	font-family: 'Montserrat', Tahoma, Arial;
 }
 
 .widget ul {
@@ -1063,8 +1063,8 @@ textarea {
 
 .widget ul .children,
 .widget ul .sub-menu {
-	padding: 0;
 	margin: 0.5em 0 0.5em 1em;
+	padding: 0;
 }
 
 /* Make sure select elements fit in widgets. */
@@ -1078,12 +1078,12 @@ textarea {
 
 /* Theme Search Widget */
 .search-form {
-	display: block;
 	position: relative;
-	width: 100%;
+	display: block;
+	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	width: 100%;
 }
 
 .search-form .screen-reader-text {
@@ -1092,10 +1092,10 @@ textarea {
 
 .search-form .search-field {
 	display: inline-block;
-	margin: 0;
-	width: 100%;
-	padding: 0.5em 1.5em 0.5em 0.7em;
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0.5em 1.5em 0.5em 0.7em;
+	width: 100%;
 	-webkit-appearance: none;
 }
 
@@ -1103,8 +1103,8 @@ textarea {
 	position: absolute;
 	top: 0;
 	right: 0;
-	border: none;
 	padding: 0.65em 0.75em 0 0.2em;
+	border: none;
 	cursor: pointer;
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
@@ -1113,17 +1113,17 @@ textarea {
 .search-form .search-submit .genericon-search {
 	display: inline-block;
 	padding: 0.05em 0 0.55em 0.45em;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size: 24px;
-	line-height: 1;
-	font-family: 'Genericons';
+	color: #fff;
+	content: '\f400';
+	vertical-align: middle;
 	text-decoration: inherit;
 	font-weight: normal;
 	font-style: normal;
-	vertical-align: middle;
-	color: #fff;
-	content: '\f400';
+	font-size: 24px;
+	font-family: 'Genericons';
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* Theme Calendar Widget */
@@ -1153,8 +1153,8 @@ textarea {
 }
 
 .widget_calendar table tfoot tr td {
-	border: none;
 	padding-top: 1em;
+	border: none;
 }
 
 .widget_calendar table tfoot tr #prev {
@@ -1181,8 +1181,8 @@ textarea {
 	margin: 0 0 1.5em 0;
 	padding: 0;
 	border: none;
-	box-shadow: none;
 	background: none;
+	box-shadow: none;
 }
 
 .widget-magazine-posts .type-post .wp-post-image {
@@ -1223,11 +1223,11 @@ textarea {
 }
 
 .widget-magazine-posts .medium-post {
-	float: left;
 	display: block;
-	width: 33.33333333%;
-	padding-right: 1.5em;
+	float: left;
 	box-sizing: border-box;
+	padding-right: 1.5em;
+	width: 33.33333333%;
 }
 
 .widget-magazine-posts .medium-post .wp-post-image {
@@ -1240,10 +1240,10 @@ textarea {
 }
 
 .widget-magazine-posts .small-post {
-	float: left;
 	display: block;
-	width: 100%;
+	float: left;
 	box-sizing: border-box;
+	width: 100%;
 }
 
 .widget-magazine-posts .small-post .wp-post-image {
@@ -1266,17 +1266,17 @@ textarea {
 /* Magazine Posts Boxed Widget Horizontal Style */
 .widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .wp-post-image {
 	float: left;
-	width: 50%;
+	box-sizing: border-box;
 	margin: 0;
 	padding-right: 0.75em;
-	box-sizing: border-box;
+	width: 50%;
 }
 
 .widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .post-content {
 	float: right;
-	width: 50%;
-	padding-left: 0.75em;
 	box-sizing: border-box;
+	padding-left: 0.75em;
+	width: 50%;
 }
 
 .widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .medium-posts {
@@ -1286,17 +1286,17 @@ textarea {
 /* Magazine Posts Boxed Widget Vertical Style */
 .widget-magazine-posts-boxed .magazine-posts-boxed-vertical .large-post {
 	float: left;
-	width: 50%;
+	box-sizing: border-box;
 	margin-bottom: 1em;
 	padding-right: 0.75em;
-	box-sizing: border-box;
+	width: 50%;
 }
 
 .widget-magazine-posts-boxed .magazine-posts-boxed-vertical .small-posts {
-	width: 50%;
+	box-sizing: border-box;
 	margin-left: 50%;
 	padding-left: 0.75em;
-	box-sizing: border-box;
+	width: 50%;
 }
 
 /* Magazine Posts Grid Widget */
@@ -1306,17 +1306,17 @@ textarea {
 
 .widget-magazine-posts-grid .magazine-posts-grid-row .large-post {
 	float: left;
-	width: 50%;
-	padding-right: 1.5em;
 	box-sizing: border-box;
+	padding-right: 1.5em;
+	width: 50%;
 }
 
 /* Magazine Posts Columns Widget */
 .napoli-magazine-posts-columns {
 	padding: 0;
 	border: none;
-	box-shadow: none;
 	background: none;
+	box-shadow: none;
 }
 
 .napoli-magazine-posts-columns .widget-magazine-posts {
@@ -1326,19 +1326,19 @@ textarea {
 .widget-magazine-posts-columns .magazine-posts-columns .magazine-posts-columns-content {
 	margin: 0;
 	padding: 1em 1.5em 1.5em;
-	background: #fff;
-	border-top: 3px solid #ee4455;
-	box-shadow: 0 2px 2px #aaa;
 	max-width: 100%;
+	border-top: 3px solid #ee4455;
+	background: #fff;
+	box-shadow: 0 2px 2px #aaa;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 }
 
 .widget-magazine-posts-columns .magazine-posts-columns .magazine-posts-columns-content .magazine-posts-columns-post-list {
 	float: left;
+	box-sizing: border-box;
 	margin-bottom: -1.5em;
 	width: 100%;
-	box-sizing: border-box;
 }
 
 .widget-magazine-posts-columns .magazine-posts-columns .magazine-posts-columns-content {
@@ -1348,21 +1348,21 @@ textarea {
 
 .widget-magazine-posts-columns .magazine-posts-column-left {
 	float: left;
-	width: 50%;
-	padding-right: 1em;
 	box-sizing: border-box;
+	padding-right: 1em;
+	width: 50%;
 }
 
 .widget-magazine-posts-columns .magazine-posts-column-right {
-	margin-left: 50%;
-	width: 50%;
-	padding-left: 1em;
 	box-sizing: border-box;
+	margin-left: 50%;
+	padding-left: 1em;
+	width: 50%;
 }
 
 .widget-magazine-posts-columns .medium-post {
-	width: 100%;
 	padding-right: 0;
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -1374,22 +1374,22 @@ textarea {
 .comments-area,
 .comment-respond {
 	margin: 0 0 2em 0;
+	max-width: 100%;
 	background: #fff;
 	box-shadow: 0 1px 2px #bbb;
-	max-width: 100%;
 }
 
 .page-title,
 .entry-title {
-	font-family: 'Montserrat', Tahoma, Arial;
-	font-size: 28px;
-	font-size: 1.75rem;
-	font-weight: normal;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	color: #ee4455;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
+	font-weight: normal;
+	font-size: 28px;
+	font-size: 1.75rem;
+	font-family: 'Montserrat', Tahoma, Arial;
 }
 
 .entry-title a:link,
@@ -1460,11 +1460,11 @@ textarea {
 
 .entry-meta span:before {
 	display: inline-block;
-	-webkit-font-smoothing: antialiased;
-	font: normal 20px 'Genericons';
-	vertical-align: middle;
-	color: #999;
 	margin-right: 0.2em;
+	color: #999;
+	vertical-align: middle;
+	font: normal 20px 'Genericons';
+	-webkit-font-smoothing: antialiased;
 }
 
 .entry-meta .meta-date:before{
@@ -1498,8 +1498,8 @@ textarea {
 .widget_tag_cloud .tagcloud:after,
 .entry-tags .meta-tags:before,
 .entry-tags .meta-tags:after {
-	content: "";
 	display: table;
+	content: "";
 }
 
 .widget_tag_cloud .tagcloud:after,
@@ -1509,12 +1509,12 @@ textarea {
 
 .widget_tag_cloud .tagcloud a,
 .entry-tags .meta-tags a {
-	float: left;
 	display: inline-block;
+	float: left;
 	margin: 0 2px 2px 0;
 	padding: 0.2em 0.5em;
-	text-decoration: none;
 	background: #ee4455;
+	text-decoration: none;
 	font-size: 13px !important;
 	font-size: 0.8125rem !important;
 }
@@ -1532,8 +1532,8 @@ textarea {
 .widget_tag_cloud .tagcloud a:active,
 .entry-tags .meta-tags a:hover,
 .entry-tags .meta-tags a:active {
-	color: #fff;
 	background: #444;
+	color: #fff;
 }
 
 /* Post Navigation */
@@ -1547,16 +1547,16 @@ textarea {
 
 .post-navigation .nav-links .nav-previous {
 	float: left;
-	max-width: 50%;
-	padding-right: 0.5em;
 	box-sizing: border-box;
+	padding-right: 0.5em;
+	max-width: 50%;
 }
 
 .post-navigation .nav-links .nav-next {
 	float: right;
-	max-width: 50%;
-	padding-left: 0.5em;
 	box-sizing: border-box;
+	padding-left: 0.5em;
+	max-width: 50%;
 }
 
 .post-navigation .nav-links .nav-link-text {
@@ -1593,11 +1593,11 @@ textarea {
 	display: inline-block;
 	margin: 0 3px 3px 0;
 	padding: 0.4em 1em;
-	text-align: center;
-	text-decoration: none;
-	color: #444;
 	background: #fff;
 	box-shadow: 0 1px 2px #bbb;
+	color: #444;
+	text-align: center;
+	text-decoration: none;
 }
 
 .post-pagination a:link,
@@ -1608,8 +1608,8 @@ textarea {
 .post-pagination a:hover,
 .post-pagination a:active,
 .post-pagination .current {
-	color: #fff;
 	background: #ee4455;
+	color: #fff;
 }
 
 /* Infinite Scroll Pagination */
@@ -1624,9 +1624,9 @@ textarea {
 }
 
 .infinite-scroll .infinite-loader .spinner {
+	bottom: -1em;
 	left: auto;
 	margin: 0 auto;
-	bottom: -1em;
 }
 
 .infinite-scroll #infinite-handle span {
@@ -1634,9 +1634,9 @@ textarea {
 	margin: 0 0 2em;
 	padding: 0.4em 1em;
 	background: #303030;
+	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
-	text-decoration: none;
 }
 
 .infinite-scroll #infinite-handle span:hover {
@@ -1655,13 +1655,13 @@ textarea {
 	display: block;
 	margin: 0;
 	padding: 0.75em 1em;
-	font-family: 'Montserrat', Tahoma, Arial;
+	background: #ee4455;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	font-weight: normal;
-	text-transform: uppercase;
-	color: #fff;
-	background: #ee4455;
+	font-family: 'Montserrat', Tahoma, Arial;
 }
 
 .homepage-description,
@@ -1696,9 +1696,9 @@ textarea {
 
 .breadcrumbs .trail-browse {
 	margin-right: 0.5em;
+	font-weight: normal;
 	font-size: 14px;
 	font-size: 0.875rem;
-	font-weight: normal;
 }
 
 .breadcrumbs .trail-items {
@@ -1706,8 +1706,8 @@ textarea {
 }
 
 .breadcrumbs .trail-items li::after {
-	content: "\00bb"; /* Raquo */
 	padding: 0 0.5em;
+	content: "\00bb"; /* Raquo */
 }
 
 .trail-separator-slash .trail-items li::after { content: "\002F"; }
@@ -1736,24 +1736,24 @@ textarea {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding-right: 2em;
 	box-sizing: border-box;
+	padding-right: 2em;
 }
 
 .post-layout-columns .post-wrapper .post-column article {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
 }
 
 .post-layout-columns .post-wrapper .post-column article .post-content {
+	flex-grow: 1;
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
-	flex-grow: 1;
 }
 
 .post-layout-columns .post-wrapper .post-column article .entry-title {
@@ -1779,8 +1779,8 @@ textarea {
 /* 3 Columns */
 .post-layout-three-columns .content-archive {
 	float: none;
-	width: 100%;
 	padding: 0;
+	width: 100%;
 }
 
 .post-layout-three-columns .post-wrapper .post-column {
@@ -1789,7 +1789,6 @@ textarea {
 
 /* Post Columns Fixes for IE 10 and IE 11*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-
 	.post-layout-columns .post-wrapper .post-column,
 	.post-layout-columns .post-wrapper .post-column article {
 		display: block;
@@ -1826,14 +1825,14 @@ textarea {
 	display: inline-block;
 	margin: 0;
 	padding: 0.75em 1em;
-	font-family: 'Montserrat', Tahoma, Arial;
-	font-size: 15px;
-	font-size: 0.9375rem;
-	font-weight: normal;
-	text-transform: uppercase;
 	color: #fff;
+	text-transform: uppercase;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
+	font-weight: normal;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-family: 'Montserrat', Tahoma, Arial;
 }
 
 /* Comment List */
@@ -1853,8 +1852,8 @@ textarea {
 
 .comment-meta {
 	float: left;
-	width: 100%;
 	padding: 0;
+	width: 100%;
 }
 
 .comment-meta .comment-author img {
@@ -1886,8 +1885,8 @@ textarea {
 }
 
 .comment ol.children {
-	list-style: none;
 	margin: 1.5em 0 0;
+	list-style: none;
 }
 
 /* Comment Pagination */
@@ -1923,10 +1922,10 @@ textarea {
 
 .comment-form label {
 	display: inline-block;
-	font-size: 15px;
-	font-size: 0.9375rem;
 	min-width: 150px;
 	font-weight: bold;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .comment-form textarea {
@@ -1947,9 +1946,9 @@ textarea {
 .comment-reply-title small a {
 	float: right;
 	padding: 0.75em 1em;
+	font-weight: normal;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	font-weight: normal;
 }
 
 .comment-reply-title small a:link,
@@ -1970,9 +1969,9 @@ textarea {
 }
 
 .site-footer {
+	color: #ddd;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	color: #ddd;
 }
 
 .site-footer .site-info {
@@ -1998,10 +1997,10 @@ textarea {
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
-	border: none;
-	margin-bottom: 0;
 	margin-top: 0;
+	margin-bottom: 0;
 	padding: 0;
+	border: none;
 }
 
 /* Make sure embeds and iframes fit their containers. */
@@ -2041,12 +2040,12 @@ object {
 
 .gallery-item {
 	display: inline-block;
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0.75em 1em 0 0;
-	text-align: center;
-	vertical-align: top;
 	width: 100%;
-	box-sizing: border-box;
+	vertical-align: top;
+	text-align: center;
 }
 
 .gallery-columns-2 .gallery-item {
@@ -2095,7 +2094,6 @@ object {
 ## 14.1 - Desktop X-Large ( < 1200px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 75em) {
-
 	.container {
 		padding: 0 1.5em;
 	}
@@ -2132,7 +2130,6 @@ object {
 ## 14.2 - Desktop Large ( < 1120px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 70em) {
-
 	.content-area {
 		width: 70%;
 	}
@@ -2172,7 +2169,6 @@ object {
 ## 14.2 - Desktop Medium ( < 1040px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 65em) {
-
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .entry-content {
 		display: none;
 	}
@@ -2183,12 +2179,11 @@ object {
 ## 14.3 - Desktop Small ( < 960px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 60em) {
-
 	.content-area,
 	.site-content .content-fullwidth {
 		float: none;
-		width: 100%;
 		padding: 0;
+		width: 100%;
 	}
 
 	.sidebar {
@@ -2198,19 +2193,19 @@ object {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		float: none;
+		margin-right: -1.5em;
 		padding: 0;
 		width: auto;
-		margin-right: -1.5em;
 	}
 
 	.sidebar .widget-wrap {
-		float: right;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		width: 50%;
-		padding-right: 1.5em;
+		float: right;
 		box-sizing: border-box;
+		padding-right: 1.5em;
+		width: 50%;
 	}
 
 	.sidebar .widget-wrap .widget {
@@ -2253,22 +2248,22 @@ object {
 	}
 
 	.main-navigation-menu li {
-		float: none;
 		position: static;
+		float: none;
 	}
 
 	.main-navigation-menu ul,
 	.mega-menu-item .mega-menu-content,
 	.mega-menu-item .mega-menu-content .mega-menu-widget {
 		position: static;
-		display: block;
-		left: auto;
 		top: auto;
+		left: auto;
+		display: block;
 	}
 
 	.main-navigation-menu ul a {
-		width: auto;
 		float: none;
+		width: auto;
 	}
 
 	.main-navigation-menu li ul ul {
@@ -2285,9 +2280,9 @@ object {
 	/* Main Navigation Toggle */
 	.main-navigation-toggle {
 		position: absolute;
-		display: inline-block;
 		top: 2em;
 		left: 2em;
+		display: inline-block;
 		margin: 0;
 		padding: 0;
 		background: none;
@@ -2296,22 +2291,22 @@ object {
 	.main-navigation-toggle:hover,
 	.main-navigation-toggle:focus,
 	.main-navigation-toggle:active {
-		cursor: pointer;
 		background: none;
+		cursor: pointer;
 	}
 
 	.main-navigation-toggle:after {
-		float: left;
 		display: inline-block;
+		float: left;
+		color: #fff;
+		content: '\f419';
+		vertical-align: middle;
+		text-decoration: inherit;
 		font-size: 28px;
-		line-height: 1;
 		font-family: 'Genericons';
+		line-height: 1;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		text-decoration: inherit;
-		vertical-align: middle;
-		content: '\f419';
-		color: #fff;
 	}
 
 	.main-navigation-toggle:hover:after {
@@ -2320,20 +2315,20 @@ object {
 
 	/* Main Navigation Menu */
 	.main-navigation-menu {
-		float: left;
-		width: 100%;
 		display: none;
+		float: left;
 		margin: 0 0 1em;
+		width: 100%;
 		border-top: 1px solid rgba(255,255,255,0.2);
 	}
 
 	.main-navigation-menu a {
 		display: block;
 		clear: left;
-		font-size: 15px;
-		font-size: 0.9375rem;
 		padding: 1.2em;
 		border-bottom: 1px solid rgba(255,255,255,0.2);
+		font-size: 15px;
+		font-size: 0.9375rem;
 	}
 
 	.main-navigation-menu li:last-child > a {
@@ -2349,9 +2344,9 @@ object {
 
 	.main-navigation-menu ul a {
 		display: block;
-		width: 100%;
-		min-width: auto;
 		padding-left: 2em;
+		min-width: auto;
+		width: 100%;
 		border-bottom: 1px solid #eee;
 	}
 
@@ -2373,8 +2368,8 @@ object {
 
 	/* Mobile Submenu Dropdowns */
 	.main-navigation-menu .submenu-dropdown-toggle {
-		float: right;
 		display: block;
+		float: right;
 		margin: 0;
 		padding: 0.8em 1.2em;
 	}
@@ -2384,15 +2379,15 @@ object {
 	}
 
 	.main-navigation-menu .submenu-dropdown-toggle:before {
+		color: #fff;
+		content: '\f431';
+		vertical-align: middle;
+		text-decoration: inherit;
 		font-size: 32px;
-		line-height: 1;
 		font-family: 'Genericons';
+		line-height: 1;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		text-decoration: inherit;
-		vertical-align: middle;
-		content: '\f431';
-		color: #fff;
 	}
 
 	.main-navigation-menu .submenu-dropdown-toggle:hover:before {
@@ -2408,8 +2403,8 @@ object {
 	}
 
 	.main-navigation-menu ul .submenu-dropdown-toggle:before {
-		font-size: 24px;
 		color: #444;
+		font-size: 24px;
 	}
 
 	.main-navigation-menu ul .submenu-dropdown-toggle:hover:before {
@@ -2447,7 +2442,6 @@ object {
 ## 14.5 - Tablet Medium ( < 800px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 50em) {
-
 	.site-branding {
 		margin: 1em 1em 1.25em 3.5em;
 	}
@@ -2506,7 +2500,6 @@ object {
 ## 14.6 - Tablet Small ( < 720px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 45em) {
-
 	.widget-magazine-posts .medium-post .entry-title {
 		font-size: 15px;
 		font-size: 0.9375rem;
@@ -2522,7 +2515,6 @@ object {
 ## 14.7 - Mobile Extra Large ( < 640px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 40em) {
-
 	.header-social-icons {
 		display: none;
 	}
@@ -2533,8 +2525,8 @@ object {
 	}
 
 	.post-layout-columns .post-wrapper .post-column {
-		float: none;
 		display: block;
+		float: none;
 		padding-right: 0;
 	}
 
@@ -2562,8 +2554,8 @@ object {
 
 	.sidebar .widget-wrap {
 		float: none;
-		width: 100%;
 		padding-right: 0;
+		width: 100%;
 	}
 
 	/* Magazine Post Widgets */
@@ -2576,16 +2568,16 @@ object {
 	.widget-magazine-posts-boxed .magazine-posts-boxed-vertical .large-post,
 	.widget-magazine-posts-columns .magazine-posts-column-left {
 		float: none;
-		width: 100%;
 		padding: 0;
+		width: 100%;
 	}
 
 	.widget-magazine-posts-boxed .magazine-posts-boxed-vertical .small-posts,
 	.widget-magazine-posts-columns .magazine-posts-column-right {
-		width: 100%;
-		padding-top: 1em;
 		margin-left: 0;
+		padding-top: 1em;
 		padding-left: 0;
+		width: 100%;
 	}
 
 	.widget-magazine-posts .large-post .wp-post-image {
@@ -2596,8 +2588,8 @@ object {
 
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .post-content {
 		float: right;
-		width: 50%;
 		padding-left: 1.5em;
+		width: 50%;
 	}
 
 	.widget-magazine-posts-grid .magazine-posts-grid-row .large-post {
@@ -2629,15 +2621,14 @@ object {
 ## 14.8 - Mobile Large ( < 560px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 35em) {
-
 	.widget-magazine-posts-grid .medium-post-row {
 		margin-right: 0;
 	}
 
 	.widget-magazine-posts .medium-post {
 		float: none;
-		width: 100%;
 		padding-right: 0;
+		width: 100%;
 	}
 
 	.widget-magazine-posts .medium-post .wp-post-image {
@@ -2652,7 +2643,6 @@ object {
 ## 14.9 - Mobile Medium ( < 480px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 30em) {
-
 	.site-branding {
 		margin: 0.75em 0.75em 0.75em 3em;
 	}
@@ -2701,8 +2691,8 @@ object {
 	.post-navigation .nav-links .nav-previous,
 	.post-navigation .nav-links .nav-next {
 		float: none;
-		max-width: 100%;
 		padding: 0;
+		max-width: 100%;
 	}
 
 	.post-navigation .nav-links .nav-next {
@@ -2729,8 +2719,8 @@ object {
 
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .post-content {
 		float: none;
-		width: 100%;
 		padding: 0;
+		width: 100%;
 	}
 
 	.widget-magazine-posts .large-post .entry-title {
@@ -2751,7 +2741,6 @@ object {
 ## 14.10 - Mobile Small ( < 320px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 20em) {
-
 	.page-title,
 	.entry-title,
 	.post-layout-columns .post-wrapper .post-column article .entry-title {
@@ -2769,9 +2758,9 @@ object {
 
 	.widget-magazine-posts .medium-post .entry-title,
 	.widget-magazine-posts .small-post .entry-title {
+		vertical-align: top;
 		font-size: 13px;
 		font-size: 0.8125rem;
-		vertical-align: top;
 	}
 
 	.widget-magazine-posts .medium-post .entry-meta,
@@ -2800,7 +2789,6 @@ object {
 }
 
 @media only screen and (max-width: 80em) {
-
 	.sidebar-left .content-area {
 		padding-right: 0;
 		padding-left: 1.5em;
@@ -2809,7 +2797,6 @@ object {
 }
 
 @media only screen and (max-width: 60em) {
-
 	.sidebar-left .content-area {
 		padding: 0;
 	}
@@ -2819,8 +2806,8 @@ object {
 /* Do not add left sidebar styles if there are no widgets */
 .no-sidebar .content-area {
 	float: none;
-	width: 100%;
 	padding: 0;
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -2829,7 +2816,6 @@ object {
 
 /* Ensure navigation is visible on desktop view */
 @media only screen and (min-width: 60.001em) {
-
 	.main-navigation-menu {
 		display: block !important;
 	}

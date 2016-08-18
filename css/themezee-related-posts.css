@@ -20,13 +20,13 @@
 	display: block;
 	margin: 0;
 	padding: 0.75em 1em;
-	font-family: 'Montserrat', Tahoma, Arial;
+	background: #ee4455;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	font-weight: normal;
-	text-transform: uppercase;
-	color: #fff;
-	background: #ee4455;
+	font-family: 'Montserrat', Tahoma, Arial;
 }
 
 /*--------------------------------------------------------------
@@ -57,9 +57,9 @@ ul.related-posts-list {
 	float: left;
 	margin: 0 1em 0 0;
 	padding: 0;
-	border: none;
 	max-width: 20%;
 	height: auto;
+	border: none;
 }
 
 .related-posts-list li .entry-meta {
@@ -81,9 +81,9 @@ ul.related-posts-list {
 
 .related-posts-columns .related-post-column {
 	float: left;
+	box-sizing: border-box;
 	margin-bottom: 2em;
 	padding-right: 2em;
-	box-sizing: border-box;
 }
 
 .related-posts-two-columns .related-post-column {
@@ -158,7 +158,6 @@ ul.related-posts-list {
 ---------------------------------------------------------------- */
 
 @media only screen and (max-width: 80em) {
-
 	/* Columns */
 	.related-posts-two-columns .related-post-column .entry-title {
 		font-size: 22px;
@@ -168,7 +167,6 @@ ul.related-posts-list {
 }
 
 @media only screen and (max-width: 70em) {
-
 	/* Columns */
 	.related-posts-two-columns .related-post-column .entry-title {
 		font-size: 20px;
@@ -178,7 +176,6 @@ ul.related-posts-list {
 }
 
 @media only screen and (max-width: 50em) {
-
 	/* Columns */
 	.related-posts-four-columns .related-post-column {
 		width: 50%;
@@ -224,7 +221,6 @@ ul.related-posts-list {
 }
 
 @media only screen and (max-width: 40em) {
-
 	.related-posts-two-columns .related-post-column .entry-title,
 	.related-posts-four-columns .related-post-column .entry-title {
 		font-size: 16px;
@@ -234,7 +230,6 @@ ul.related-posts-list {
 }
 
 @media only screen and (max-width: 35em) {
-
 	/* Columns */
 	.related-posts-three-columns {
 		margin: 0;
@@ -242,14 +237,13 @@ ul.related-posts-list {
 
 	.related-posts-three-columns .related-post-column {
 		float: none;
-		width: 100%;
 		padding-right: 0;
+		width: 100%;
 	}
 
 }
 
 @media only screen and (max-width: 25em) {
-
 	/* Columns */
 	.related-posts-two-columns,
 	.related-posts-four-columns {
@@ -259,8 +253,8 @@ ul.related-posts-list {
 	.related-posts-two-columns .related-post-column,
 	.related-posts-four-columns .related-post-column {
 		float: none;
-		width: 100%;
 		padding-right: 0;
+		width: 100%;
 	}
 
 	/* List */
@@ -273,7 +267,6 @@ ul.related-posts-list {
 }
 
 @media only screen and (max-width: 20em) {
-
 	.related-posts .entry-meta .meta-date,
 	.related-posts .entry-meta .meta-author  {
 		display: block;
