@@ -22,7 +22,11 @@ function napoli_slider_scripts() {
 	if ( true === $theme_options['slider_blog'] or true === $theme_options['slider_magazine'] or is_page_template( 'template-slider.php' ) ) :
 
 		// FlexSlider CSS.
-		wp_enqueue_style( 'napoli-flexslider', get_template_directory_uri() . '/css/flexslider.css' );
+		if ( is_rtl() ) {
+			wp_enqueue_style( 'napoli-flexslider', get_template_directory_uri() . '/css/flexslider-rtl.css' );
+		} else {
+			wp_enqueue_style( 'napoli-flexslider', get_template_directory_uri() . '/css/flexslider.css' );
+		}
 
 		// FlexSlider JS.
 		wp_enqueue_script( 'flexslider', get_template_directory_uri() .'/js/jquery.flexslider-min.js', array( 'jquery' ), '2.6.0' );
