@@ -3,15 +3,12 @@ var gulp = require('gulp');
 
 // Include Our Plugins
 var rename       = require( 'gulp-rename' );
-var concat       = require( 'gulp-concat' );
 var uglify       = require( 'gulp-uglify' );
-var postcss      = require( 'gulp-postcss' );
-var sourcemaps   = require( 'gulp-sourcemaps' );
-var autoprefixer = require( 'autoprefixer' );
-var sorting      = require( 'postcss-sorting' );
 var rtlcss       = require( 'gulp-rtlcss' );
+var autoprefixer = require( 'autoprefixer' );
+var postcss      = require( 'gulp-postcss' );
+var sorting      = require( 'postcss-sorting' );
 var wprtl        = require( 'postcss-wprtl' );
-var duplicates   = require( 'postcss-discard-duplicates' );
 
 // Minify JS
 gulp.task( 'minifyjs', function() {
@@ -23,16 +20,10 @@ gulp.task( 'minifyjs', function() {
 		.pipe( gulp.dest('js') );
 });
 
-// Autoprefix CSS
-gulp.task( 'autoprefix', function() {
+// Clean up CSS
+gulp.task( 'cleancss', function() {
 	return gulp.src( ['style.css', 'css/*.css'], { base: './' } )
 		.pipe( postcss( [ autoprefixer() ] ) )
-		.pipe( gulp.dest( './' ) );
-});
-
-// Sort CSS
-gulp.task( 'sorting', function() {
-	return gulp.src( ['style.css', 'css/*.css'], { base: './' } )
 		.pipe( postcss( [ sorting( { 'preserve-empty-lines-between-children-rules': true } ) ] ) )
 		.pipe( gulp.dest( './' ) );
 });
@@ -41,8 +32,6 @@ gulp.task( 'sorting', function() {
 gulp.task( 'wprtl', function () {
 	return gulp.src( 'style.css' )
 		.pipe( postcss( [ wprtl() ] ) )
-		.pipe( rtlcss() )
-		.pipe( postcss( [ duplicates() ] ) )
 		.pipe( postcss( [ sorting( { 'preserve-empty-lines-between-children-rules': true } ) ] ) )
 		.pipe( rename( 'rtl.css' ) )
 		.pipe( gulp.dest( './' ) );
@@ -59,4 +48,4 @@ gulp.task( 'flexrtl', function () {
 });
 
 // Default Task
-gulp.task( 'default', ['minifyjs', 'autoprefix', 'sorting'] );
+gulp.task( 'default', ['minifyjs', 'cleancss'] );

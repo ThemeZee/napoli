@@ -5,14 +5,12 @@
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-css-flip": "^0.4.0",
     "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-rtlcss": "^1.0.0",
-    "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "postcss-discard-duplicates": "^2.0.1",
-    "postcss-sorting": "^1.6.1"
+    "postcss-sorting": "^1.6.1",
+    "postcss-wprtl": "^1.2.0"
   }
 }
