@@ -83,15 +83,15 @@ html[xmlns] .zeeflexslider .zeeslides {
 
 .post-slider .zeeslide {
 	position: relative;
-	direction: rtl;
 	text-align: right;
+	direction: rtl;
 }
 
 .zeeflex-viewport {
-	direction: ltr;
 	max-height: 2000px;
 	-webkit-transition: all 1s ease;
 	transition: all 1s ease;
+	direction: ltr;
 }
 
 .post-slider .zeeslide .type-post {
