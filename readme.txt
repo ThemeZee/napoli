@@ -29,6 +29,7 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 = 1.0.1 =
 * added Right-to-Left language support
 * moved Theme Links to Theme Options panel dropdown
+* updated pagination template function
 
 = 1.0 =
 Initial Release

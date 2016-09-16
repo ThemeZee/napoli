@@ -371,29 +371,11 @@ if ( ! function_exists( 'napoli_pagination' ) ) :
  */
 function napoli_pagination() {
 
-	global $wp_query;
-
-	$big = 999999999; // Need an unlikely integer.
-
-	$paginate_links = paginate_links( array(
-		'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-		'format' => '?paged=%#%',
-		'current' => max( 1, get_query_var( 'paged' ) ),
-		'total' => $wp_query->max_num_pages,
-		'next_text' => '<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'napoli' ) . '</span>&raquo;',
+	the_posts_pagination( array(
+		'mid_size'  => 2,
 		'prev_text' => '&laquo<span class="screen-reader-text">' . esc_html_x( 'Previous Posts', 'pagination', 'napoli' ) . '</span>',
-		'add_args' => false,
+		'next_text' =>'<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'napoli' ) . '</span>&raquo;',
 	) );
-
-	// Display the pagination if more than one page is found.
-	if ( $paginate_links ) : ?>
-
-		<div class="post-pagination clearfix">
-			<?php echo $paginate_links; ?>
-		</div>
-
-	<?php
-	endif;
 
 } // napoli_pagination()
 endif;
