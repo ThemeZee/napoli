@@ -29,7 +29,7 @@ function napoli_customize_register_options( $wp_customize ) {
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
 		'title'          => esc_html__( 'Theme Options', 'napoli' ),
-		'description'    => '',
+		'description'    => napoli_customize_theme_links(),
 	) );
 
 	// Add postMessage support for site title and description.
@@ -88,32 +88,54 @@ add_action( 'customize_preview_init', 'napoli_customize_preview_js' );
 
 
 /**
- * Embed JS file for Customizer Controls
- */
-function napoli_customize_controls_js() {
-
-	wp_enqueue_script( 'napoli-customizer-controls', get_template_directory_uri() . '/js/customizer-controls.js', array(), '20151202', true );
-
-	// Localize the script.
-	wp_localize_script( 'napoli-customizer-controls', 'napoli_theme_links', array(
-		'title'	=> esc_html__( 'Theme Links', 'napoli' ),
-		'themeURL'	=> esc_url( __( 'https://themezee.com/themes/napoli/', 'napoli' ) . '?utm_source=customizer&utm_medium=textlink&utm_campaign=napoli&utm_content=theme-page' ),
-		'themeLabel'	=> esc_html__( 'Theme Page', 'napoli' ),
-		'docuURL'	=> esc_url( __( 'https://themezee.com/docs/napoli-documentation/', 'napoli' ) . '?utm_source=customizer&utm_medium=textlink&utm_campaign=napoli&utm_content=documentation' ),
-		'docuLabel'	=> esc_html__( 'Theme Documentation', 'napoli' ),
-		'rateURL'	=> esc_url( 'http://wordpress.org/support/view/theme-reviews/napoli?filter=5' ),
-		'rateLabel'	=> esc_html__( 'Rate this theme', 'napoli' ),
-		)
-	);
-
-}
-add_action( 'customize_controls_enqueue_scripts', 'napoli_customize_controls_js' );
-
-
-/**
  * Embed CSS styles for the theme options in the Customizer
  */
 function napoli_customize_preview_css() {
-	wp_enqueue_style( 'napoli-customizer-css', get_template_directory_uri() . '/css/customizer.css', array(), '20151202' );
+	wp_enqueue_style( 'napoli-customizer-css', get_template_directory_uri() . '/css/customizer.css', array(), '20160915' );
 }
 add_action( 'customize_controls_print_styles', 'napoli_customize_preview_css' );
+
+/**
+ * Returns Theme Links
+ */
+function napoli_customize_theme_links() {
+
+	ob_start();
+	?>
+
+		<div class="theme-links">
+
+			<span class="customize-control-title"><?php esc_html_e( 'Theme Links', 'napoli' ); ?></span>
+
+			<p>
+				<a href="<?php echo esc_url( __( 'https://themezee.com/themes/napoli/', 'napoli' ) ); ?>?utm_source=customizer&utm_medium=textlink&utm_campaign=napoli&utm_content=theme-page" target="_blank">
+					<?php esc_html_e( 'Theme Page', 'napoli' ); ?>
+				</a>
+			</p>
+
+			<p>
+				<a href="http://preview.themezee.com/napoli/?utm_source=theme-info&utm_medium=textlink&utm_campaign=napoli&utm_content=demo" target="_blank">
+					<?php esc_html_e( 'Theme Demo', 'napoli' ); ?>
+				</a>
+			</p>
+
+			<p>
+				<a href="<?php echo esc_url( __( 'https://themezee.com/docs/napoli-documentation/', 'napoli' ) ); ?>?utm_source=customizer&utm_medium=textlink&utm_campaign=napoli&utm_content=documentation" target="_blank">
+					<?php esc_html_e( 'Theme Documentation', 'napoli' ); ?>
+				</a>
+			</p>
+
+			<p>
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/napoli/reviews/?filter=5', 'napoli' ) ); ?>" target="_blank">
+					<?php esc_html_e( 'Rate this theme', 'napoli' ); ?>
+				</a>
+			</p>
+
+		</div>
+
+	<?php
+	$theme_links = ob_get_contents();
+	ob_end_clean();
+
+	return $theme_links;
+}
