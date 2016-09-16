@@ -1614,7 +1614,7 @@ textarea {
 }
 
 /* Infinite Scroll Pagination */
-.infinite-scroll .post-pagination {
+.infinite-scroll .pagination {
 	display: none;
 }
 
@@ -2112,7 +2112,7 @@ object {
 	.type-post,
 	.type-page,
 	.type-attachment,
-	.post-pagination,
+	.pagination,
 	.comments-area {
 		margin-bottom: 1.5em;
 	}
