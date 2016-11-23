@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.0.2 =
+* improved escaping and sanitizing of widget settings and slider options
+
 = 1.0.1 =
 * added Right-to-Left language support
 * moved Theme Links to Theme Options panel dropdown

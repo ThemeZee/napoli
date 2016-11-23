@@ -80,7 +80,7 @@ function napoli_theme_info_page() {
 							<?php printf( esc_html__( '%s makes use of the Customizer for all theme settings. Click on "Customize Theme" to open the Customizer now.', 'napoli' ), $theme->get( 'Name' ) ); ?>
 						</p>
 						<p>
-							<a href="<?php echo admin_url( 'customize.php' ); ?>" class="button button-primary"><?php esc_html_e( 'Customize Theme', 'napoli' ); ?></a>
+							<a href="<?php echo wp_customize_url(); ?>" class="button button-primary"><?php esc_html_e( 'Customize Theme', 'napoli' ); ?></a>
 						</p>
 					</div>
 
@@ -146,10 +146,12 @@ function napoli_theme_info_page() {
 
 		<div id="theme-author">
 
-			<p><?php printf( esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'napoli' ),
-				$theme->get( 'Name' ),
-				'<a target="_blank" href="' . __( 'https://themezee.com/', 'napoli' ) . '?utm_source=theme-info&utm_medium=footer&utm_campaign=napoli" title="ThemeZee">ThemeZee</a>',
-				'<a target="_blank" href="' . __( 'https://wordpress.org/support/theme/napoli/reviews/?filter=5', 'napoli' ) . '" title="' . esc_attr__( 'Review Napoli', 'napoli' ) . '">' . esc_html__( 'rate it', 'napoli' ) . '</a>'); ?>
+			<p>
+				<?php printf( esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'napoli' ),
+					$theme->get( 'Name' ),
+					'<a target="_blank" href="' . __( 'https://themezee.com/', 'napoli' ) . '?utm_source=theme-info&utm_medium=footer&utm_campaign=napoli" title="ThemeZee">ThemeZee</a>',
+					'<a target="_blank" href="' . __( 'https://wordpress.org/support/theme/napoli/reviews/?filter=5', 'napoli' ) . '" title="' . esc_attr__( 'Review Napoli', 'napoli' ) . '">' . esc_html__( 'rate it', 'napoli' ) . '</a>'
+				); ?>
 			</p>
 
 		</div>
@@ -172,7 +174,7 @@ function napoli_theme_info_page_css( $hook ) {
 	}
 
 	// Embed theme info css style.
-	wp_enqueue_style( 'napoli-theme-info-css', get_template_directory_uri() .'/css/theme-info.css' );
+	wp_enqueue_style( 'napoli-theme-info-css', get_template_directory_uri() . '/css/theme-info.css' );
 
 }
 add_action( 'admin_enqueue_scripts', 'napoli_theme_info_page_css' );

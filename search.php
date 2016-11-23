@@ -21,7 +21,7 @@ $theme_options = napoli_theme_options();
 
 			<header class="page-header">
 
-				<h1 class="archive-title"><?php printf( esc_html__( 'Search Results for: %s', 'napoli' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h1>
+				<h1 class="archive-title"><?php printf( esc_html__( 'Search Results for: %s', 'napoli' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				<p><?php get_search_form(); ?></p>
 
 			</header><!-- .page-header -->

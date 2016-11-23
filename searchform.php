@@ -12,7 +12,7 @@
 		<span class="screen-reader-text"><?php echo esc_html_x( 'Search for:', 'label', 'napoli' ); ?></span>
 		<input type="search" class="search-field"
 			placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'napoli' ); ?>"
-			value="<?php echo esc_html( get_search_query() ); ?>" name="s"
+			value="<?php echo get_search_query(); ?>" name="s"
 			title="<?php echo esc_attr_x( 'Search for:', 'label', 'napoli' ); ?>" />
 	</label>
 	<button type="submit" class="search-submit">
