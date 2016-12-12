@@ -36,12 +36,12 @@
 	margin-bottom: 4px;
 }
 
-#accordion-panel-napoli_options_panel .customize-info .customize-help-toggle {
+#customize-theme-controls [id$=accordion-panel-napoli_options_panel] .customize-info .customize-help-toggle {
 	top: 24px;
 	right: 4px;
 }
 
-#accordion-panel-napoli_options_panel .customize-info .customize-help-toggle::before {
+#customize-theme-controls [id$=accordion-panel-napoli_options_panel] .customize-info .customize-help-toggle::before {
 	content: "\f333";
 	color: #a0a5aa;
 	font-size: 28px;
@@ -50,14 +50,14 @@
 	top: 0;
 }
 
-#accordion-panel-napoli_options_panel .customize-info .customize-help-toggle[aria-expanded="true"]::before {
+#customize-theme-controls [id$=accordion-panel-napoli_options_panel] .customize-info .customize-help-toggle[aria-expanded="true"]::before {
 	content: "\f335";
 }
 
-#accordion-panel-napoli_options_panel .customize-info .customize-help-toggle:hover::before {
+#customize-theme-controls [id$=accordion-panel-napoli_options_panel] .customize-info .customize-help-toggle:hover::before {
 	color: #72777c;
 }
 
-#accordion-panel-napoli_options_panel .customize-info .customize-help-toggle:focus::before {
+#customize-theme-controls [id$=accordion-panel-napoli_options_panel] .customize-info .customize-help-toggle:focus::before {
 	box-shadow: none;
 }
