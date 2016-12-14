@@ -31,7 +31,7 @@
 
 			<div class="header-main container clearfix">
 
-				<?php if( has_nav_menu( 'social' ) ) : ?>
+				<?php if ( has_nav_menu( 'social' ) ) : ?>
 
 					<div id="header-social-icons" class="header-social-icons social-icons-navigation clearfix">
 						<?php
@@ -44,8 +44,7 @@
 								'link_before' => '<span class="screen-reader-text">',
 								'link_after' => '</span>',
 								'depth' => 1,
-								)
-							);
+							) );
 						?>
 					</div>
 
@@ -68,8 +67,7 @@
 							'menu_class' => 'main-navigation-menu',
 							'echo' => true,
 							'fallback_cb' => 'napoli_default_menu',
-							)
-						);
+						) );
 					?>
 				</nav><!-- #main-navigation -->
 
