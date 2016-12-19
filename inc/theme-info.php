@@ -45,7 +45,7 @@ function napoli_theme_info_page() {
 		<div class="important-links clearfix">
 			<p><strong><?php esc_html_e( 'Theme Links', 'napoli' ); ?>:</strong>
 				<a href="<?php echo esc_url( __( 'https://themezee.com/themes/napoli/', 'napoli' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=napoli&utm_content=theme-page' ); ?>" target="_blank"><?php esc_html_e( 'Theme Page', 'napoli' ); ?></a>
-				<a href="http://preview.themezee.com/?demo=napoli&utm_source=theme-info&utm_medium=textlink&utm_campaign=napoli&utm_content=demo" target="_blank"><?php esc_html_e( 'Theme Demo', 'napoli' ); ?></a>
+				<a href="http://preview.themezee.com/?demo=napoli&utm_source=theme-info&utm_campaign=napoli" target="_blank"><?php esc_html_e( 'Theme Demo', 'napoli' ); ?></a>
 				<a href="<?php echo esc_url( __( 'https://themezee.com/docs/napoli-documentation/', 'napoli' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=napoli&utm_content=documentation' ); ?>" target="_blank"><?php esc_html_e( 'Theme Documentation', 'napoli' ); ?></a>
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/napoli/reviews/?filter=5', 'napoli' ) ); ?>" target="_blank"><?php esc_html_e( 'Rate this theme', 'napoli' ); ?></a>
 			</p>
