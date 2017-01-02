@@ -185,9 +185,9 @@ function napoli_google_fonts_url() {
 function napoli_add_image_sizes() {
 
 	// Add different thumbnail sizes for Magazine Posts widgets.
-	add_image_size( 'napoli-thumbnail-small', 120, 80, true );
+	add_image_size( 'napoli-thumbnail-small', 180, 120, true );
 	add_image_size( 'napoli-thumbnail-medium', 360, 200, true );
-	add_image_size( 'napoli-thumbnail-large', 580, 320, true );
+	add_image_size( 'napoli-thumbnail-large', 540, 300, true );
 
 }
 add_action( 'after_setup_theme', 'napoli_add_image_sizes' );

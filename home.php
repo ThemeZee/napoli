@@ -23,7 +23,20 @@ endif;
 	<section id="primary" class="content-archive content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php // Display Homepage Title.
+			<?php
+			// Display Magazine Homepage Widgets.
+			if ( ! is_paged() && is_active_sidebar( 'magazine-homepage' ) ) : ?>
+
+				<div id="magazine-homepage-widgets" class="widget-area clearfix">
+
+					<?php dynamic_sidebar( 'magazine-homepage' ); ?>
+
+				</div><!-- #magazine-homepage-widgets -->
+
+				<?php
+			endif;
+
+			// Display Homepage Title.
 			if ( '' !== $theme_options['blog_title'] ) : ?>
 
 				<header class="page-header clearfix">

@@ -21,9 +21,9 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 		// Setup Widget.
 		parent::__construct(
 			'napoli-magazine-posts-grid', // ID.
-			sprintf( esc_html__( 'Magazine Posts: Grid (%s)', 'napoli' ), wp_get_theme()->Name ), // Name.
+			esc_html__( 'Magazine: Grid', 'napoli' ), // Name.
 			array(
-				'classname' => 'napoli-magazine-posts-grid',
+				'classname' => 'napoli_magazine_posts_grid',
 				'description' => esc_html__( 'Displays your posts from a selected category in a grid layout. Please use this widget ONLY in the Magazine Homepage widget area.', 'napoli' ),
 				'customize_selective_refresh' => true,
 			) // Args.
@@ -47,9 +47,6 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 			'category'			=> 0,
 			'layout'			=> 'three-columns',
 			'number'			=> 6,
-			'excerpt'			=> false,
-			'meta_date'			=> true,
-			'meta_author'		=> false,
 		);
 
 		return $defaults;
@@ -89,6 +86,9 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 		// Get Widget Settings.
 		$settings = wp_parse_args( $instance, $this->default_settings() );
 
+		// Set Widget class.
+		$class = ( 'three-columns' === $settings['layout'] ) ? 'magazine-grid-three-columns' : 'magazine-grid-two-columns';
+
 		// Output.
 		echo $args['before_widget'];
 		?>
@@ -98,7 +98,7 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 			<?php // Display Title.
 			$this->widget_title( $args, $settings ); ?>
 
-			<div class="widget-magazine-posts-content">
+			<div class="widget-magazine-posts-content <?php echo $class; ?> magazine-grid">
 
 				<?php $this->render( $settings ); ?>
 
@@ -132,197 +132,39 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 	 */
 	function render( $settings ) {
 
-		if ( 'three-columns' === $settings['layout'] ) :
+		// Get latest posts from database.
+		$query_arguments = array(
+			'posts_per_page' => (int) $settings['number'],
+			'ignore_sticky_posts' => true,
+			'cat' => (int) $settings['category'],
+		);
+		$posts_query = new WP_Query( $query_arguments );
+		$i = 0;
 
-			$this->magazine_posts_three_column_grid( $settings );
+		// Set template.
+		$template = ( 'three-columns' === $settings['layout'] ) ? 'medium-post' : 'large-post';
 
-		else :
+		// Check if there are posts.
+		if ( $posts_query->have_posts() ) :
 
-			$this->magazine_posts_two_column_grid( $settings );
+			// Display Posts.
+			while ( $posts_query->have_posts() ) : $posts_query->the_post(); ?>
+
+				<div class="post-column">
+
+					<?php get_template_part( 'template-parts/widgets/magazine-content', $template ); ?>
+
+				</div>
+
+				<?php
+			endwhile;
 
 		endif;
+
+		// Reset Postdata.
+		wp_reset_postdata();
 
 	} // render()
-
-
-	/**
-	 * Displays category posts in two column grid
-	 *
-	 * @used-by this->render()
-	 *
-	 * @param array $settings / Settings for this widget instance.
-	 */
-	function magazine_posts_two_column_grid( $settings ) {
-
-		// Get latest posts from database.
-		$query_arguments = array(
-			'posts_per_page' => (int) $settings['number'],
-			'ignore_sticky_posts' => true,
-			'cat' => (int) $settings['category'],
-		);
-		$posts_query = new WP_Query( $query_arguments );
-		$i = 0;
-
-		// Check if there are posts.
-		if ( $posts_query->have_posts() ) :
-
-			// Display Posts.
-			while ( $posts_query->have_posts() ) :
-
-				$posts_query->the_post();
-
-				// Open new Row on the Grid.
-				if ( 0 === $i % 2 ) : $row_open = true; ?>
-					<div class="magazine-posts-grid-row large-post-row clearfix">
-				<?php endif; ?>
-
-						<article id="post-<?php the_ID(); ?>" <?php post_class( 'large-post' ); ?>>
-
-							<header class="entry-header">
-
-								<?php napoli_post_image( 'napoli-thumbnail-large' ); ?>
-
-								<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-								<?php $this->entry_meta( $settings ); ?>
-
-							</header><!-- .entry-header -->
-
-						<?php if ( true === $settings['excerpt'] ) : ?>
-
-							<div class="entry-content clearfix">
-								<?php the_excerpt(); ?>
-								<?php napoli_more_link(); ?>
-							</div><!-- .entry-content -->
-
-						<?php endif; ?>
-
-						</article>
-
-				<?php // Close Row on the Grid.
-				if ( 1 === $i % 2 ) : $row_open = false; ?>
-					</div>
-				<?php endif;
-
-				$i++;
-			endwhile;
-
-			// Close Row if still open.
-			if ( true === $row_open ) : ?>
-				</div>
-			<?php endif;
-
-		endif;
-
-		// Reset Postdata.
-		wp_reset_postdata();
-
-	} // magazine_posts_two_column_grid()
-
-
-	/**
-	 * Displays category posts in three column grid
-	 *
-	 * @used-by this->render()
-	 *
-	 * @param array $settings / Settings for this widget instance.
-	 */
-	function magazine_posts_three_column_grid( $settings ) {
-
-		// Get latest posts from database.
-		$query_arguments = array(
-			'posts_per_page' => (int) $settings['number'],
-			'ignore_sticky_posts' => true,
-			'cat' => (int) $settings['category'],
-		);
-		$posts_query = new WP_Query( $query_arguments );
-		$i = 0;
-
-		// Check if there are posts.
-		if ( $posts_query->have_posts() ) :
-
-			// Display Posts.
-			while ( $posts_query->have_posts() ) :
-
-				$posts_query->the_post();
-
-				 // Open new Row on the Grid.
-				if ( 0 === $i % 3 ) : $row_open = true; ?>
-					<div class="magazine-posts-grid-row medium-post-row clearfix">
-				<?php endif; ?>
-
-						<article id="post-<?php the_ID(); ?>" <?php post_class( 'medium-post clearfix' ); ?>>
-
-							<header class="entry-header">
-
-								<?php napoli_post_image( 'napoli-thumbnail-medium' ); ?>
-
-								<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-								<?php $this->entry_meta( $settings ); ?>
-
-							</header><!-- .entry-header -->
-
-						<?php if ( true === $settings['excerpt'] ) : ?>
-
-							<div class="entry-content clearfix">
-								<?php the_excerpt(); ?>
-								<?php napoli_more_link(); ?>
-							</div><!-- .entry-content -->
-
-						<?php endif; ?>
-
-						</article>
-
-				<?php // Close Row on the Grid.
-				if ( 2 === $i % 3 ) : $row_open = false; ?>
-					</div>
-				<?php endif;
-
-				$i++;
-			endwhile;
-
-			// Close Row if still open.
-			if ( true === $row_open ) : ?>
-				</div>
-			<?php endif;
-
-		endif;
-
-		// Reset Postdata.
-		wp_reset_postdata();
-
-	} // magazine_posts_three_column_grid()
-
-
-	/**
-	 * Displays Entry Meta of Posts
-	 *
-	 * @param array $settings / Settings for this widget instance.
-	 */
-	function entry_meta( $settings ) {
-
-		$postmeta = '';
-
-		if ( true === $settings['meta_date'] ) {
-
-			$postmeta .= napoli_meta_date();
-
-		}
-
-		if ( true === $settings['meta_author'] ) {
-
-			$postmeta .= napoli_meta_author();
-
-		}
-
-		if ( $postmeta ) {
-
-			echo '<div class="entry-meta">' . $postmeta . '</div>';
-
-		}
-
-	} // entry_meta()
 
 
 	/**
@@ -342,12 +184,12 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 			if ( $settings['category'] > 0 ) :
 
 				// Set Link URL and Title for Category.
-				$link_title = sprintf( esc_html__( 'View all posts from category %s', 'napoli' ), get_cat_name( $settings['category'] ) );
-				$link_url = esc_url( get_category_link( $settings['category'] ) );
+				$link_title = sprintf( __( 'View all posts from category %s', 'napoli' ), get_cat_name( $settings['category'] ) );
+				$link_url = get_category_link( $settings['category'] );
 
 				// Display Widget Title with link to category archive.
 				echo '<div class="widget-header">';
-				echo '<h3 class="widget-title"><a class="category-archive-link" href="'. $link_url .'" title="'. $link_title . '">'. $widget_title . '</a></h3>';
+				echo '<h3 class="widget-title"><a class="category-archive-link" href="' . esc_url( $link_url ) . '" title="' . esc_attr( $link_title ) . '">' . $widget_title . '</a></h3>';
 				echo '</div>';
 
 			else :
@@ -376,9 +218,6 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 		$instance['category'] = (int) $new_instance['category'];
 		$instance['layout'] = esc_attr( $new_instance['layout'] );
 		$instance['number'] = (int) $new_instance['number'];
-		$instance['excerpt'] = ! empty( $new_instance['excerpt'] );
-		$instance['meta_date'] = ! empty( $new_instance['meta_date'] );
-		$instance['meta_author'] = ! empty( $new_instance['meta_author'] );
 
 		$this->delete_widget_cache();
 
@@ -432,27 +271,8 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 			</label>
 		</p>
 
-		<p>
-			<label for="<?php echo $this->get_field_id( 'excerpt' ); ?>">
-				<input class="checkbox" type="checkbox" <?php checked( $settings['excerpt'] ); ?> id="<?php echo $this->get_field_id( 'excerpt' ); ?>" name="<?php echo $this->get_field_name( 'excerpt' ); ?>" />
-				<?php esc_html_e( 'Display post excerpt', 'napoli' ); ?>
-			</label>
-		</p>
+		<?php
 
-		<p>
-			<label for="<?php echo $this->get_field_id( 'meta_date' ); ?>">
-				<input class="checkbox" type="checkbox" <?php checked( $settings['meta_date'] ); ?> id="<?php echo $this->get_field_id( 'meta_date' ); ?>" name="<?php echo $this->get_field_name( 'meta_date' ); ?>" />
-				<?php esc_html_e( 'Display post date', 'napoli' ); ?>
-			</label>
-		</p>
-
-		<p>
-			<label for="<?php echo $this->get_field_id( 'meta_author' ); ?>">
-				<input class="checkbox" type="checkbox" <?php checked( $settings['meta_author'] ); ?> id="<?php echo $this->get_field_id( 'meta_author' ); ?>" name="<?php echo $this->get_field_name( 'meta_author' ); ?>" />
-				<?php esc_html_e( 'Display post author', 'napoli' ); ?>
-			</label>
-		</p>
-<?php
 	} // form()
 
 
