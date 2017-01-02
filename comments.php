@@ -60,10 +60,6 @@ if ( have_comments() ) : ?>
 
 if ( comments_open() ) :
 
-	comment_form( array(
-		'title_reply' => '<span>' . esc_html__( 'Leave a Reply', 'napoli' ) . '</span>',
-		'comment_notes_after' => '',
-		)
-	);
+	comment_form();
 
 endif;

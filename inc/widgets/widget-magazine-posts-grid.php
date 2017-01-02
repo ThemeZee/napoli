@@ -166,9 +166,6 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 		// Check if there are posts.
 		if ( $posts_query->have_posts() ) :
 
-			// Limit the number of words for the excerpt.
-			add_filter( 'excerpt_length', 'napoli_magazine_posts_excerpt_length' );
-
 			// Display Posts.
 			while ( $posts_query->have_posts() ) :
 
@@ -215,9 +212,6 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 				</div>
 			<?php endif;
 
-			// Remove excerpt filter.
-			remove_filter( 'excerpt_length', 'napoli_magazine_posts_excerpt_length' );
-
 		endif;
 
 		// Reset Postdata.
@@ -246,9 +240,6 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 
 		// Check if there are posts.
 		if ( $posts_query->have_posts() ) :
-
-			// Limit the number of words for the excerpt.
-			add_filter( 'excerpt_length', 'napoli_magazine_posts_excerpt_length' );
 
 			// Display Posts.
 			while ( $posts_query->have_posts() ) :
@@ -295,9 +286,6 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 			if ( true === $row_open ) : ?>
 				</div>
 			<?php endif;
-
-			// Remove excerpt filter.
-			remove_filter( 'excerpt_length', 'napoli_magazine_posts_excerpt_length' );
 
 		endif;
 

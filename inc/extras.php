@@ -93,6 +93,10 @@ add_filter( 'wp_enqueue_scripts', 'napoli_hide_elements', 11 );
  */
 function napoli_excerpt_length( $length ) {
 
+	if ( is_admin() ) {
+		return 55;
+	}
+
 	// Get theme options from database.
 	$theme_options = napoli_theme_options();
 
@@ -100,21 +104,10 @@ function napoli_excerpt_length( $length ) {
 	if ( isset( $theme_options['excerpt_length'] ) and $theme_options['excerpt_length'] >= 0 ) :
 		return absint( $theme_options['excerpt_length'] );
 	else :
-		return 30; // Number of words.
+		return 20; // Number of words.
 	endif;
 }
 add_filter( 'excerpt_length', 'napoli_excerpt_length' );
-
-
-/**
- * Function to change excerpt length for posts in category posts widgets
- *
- * @param int $length Length of excerpt in number of words.
- * @return int
- */
-function napoli_magazine_posts_excerpt_length( $length ) {
-	return 12;
-}
 
 
 /**
@@ -125,7 +118,11 @@ function napoli_magazine_posts_excerpt_length( $length ) {
  */
 function napoli_excerpt_more( $more_text ) {
 
-	return ' ...';
+	if ( is_admin() ) {
+		return $more_text;
+	}
+
+	return ' <span class="more-text">&hellip;</span>';
 
 }
 add_filter( 'excerpt_more', 'napoli_excerpt_more' );
