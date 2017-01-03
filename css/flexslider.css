@@ -216,9 +216,9 @@ html[xmlns] .zeeflexslider .zeeslides {
 --------------------------------------------------------------*/
 
 @media only screen and (max-width: 75em) {
-
-
-
+	.post-slider-wrap {
+		margin-bottom: 1.5em;
+	}
 }
 
 @media only screen and (max-width: 60em) {
