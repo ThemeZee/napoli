@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/napoli/
 Author: ThemeZee
 Author URI: https://themezee.com
 Description: Napoli is a beautiful WordPress theme perfectly suited for a food magazine. It features a great featured post slider, smooth typography and a grid-layout for posts. Bon appétit!
-Version: 1.0.4
+Version: 1.0.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: napoli
@@ -791,7 +791,6 @@ textarea {
 .main-navigation-menu > .menu-item-has-children > a:after {
 	display: inline-block;
 	margin: 0.4em 0 0 0.3em;
-	color: #fff;
 	content: '\f431';
 	vertical-align: top;
 	text-decoration: none;
@@ -954,6 +953,7 @@ textarea {
 	display: inline-block;
 	padding: 0.5em;
 	text-decoration: none;
+	color: #fff;
 }
 
 .social-icons-menu li a .screen-reader-text {
@@ -963,7 +963,6 @@ textarea {
 /* Add Genericons */
 .social-icons-menu li a:before {
 	display: inline-block;
-	color: #fff;
 	vertical-align: top;
 	text-decoration: inherit;
 	font-size: 16px;
@@ -1020,7 +1019,7 @@ textarea {
 	font-size: 24px;
 }
 
-.header-social-icons .social-icons-menu li a:hover:before {
+.header-social-icons .social-icons-menu li a:hover {
 	color: #ccc;
 }
 
@@ -1054,6 +1053,15 @@ textarea {
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: 'Montserrat', Tahoma, Arial;
+}
+
+.widget-title a:link,
+.widget-title a:visited {
+	color: #fff;
+}
+.widget-title a:hover,
+.widget-title a:active {
+	color: rgba(255,255,255,0.5);
 }
 
 .widget ul {
@@ -1545,11 +1553,13 @@ textarea {
 .infinite-scroll .infinite-loader {
 	width: 100%;
 	text-align: center;
+	margin-right: 2em;
 }
 
 .infinite-scroll .infinite-loader .spinner {
-	bottom: -1em;
+	bottom: -0.5em;
 	left: auto;
+	padding-right: 2em;
 	margin: 0 auto;
 }
 
@@ -2056,6 +2066,10 @@ object {
 		padding-right: 1.5em;
 	}
 
+	.infinite-scroll #infinite-handle,
+	.infinite-scroll .infinite-loader {
+		margin-right: 1.5em;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -2147,6 +2161,11 @@ object {
 		margin: 1em 1em 1em 4em;
 	}
 
+	.site-footer .site-info {
+		float: none;
+		text-align: center;
+	}
+
 	/*** Mobile Main Navigation ***/
 
 	/* Reset */
@@ -2222,12 +2241,16 @@ object {
 	}
 
 	/* Main Navigation Menu */
-	.main-navigation-menu {
+	.main-navigation-menu-wrap {
 		display: none;
 		float: left;
 		margin: 0 0 1em;
 		width: 100%;
 		border-top: 1px solid rgba(255,255,255,0.2);
+	}
+
+	.main-navigation-menu {
+		width: 100%;
 	}
 
 	.main-navigation-menu a {
@@ -2420,6 +2443,11 @@ object {
 	.post-layout-two-columns .post-wrapper .post-column,
 	.post-layout-three-columns .post-wrapper .post-column {
 		width: 100%;
+	}
+
+	.infinite-scroll #infinite-handle,
+	.infinite-scroll .infinite-loader {
+		margin-right: 0;
 	}
 
 	.page-title,
@@ -2677,9 +2705,8 @@ object {
 --------------------------------------------------------------*/
 
 /* Ensure navigation is visible on desktop view */
-@media only screen and (min-width: 60.001em) {
-	.main-navigation-menu {
+@media only screen and (min-width: 60.01em) {
+	.main-navigation-menu-wrap {
 		display: block !important;
 	}
-
 }

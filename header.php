@@ -25,8 +25,6 @@
 
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'napoli' ); ?></a>
 
-		<div id="header-top" class="header-bar-wrap"><?php do_action( 'napoli_header_bar' ); ?></div>
-
 		<header id="masthead" class="site-header clearfix" role="banner">
 
 			<div class="header-main container clearfix">
@@ -59,6 +57,8 @@
 				</div><!-- .site-branding -->
 
 				<nav id="main-navigation" class="primary-navigation navigation clearfix" role="navigation">
+
+					<div class="main-navigation-menu-wrap">
 					<?php
 						// Display Main Navigation.
 						wp_nav_menu( array(
@@ -69,9 +69,13 @@
 							'fallback_cb' => 'napoli_default_menu',
 						) );
 					?>
+					</div>
+
 				</nav><!-- #main-navigation -->
 
 			</div><!-- .header-main -->
+
+			<?php do_action( 'napoli_header_menu' ); ?>
 
 		</header><!-- #masthead -->
 

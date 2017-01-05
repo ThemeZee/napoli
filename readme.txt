@@ -26,6 +26,13 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.0.6 =
+* added Magazine widget area on blog index
+* added extra template files for Magazine widgets for better child theme compatibility
+* improved responsive layout of Magazine Homepage
+* updated styling of navigation menu
+* changed hooks for Pro Version
+
 = 1.0.5 =
 * fixed minor issues for wp.org theme review
 
