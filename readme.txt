@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.0.5 =
+* fixed minor issues for wp.org theme review
+
 = 1.0.4 =
 * fixed minor escaping and best practice issues for wp.org theme review
 * removed Magazine Boxed and Columns widgets

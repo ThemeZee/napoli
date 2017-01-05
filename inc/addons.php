@@ -10,7 +10,7 @@
  */
 function napoli_theme_addons_setup() {
 
-	// Add theme support for Anderson Pro plugin.
+	// Add theme support for Napoli Pro plugin.
 	add_theme_support( 'napoli-pro' );
 
 	// Add theme support for ThemeZee Plugins.

@@ -94,7 +94,7 @@ add_filter( 'wp_enqueue_scripts', 'napoli_hide_elements', 11 );
 function napoli_excerpt_length( $length ) {
 
 	if ( is_admin() ) {
-		return 55;
+		return $length;
 	}
 
 	// Get theme options from database.
