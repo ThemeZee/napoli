@@ -1599,9 +1599,20 @@ textarea {
 }
 
 .homepage-description,
-.archive-description p {
-	margin: 0;
-	padding: 1em;
+.archive-description {
+	padding: 0.75em 1em;
+}
+
+.homepage-description:empty {
+	display: none;
+}
+
+.archive-description p:first-child {
+	margin-top: 0;
+}
+
+.archive-description p:last-child {
+	margin-bottom: 0;
 }
 
 /* Breadcrumbs */

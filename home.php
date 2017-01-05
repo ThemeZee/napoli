@@ -42,7 +42,7 @@ endif;
 				<header class="page-header clearfix">
 
 					<h1 class="home-title archive-title"><?php echo wp_kses_post( $theme_options['blog_title'] ); ?></h1>
-					<p class="homepage-description"><?php echo wp_kses_post( $theme_options['blog_description'] ); ?></p>
+					<div class="homepage-description"><?php echo wp_kses_post( $theme_options['blog_description'] ); ?></div>
 
 				</header>
 
