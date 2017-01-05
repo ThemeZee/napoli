@@ -147,7 +147,7 @@ function napoli_scripts() {
 	wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 
 	// Register and enqueue navigation.js.
-	wp_enqueue_script( 'napoli-jquery-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20160719' );
+	wp_enqueue_script( 'napoli-jquery-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20170105' );
 
 	// Register and Enqueue Google Fonts.
 	wp_enqueue_style( 'napoli-default-fonts', napoli_google_fonts_url(), array(), null );
