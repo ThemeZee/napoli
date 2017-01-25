@@ -26,6 +26,10 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.0.7 =
+* added fullwidth page template for blog posts
+* added centered page template for posts and static pages
+
 = 1.0.6 =
 * added Magazine widget area on blog index
 * added extra template files for Magazine widgets for better child theme compatibility
