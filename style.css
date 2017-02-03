@@ -1620,6 +1620,10 @@ textarea {
 	margin-bottom: 0;
 }
 
+.search-form-wrap {
+	padding: 1.5em;
+}
+
 /* Breadcrumbs */
 .breadcrumbs {
 	margin: 0;
