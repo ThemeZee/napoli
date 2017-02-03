@@ -1759,6 +1759,13 @@ textarea {
 	}
 }
 
+/* Error 404: Not Found Template */
+.error404 .not-found .widget {
+	padding: 0;
+	border: none;
+	box-shadow: none;
+}
+
 /*--------------------------------------------------------------
 # 11.0 - Comments
 --------------------------------------------------------------*/
