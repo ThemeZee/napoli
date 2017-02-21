@@ -121,7 +121,7 @@ class Napoli_Magazine_Posts_Grid_Widget extends WP_Widget {
 
 				<div class="post-column">
 
-					<?php get_template_part( 'template-parts/widgets/magazine-content-' . $template, 'grid' ); ?>
+					<?php get_template_part( 'template-parts/widgets/magazine-' . $template, 'grid' ); ?>
 
 				</div>
 
