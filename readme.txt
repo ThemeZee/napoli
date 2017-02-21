@@ -26,6 +26,11 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.0.8 =
+* improved transient caching of Magazine widgets for increased performance
+* fixed styling on 404 error template
+* fixed styling on search template
+
 = 1.0.7 =
 * added fullwidth page template for blog posts
 * added centered page template for posts and static pages
