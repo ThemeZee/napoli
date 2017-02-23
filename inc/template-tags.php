@@ -265,7 +265,7 @@ if ( ! function_exists( 'napoli_post_navigation' ) ) :
 		// Get theme options from database.
 		$theme_options = napoli_theme_options();
 
-		if ( true === $theme_options['post_navigation'] ) {
+		if ( true === $theme_options['post_navigation'] || is_customize_preview() ) {
 
 			the_post_navigation( array(
 				'prev_text' => '<span class="nav-link-text">' . esc_html_x( 'Previous Post', 'post navigation', 'napoli' ) . '</span><h3 class="entry-title">%title</h3>',

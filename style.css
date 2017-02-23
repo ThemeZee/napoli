@@ -1420,12 +1420,11 @@ textarea {
 	content: '\f300';
 }
 
-/* Hide post details if they are deactivated in settings */
+/* Hide post meta if they are deactivated in settings */
 body.date-hidden .type-post .entry-meta .meta-date,
 body.author-hidden .type-post .entry-meta .meta-author,
 body.categories-hidden .type-post .entry-meta .meta-category,
-body.comments-hidden .type-post .entry-meta .meta-comments,
-body.tags-hidden .type-post .entry-footer {
+body.comments-hidden .type-post .entry-meta .meta-comments {
 	 position: absolute;
 	 clip: rect(1px, 1px, 1px, 1px);
 }

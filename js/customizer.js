@@ -92,9 +92,20 @@
 	wp.customize( 'napoli_theme_options[meta_tags]', function( value ) {
 		value.bind( function( newval ) {
 			if ( false === newval ) {
-				$( 'body' ).addClass( 'tags-hidden' );
+				hideElement( '.type-post .entry-footer' );
 			} else {
-				$( 'body' ).removeClass( 'tags-hidden' );
+				showElement( '.type-post .entry-footer' );
+			}
+		} );
+	} );
+
+	// Post Navigation checkbox.
+	wp.customize( 'napoli_theme_options[post_navigation]', function( value ) {
+		value.bind( function( newval ) {
+			if ( false === newval ) {
+				hideElement( '.type-post .post-navigation' );
+			} else {
+				showElement( '.type-post .post-navigation' );
 			}
 		} );
 	} );

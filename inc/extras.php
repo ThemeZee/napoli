@@ -59,12 +59,6 @@ function napoli_body_classes( $classes ) {
 	if ( false === $theme_options['meta_comments'] ) {
 		$classes[] = 'comments-hidden';
 	}
-
-	// Hide Tags?
-	if ( false === $theme_options['meta_tags'] ) {
-		$classes[] = 'tags-hidden';
-	}
-
 	return $classes;
 }
 add_filter( 'body_class', 'napoli_body_classes' );
@@ -92,6 +86,16 @@ function napoli_hide_elements() {
 		$elements[] = '.site-description';
 	}
 
+	// Hide Post Tags?
+	if ( false === $theme_options['meta_tags'] ) {
+		$elements[] = '.type-post .entry-footer';
+	}
+
+	// Hide Post Navigation?
+	if ( false === $theme_options['post_navigation'] ) {
+		$elements[] = '.type-post .post-navigation';
+	}
+
 	// Return early if no elements are hidden.
 	if ( empty( $elements ) ) {
 		return;
@@ -99,10 +103,7 @@ function napoli_hide_elements() {
 
 	// Create CSS.
 	$classes = implode( ', ', $elements );
-	$custom_css = $classes . ' {
-	position: absolute;
-	clip: rect(1px, 1px, 1px, 1px);
-}';
+	$custom_css = $classes . ' { position: absolute; clip: rect(1px, 1px, 1px, 1px); }';
 
 	// Add Custom CSS.
 	wp_add_inline_style( 'napoli-stylesheet', $custom_css );
