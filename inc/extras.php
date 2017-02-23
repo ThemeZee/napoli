@@ -40,6 +40,31 @@ function napoli_body_classes( $classes ) {
 		$classes[] = 'post-layout-three-columns post-layout-columns no-sidebar';
 	}
 
+	// Hide Date?
+	if ( false === $theme_options['meta_date'] ) {
+		$classes[] = 'date-hidden';
+	}
+
+	// Hide Author?
+	if ( false === $theme_options['meta_author'] ) {
+		$classes[] = 'author-hidden';
+	}
+
+	// Hide Categories?
+	if ( false === $theme_options['meta_category'] ) {
+		$classes[] = 'categories-hidden';
+	}
+
+	// Hide Comments?
+	if ( false === $theme_options['meta_comments'] ) {
+		$classes[] = 'comments-hidden';
+	}
+
+	// Hide Tags?
+	if ( false === $theme_options['meta_tags'] ) {
+		$classes[] = 'tags-hidden';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'napoli_body_classes' );

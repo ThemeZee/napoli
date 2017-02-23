@@ -134,44 +134,18 @@ if ( ! function_exists( 'napoli_entry_meta' ) ) :
 	 */
 	function napoli_entry_meta() {
 
-		// Get theme options from database.
-		$theme_options = napoli_theme_options();
+		$postmeta = napoli_meta_date();
+		$postmeta .= napoli_meta_author();
 
-		$postmeta = '';
-
-		// Display date unless user has deactivated it via settings.
-		if ( true === $theme_options['meta_date'] ) {
-
-			$postmeta .= napoli_meta_date();
-
-		}
-
-		// Display author unless user has deactivated it via settings.
-		if ( true === $theme_options['meta_author'] ) {
-
-			$postmeta .= napoli_meta_author();
-
-		}
-
-		// Display categories unless user has deactivated it via settings.
-		if ( true === $theme_options['meta_category'] && is_single() ) {
+		// Display categories on comments on single posts.
+		if ( is_single() ) {
 
 			$postmeta .= napoli_meta_category();
-
-		}
-
-		// Display categories unless user has deactivated it via settings.
-		if ( true === $theme_options['meta_comments'] && is_single() ) {
-
 			$postmeta .= napoli_meta_comments();
 
 		}
 
-		if ( $postmeta ) {
-
-			echo '<div class="entry-meta">' . $postmeta . '</div>';
-
-		}
+		echo '<div class="entry-meta">' . $postmeta . '</div>';
 	}
 endif;
 
@@ -250,14 +224,11 @@ if ( ! function_exists( 'napoli_entry_tags' ) ) :
 	 */
 	function napoli_entry_tags() {
 
-		// Get theme options from database.
-		$theme_options = napoli_theme_options();
-
 		// Get tags.
 		$tag_list = get_the_tag_list( '', '' );
 
 		// Display tags.
-		if ( $tag_list && $theme_options['meta_tags'] ) : ?>
+		if ( $tag_list ) : ?>
 
 			<div class="entry-tags clearfix">
 				<span class="meta-tags">

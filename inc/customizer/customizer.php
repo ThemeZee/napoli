@@ -117,7 +117,7 @@ add_action( 'customize_preview_init', 'napoli_customize_preview_js' );
  * Embed CSS styles for the theme options in the Customizer
  */
 function napoli_customize_preview_css() {
-	wp_enqueue_style( 'napoli-customizer-css', get_template_directory_uri() . '/css/customizer.css', array(), '20161214' );
+	wp_enqueue_style( 'napoli-customizer-css', get_template_directory_uri() . '/css/customizer.css', array(), '20170221' );
 }
 add_action( 'customize_controls_print_styles', 'napoli_customize_preview_css' );
 

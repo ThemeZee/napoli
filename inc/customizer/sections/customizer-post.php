@@ -59,7 +59,7 @@ function napoli_customize_register_post_settings( $wp_customize ) {
 	$wp_customize->add_setting( 'napoli_theme_options[meta_date]', array(
 		'default'           => true,
 		'type'           	=> 'option',
-		'transport'         => 'refresh',
+		'transport'         => 'postMessage',
 		'sanitize_callback' => 'napoli_sanitize_checkbox',
 		)
 	);
@@ -75,7 +75,7 @@ function napoli_customize_register_post_settings( $wp_customize ) {
 	$wp_customize->add_setting( 'napoli_theme_options[meta_author]', array(
 		'default'           => true,
 		'type'           	=> 'option',
-		'transport'         => 'refresh',
+		'transport'         => 'postMessage',
 		'sanitize_callback' => 'napoli_sanitize_checkbox',
 		)
 	);
@@ -108,7 +108,7 @@ function napoli_customize_register_post_settings( $wp_customize ) {
 	$wp_customize->add_setting( 'napoli_theme_options[meta_category]', array(
 		'default'           => true,
 		'type'           	=> 'option',
-		'transport'         => 'refresh',
+		'transport'         => 'postMessage',
 		'sanitize_callback' => 'napoli_sanitize_checkbox',
 		)
 	);
@@ -124,7 +124,7 @@ function napoli_customize_register_post_settings( $wp_customize ) {
 	$wp_customize->add_setting( 'napoli_theme_options[meta_comments]', array(
 		'default'           => true,
 		'type'           	=> 'option',
-		'transport'         => 'refresh',
+		'transport'         => 'postMessage',
 		'sanitize_callback' => 'napoli_sanitize_checkbox',
 		)
 	);
@@ -140,7 +140,7 @@ function napoli_customize_register_post_settings( $wp_customize ) {
 	$wp_customize->add_setting( 'napoli_theme_options[meta_tags]', array(
 		'default'           => true,
 		'type'           	=> 'option',
-		'transport'         => 'refresh',
+		'transport'         => 'postMessage',
 		'sanitize_callback' => 'napoli_sanitize_checkbox',
 		)
 	);

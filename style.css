@@ -1420,6 +1420,24 @@ textarea {
 	content: '\f300';
 }
 
+/* Hide post details if they are deactivated in settings */
+body.date-hidden .type-post .entry-meta .meta-date,
+body.author-hidden .type-post .entry-meta .meta-author,
+body.categories-hidden .type-post .entry-meta .meta-category,
+body.comments-hidden .type-post .entry-meta .meta-comments,
+body.tags-hidden .type-post .entry-footer {
+	 position: absolute;
+	 clip: rect(1px, 1px, 1px, 1px);
+}
+
+body.date-hidden.author-hidden .content-archive .type-post .entry-meta {
+	display: none;
+}
+
+body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single .type-post .entry-meta {
+	display: none;
+}
+
 /* Entry Tags & Tagcloud Widget */
 .entry-tags {
 	margin: 1em 0 0;
