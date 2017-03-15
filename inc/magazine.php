@@ -8,6 +8,32 @@
  */
 
 
+if ( ! function_exists( 'napoli_magazine_widget_title' ) ) :
+	/**
+	 * Displays the widget title with link to the category archive
+	 *
+	 * @param String $widget_title Widget Title.
+	 * @param int    $category_id  Category ID.
+	 * @return String Widget Title
+	 */
+	function napoli_magazine_widget_title( $widget_title, $category_id ) {
+
+		// Check if widget shows a specific category.
+		if ( $category_id > 0 ) {
+
+			// Set URL and Title for Category.
+			$category_title = sprintf( esc_html__( 'View all posts from category %s', 'napoli' ), get_cat_name( $category_id ) );
+			$category_url = get_category_link( $category_id );
+
+			// Set Widget Title with link to category archive.
+			$widget_title = '<a class="category-archive-link" href="' . esc_url( $category_url ) . '" title="' . esc_attr( $category_title ) . '">' . $widget_title . '</a>';
+		}
+
+		return $widget_title;
+	}
+endif;
+
+
 /**
 * Get Magazine Post IDs
 *
