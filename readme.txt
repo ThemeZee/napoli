@@ -26,8 +26,11 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
-= 1.0.8 =
-* improved transient caching of Magazine widgets for increased performance
+= 1.2 =
+* added template files for Magazine widgets to improve child theme compatibility
+* added transient caching for Magazine widgets to increase performance
+* added pluggable template functions for Magazine widgets
+* improved implementation of post meta settings for instant live preview in Customizer
 * fixed styling on 404 error template
 * fixed styling on search template
 
