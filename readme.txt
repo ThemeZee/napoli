@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/napoli/
 Contributors: themezee
 Tags: two-columns, custom-background, custom-header, custom-menu, editor-style, grid-layout, blog, food-and-drink, news, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, one-column, left-sidebar, right-sidebar, three-columns
 Requires at least: 4.4
-Tested up to: 4.7
+Tested up to: 4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,10 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
 == Changelog ==
+
+= 1.2.2 =
+* fixed flexbox layout issues appearing with the latest Safari 10.1 version
+* fixed horizontal scrolling issue on mobile devices when elements are hidden in theme options
 
 = 1.2.1 =
 * fixed number of posts setting in Magazine widgets
