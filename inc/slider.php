@@ -28,7 +28,11 @@ function napoli_slider_scripts() {
 		wp_enqueue_script( 'napoli-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery-flexslider' ) );
 
 		// Register and enqueue slider CSS.
-		wp_enqueue_style( 'napoli-slider', get_template_directory_uri() . '/css/flexslider.css' );
+		if ( is_rtl() ) {
+			wp_enqueue_style( 'napoli-slider', get_template_directory_uri() . '/css/flexslider-rtl.css' );
+		} else {
+			wp_enqueue_style( 'napoli-slider', get_template_directory_uri() . '/css/flexslider.css' );
+		}
 
 	endif;
 

@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.2.3 =
+* fixed slider layout on Right-to-Left language websites
+
 = 1.2.2 =
 * fixed flexbox layout issues appearing with the latest Safari 10.1 version
 * fixed horizontal scrolling issue on mobile devices when elements are hidden in theme options
