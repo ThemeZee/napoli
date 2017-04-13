@@ -28,6 +28,7 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 = 1.2.3 =
 * fixed slider layout on Right-to-Left language websites
+* fixed alignment of Magazine widgets for RTL websites
 
 = 1.2.2 =
 * fixed flexbox layout issues appearing with the latest Safari 10.1 version

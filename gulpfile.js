@@ -31,7 +31,7 @@ gulp.task( 'cleancss', function() {
 
 // WP RTL
 gulp.task( 'wprtl', function () {
-	return gulp.src( ['style.css', 'css/themezee-related-posts.css', 'css/themezee-widget-bundle.css', 'css/flexslider.css'] )
+	return gulp.src( ['style.css', 'css/themezee-related-posts.css', 'css/themezee-widget-bundle.css'] )
 		.pipe( concat( 'rtl.css' ) )
 		.pipe( postcss( [ wprtl() ] ) )
 		.pipe( postcss( [ sorting( { 'preserve-empty-lines-between-children-rules': true } ) ] ) )
