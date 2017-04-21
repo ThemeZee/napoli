@@ -25,13 +25,13 @@ function napoli_slider_scripts() {
 		wp_enqueue_script( 'jquery-flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array( 'jquery' ), '2.6.0' );
 
 		// Register and enqueue slider setup.
-		wp_enqueue_script( 'napoli-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery-flexslider' ) );
+		wp_enqueue_script( 'napoli-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery-flexslider' ), '20170421' );
 
 		// Register and enqueue slider CSS.
 		if ( is_rtl() ) {
 			wp_enqueue_style( 'napoli-slider', get_template_directory_uri() . '/css/flexslider-rtl.css' );
 		} else {
-			wp_enqueue_style( 'napoli-slider', get_template_directory_uri() . '/css/flexslider.css' );
+			wp_enqueue_style( 'napoli-slider', get_template_directory_uri() . '/css/flexslider.css', array(), '20170421' );
 		}
 
 	endif;
@@ -49,6 +49,37 @@ add_action( 'wp_enqueue_scripts', 'napoli_slider_scripts' );
 function napoli_slider_excerpt_length( $length ) {
 	return 25;
 }
+
+
+if ( ! function_exists( 'napoli_slider_image' ) ) :
+	/**
+	 * Displays the featured image of the post as slider image
+	 *
+	 * @param string $size Post thumbnail size.
+	 * @param array  $attr Post thumbnail attributes.
+	 */
+	function napoli_slider_image( $size = 'post-thumbnail', $attr = array() ) {
+
+		// Display Post Thumbnail.
+		if ( has_post_thumbnail() ) : ?>
+
+			<a class="slide-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
+				<figure class="slide-image-wrap">
+					<?php the_post_thumbnail( $size, $attr ); ?>
+				</figure>
+			</a>
+
+		<?php else : ?>
+
+			<a class="slide-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
+				<figure class="slide-image-wrap">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/default-slider-image.png" class="slide-image default-slide-image wp-post-image" />
+				</figure>
+			</a>
+
+		<?php endif;
+	}
+endif;
 
 
 /**

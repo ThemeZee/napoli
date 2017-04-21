@@ -73,7 +73,7 @@ html[xmlns] .zeeflexslider .zeeslides {
 	position: relative;
 	overflow: hidden;
 	margin: 0 0 2em 0;
-	background: #fff;
+	background: #e5e5e5;
 	box-shadow: 0 1px 2px #bbb;
 }
 
@@ -100,12 +100,21 @@ html[xmlns] .zeeflexslider .zeeslides {
 	box-shadow: none;
 }
 
-.post-slider .zeeslide .type-post .slide-image {
+.post-slider .zeeslide .slide-image-link {
+	width: 67%;
+}
+
+.post-slider .zeeslide .slide-image-wrap {
 	margin: 0;
 	padding: 0;
-	max-width: 900px;
+}
+
+.post-slider .zeeslide .slide-image {
+	margin: auto;
+	padding: 0;
+	max-width: 100%;
 	max-height: 500px;
-	width: 67%;
+	width: auto;
 	height: auto;
 	vertical-align: top;
 }
@@ -120,6 +129,7 @@ html[xmlns] .zeeflexslider .zeeslides {
 	margin: 0;
 	padding: 0;
 	width: 33%;
+	background: #fff;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 }
