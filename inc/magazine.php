@@ -80,4 +80,5 @@ function napoli_flush_magazine_post_ids() {
 }
 add_action( 'save_post', 'napoli_flush_magazine_post_ids' );
 add_action( 'deleted_post', 'napoli_flush_magazine_post_ids' );
+add_action( 'customize_save_after', 'napoli_flush_magazine_post_ids' );
 add_action( 'switch_theme', 'napoli_flush_magazine_post_ids' );
