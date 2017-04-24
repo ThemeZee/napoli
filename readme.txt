@@ -27,9 +27,11 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 == Changelog ==
 
 = 1.2.4 =
+* added transient caching to post slider
 * added post hyperlinks to slider images in post slider
 * added own template function to display slider image for better child theme support
 * fixed slider images getting stretched when too small images are uploaded
+* improved Right-to-Left language stylesheets
 
 = 1.2.3 =
 * fixed slider layout on Right-to-Left language websites

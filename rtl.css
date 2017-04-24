@@ -151,6 +151,7 @@ li > ol {
 .entry-meta .meta-author,
 .entry-meta .meta-category,
 .entry-meta .meta-comments {
+	float: right;
 	margin-right: 0;
 	margin-left: 1.5em;
 }
@@ -555,4 +556,47 @@ li > ol {
 
 .tzwb-social-icons .social-icons-menu li {
 	margin: 0 0 2px 2px;
+}
+
+.post-slider .zeeslide {
+	text-align: right;
+	direction: rtl;
+}
+
+.zeeflex-viewport {
+	direction: ltr;
+}
+
+.post-slider-controls {
+	clear: right;
+}
+
+.post-slider-controls .zeeflex-direction-nav {
+	right: 1em;
+	left: auto;
+}
+
+.post-slider-controls .zeeflex-direction-nav a {
+	text-align: right;
+}
+
+.post-slider-controls .zeeflex-direction-nav .zeeflex-next {
+	right: 45px;
+	left: auto;
+}
+
+.post-slider-controls .zeeflex-direction-nav a.zeeflex-next:before {
+	margin: 0.25em 0.15em;
+	-webkit-transform:rotate(-270deg);
+	-moz-transform:rotate(-270deg);
+	-o-transform:rotate(-270deg);
+	-ms-transform:rotate(-270deg);
+}
+
+.post-slider-controls .zeeflex-direction-nav a.zeeflex-prev:before {
+	margin: 0.2em 0.25em;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
 }

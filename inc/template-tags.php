@@ -145,7 +145,7 @@ if ( ! function_exists( 'napoli_entry_meta' ) ) :
 
 		}
 
-		echo '<div class="entry-meta">' . $postmeta . '</div>';
+		echo '<div class="entry-meta clearfix">' . $postmeta . '</div>';
 	}
 endif;
 

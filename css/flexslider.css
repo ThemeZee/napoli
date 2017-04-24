@@ -236,7 +236,7 @@ html[xmlns] .zeeflexslider .zeeslides {
 		display: block;
 	}
 
-	.post-slider .zeeslide .type-post .slide-image {
+	.post-slider .zeeslide .type-post .slide-image-link {
 		width: 100%;
 	}
 
@@ -244,17 +244,4 @@ html[xmlns] .zeeflexslider .zeeslides {
 		width: 100%;
 		box-shadow: none;
 	}
-
-}
-
-@media only screen and (max-width: 55em) {
-
-
-
-}
-
-@media only screen and (max-width: 25em) {
-
-
-
 }
