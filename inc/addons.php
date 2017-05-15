@@ -14,10 +14,18 @@ function napoli_theme_addons_setup() {
 	add_theme_support( 'napoli-pro' );
 
 	// Add theme support for ThemeZee Plugins.
-	add_theme_support( 'themezee-widget-bundle' );
 	add_theme_support( 'themezee-breadcrumbs' );
-	add_theme_support( 'themezee-related-posts' );
 	add_theme_support( 'themezee-mega-menu', array( 'primary', 'secondary' ) );
+
+	// Add theme support for Widget Bundle.
+	add_theme_support( 'themezee-widget-bundle', array(
+		'thumbnail_size' => array( 90, 65 ),
+	) );
+
+	// Add theme support for Related Posts.
+	add_theme_support( 'themezee-related-posts', array(
+		'thumbnail_size' => array( 480, 320 ),
+	) );
 
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
