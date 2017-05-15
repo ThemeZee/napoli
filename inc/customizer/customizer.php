@@ -108,7 +108,7 @@ function napoli_customize_partial_blogdescription() {
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function napoli_customize_preview_js() {
-	wp_enqueue_script( 'napoli-customizer-preview', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20161214', true );
+	wp_enqueue_script( 'napoli-customizer-preview', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20170515', true );
 }
 add_action( 'customize_preview_init', 'napoli_customize_preview_js' );
 
