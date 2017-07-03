@@ -25,16 +25,7 @@ endif;
 
 			<?php
 			// Display Magazine Homepage Widgets.
-			if ( ! is_paged() && is_active_sidebar( 'magazine-homepage' ) ) : ?>
-
-				<div id="magazine-homepage-widgets" class="widget-area clearfix">
-
-					<?php dynamic_sidebar( 'magazine-homepage' ); ?>
-
-				</div><!-- #magazine-homepage-widgets -->
-
-				<?php
-			endif;
+			napoli_magazine_widgets();
 
 			// Display Homepage Title.
 			if ( '' !== $theme_options['blog_title'] ) : ?>
