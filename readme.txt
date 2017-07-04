@@ -26,6 +26,11 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.3 =
+* added improved Magazine Widget Customizer Control
+* added default widget titles for Magazine widgets
+* ignore sticky posts in Magazine widgets
+
 = 1.2.5 =
 * fixed alignment of site logo and site title when used together
 * fixed small live preview issue in Customizer for site title and tagline options
