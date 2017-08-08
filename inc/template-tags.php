@@ -30,7 +30,7 @@ if ( ! function_exists( 'napoli_site_title' ) ) :
 	 */
 	function napoli_site_title() {
 
-		if ( is_home() or is_page_template( 'template-magazine.php' )  ) : ?>
+		if ( is_home() or is_page_template( 'template-magazine.php' ) ) : ?>
 
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 

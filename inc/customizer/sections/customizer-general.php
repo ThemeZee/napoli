@@ -24,8 +24,8 @@ function napoli_customize_register_general_settings( $wp_customize ) {
 	// Add Settings and Controls for Layout.
 	$wp_customize->add_setting( 'napoli_theme_options[layout]', array(
 		'default'           => 'right-sidebar',
-		'type'           	=> 'option',
-		'transport'         => 'refresh',
+		'type'              => 'option',
+		'transport'         => 'postMessage',
 		'sanitize_callback' => 'napoli_sanitize_select',
 	) );
 
@@ -34,11 +34,11 @@ function napoli_customize_register_general_settings( $wp_customize ) {
 		'section'  => 'napoli_section_general',
 		'settings' => 'napoli_theme_options[layout]',
 		'type'     => 'radio',
-		'priority' => 1,
+		'priority' => 10,
 		'choices'  => array(
 			'left-sidebar'  => esc_html__( 'Left Sidebar', 'napoli' ),
 			'right-sidebar' => esc_html__( 'Right Sidebar', 'napoli' ),
-			),
+		),
 	) );
 }
 add_action( 'customize_register', 'napoli_customize_register_general_settings' );

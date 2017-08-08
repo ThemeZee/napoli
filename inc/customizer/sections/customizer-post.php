@@ -82,7 +82,7 @@ function napoli_customize_register_post_settings( $wp_customize ) {
 	// Add Single Post Headline.
 	$wp_customize->add_control( new Napoli_Customize_Header_Control(
 		$wp_customize, 'napoli_theme_options[single_post_headline]', array(
-			'label'    => esc_html__( 'Single Post', 'napoli' ),
+			'label'    => esc_html__( 'Single Posts', 'napoli' ),
 			'section'  => 'napoli_section_post',
 			'settings' => array(),
 			'priority' => 50,
