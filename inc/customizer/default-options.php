@@ -19,7 +19,6 @@ function napoli_theme_options() {
 
 	// Return theme options.
 	return $theme_options;
-
 }
 
 
@@ -43,8 +42,9 @@ function napoli_default_options() {
 		'meta_category'         => true,
 		'meta_comments'         => true,
 		'meta_tags'             => true,
-		'post_image_single'     => true,
 		'post_navigation'       => true,
+		'post_image_archives'   => true,
+		'post_image_single'     => true,
 		'slider_magazine'       => false,
 		'slider_blog'           => false,
 		'slider_category'       => 0,

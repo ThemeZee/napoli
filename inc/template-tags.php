@@ -108,6 +108,28 @@ if ( ! function_exists( 'napoli_post_image' ) ) :
 endif;
 
 
+if ( ! function_exists( 'napoli_post_image_archives' ) ) :
+	/**
+	 * Displays the featured image on archive posts.
+	 */
+	function napoli_post_image_archives() {
+
+		// Get theme options from database.
+		$theme_options = napoli_theme_options();
+
+		// Display Post Thumbnail if activated.
+		if ( true === $theme_options['post_image_archives'] && has_post_thumbnail() ) : ?>
+
+			<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
+				<?php the_post_thumbnail(); ?>
+			</a>
+
+		<?php
+		endif;
+	}
+endif;
+
+
 if ( ! function_exists( 'napoli_post_image_single' ) ) :
 	/**
 	 * Displays the featured image on single posts

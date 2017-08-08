@@ -11,7 +11,7 @@
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<?php napoli_post_image(); ?>
+		<?php napoli_post_image_archives(); ?>
 
 		<div class="post-content clearfix">
 
