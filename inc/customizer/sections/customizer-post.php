@@ -37,7 +37,7 @@ function napoli_customize_register_post_settings( $wp_customize ) {
 		'priority' => 10,
 	) );
 
-	// Add Post Meta Headline.
+	// Add Post Details Headline.
 	$wp_customize->add_control( new Napoli_Customize_Header_Control(
 		$wp_customize, 'napoli_theme_options[post_meta_headline]', array(
 			'label'    => esc_html__( 'Post Meta', 'napoli' ),
@@ -79,7 +79,7 @@ function napoli_customize_register_post_settings( $wp_customize ) {
 		'priority' => 40,
 	) );
 
-	// Add Single Post Headline.
+	// Add Single Posts Headline.
 	$wp_customize->add_control( new Napoli_Customize_Header_Control(
 		$wp_customize, 'napoli_theme_options[single_post_headline]', array(
 			'label'    => esc_html__( 'Single Posts', 'napoli' ),

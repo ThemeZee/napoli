@@ -14,7 +14,7 @@
  */
 function napoli_customize_register_blog_settings( $wp_customize ) {
 
-	// Add Sections for Post Settings.
+	// Add Section for Blog Settings.
 	$wp_customize->add_section( 'napoli_section_blog', array(
 		'title'    => esc_html__( 'Blog Settings', 'napoli' ),
 		'priority' => 25,
