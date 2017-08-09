@@ -114,7 +114,7 @@ if ( ! function_exists( 'napoli_blog_title' ) ) :
 				// Display Blog Description.
 				if ( '' !== $blog_description || is_customize_preview() ) : ?>
 
-					<p class="blog-description"><?php echo wp_kses_post( $blog_description ); ?></p>
+					<div class="blog-description"><?php echo wp_kses_post( $blog_description ); ?></div>
 
 				<?php endif; ?>
 
