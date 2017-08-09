@@ -1617,12 +1617,12 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 	font-family: 'Montserrat', Tahoma, Arial;
 }
 
-.homepage-description,
+.blog-description,
 .archive-description {
 	padding: 0.75em 1em;
 }
 
-.homepage-description:empty {
+.blog-description:empty {
 	display: none;
 }
 

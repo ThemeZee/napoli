@@ -27,19 +27,11 @@ endif;
 			// Display Magazine Homepage Widgets.
 			napoli_magazine_widgets();
 
-			// Display Homepage Title.
-			if ( '' !== $theme_options['blog_title'] ) : ?>
+			if ( have_posts() ) :
 
-				<header class="page-header clearfix">
-
-					<h1 class="home-title archive-title"><?php echo wp_kses_post( $theme_options['blog_title'] ); ?></h1>
-					<div class="homepage-description"><?php echo wp_kses_post( $theme_options['blog_description'] ); ?></div>
-
-				</header>
-
-			<?php endif;
-
-			if ( have_posts() ) : ?>
+				// Display Blog Title.
+				napoli_blog_title();
+				?>
 
 				<div id="post-wrapper" class="post-wrapper clearfix">
 
