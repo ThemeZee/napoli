@@ -38,6 +38,8 @@
 
 	</div>
 
+	<?php do_action( 'napoli_author_bio' ); ?>
+
 	<?php napoli_post_navigation(); ?>
 
 	<?php napoli_entry_meta(); ?>
