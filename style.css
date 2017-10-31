@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/napoli/
 Author: ThemeZee
 Author URI: https://themezee.com
 Description: Napoli is a beautiful WordPress theme perfectly suited for a food magazine. It features a great featured post slider, smooth typography and a grid-layout for posts. Bon appétit!
-Version: 1.4.1
+Version: 1.4.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: napoli
@@ -1990,6 +1990,8 @@ object {
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
+	font-size: 13px;
+	font-size: 0.8125rem;
 }
 
 .wp-caption img[class*="wp-image-"] {
@@ -2009,14 +2011,14 @@ object {
 ## 13.2 - Galleries
 --------------------------------------------------------------*/
 .gallery {
-	margin-bottom: 1.25em;
+	margin-bottom: 1em;
 }
 
 .gallery-item {
 	display: inline-block;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0.75em 1em 0 0;
+	padding: 0 1em 0.75em 0;
 	width: 100%;
 	vertical-align: top;
 	text-align: center;
@@ -2058,6 +2060,7 @@ object {
 	display: block;
 	font-size: 13px;
 	font-size: 0.8125rem;
+	margin-bottom: 0.75em;
 }
 
 /*--------------------------------------------------------------
@@ -2441,6 +2444,18 @@ object {
 		font-size: 18px;
 		font-size: 1.125rem;
 	}
+
+	/* Gallery */
+	.gallery-item {
+		padding: 0 0.75em 0.5em 0;
+	}
+
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item {
+		max-width: 25%;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -2609,6 +2624,16 @@ object {
 	.post-navigation .nav-links a {
 		display: block;
 		margin-bottom: 0.5em;
+	}
+
+	/* Gallery */
+	.gallery-columns-4 .gallery-item,
+	.gallery-columns-5 .gallery-item,
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item {
+		max-width: 50%;
 	}
 
 	/* Magazine Post Widgets */
