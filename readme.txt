@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.4.3 =
+* fixed styling of Magazine Grid in Safari 10.1
+
 = 1.4.2 =
 * improved styling of image captions
 * improved styling of galleries
