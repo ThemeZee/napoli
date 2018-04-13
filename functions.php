@@ -76,7 +76,7 @@ if ( ! function_exists( 'napoli_setup' ) ) :
 		add_theme_support( 'woocommerce' );
 
 		// Add extra theme styling to the visual editor.
-		add_editor_style( array( 'css/editor-style.css', napoli_google_fonts_url() ) );
+		add_editor_style( array( 'css/editor-style.css', get_template_directory_uri() . '/assets/css/custom-fonts.css' ) );
 
 		// Add Theme Support for Selective Refresh in Customizer.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -150,9 +150,6 @@ function napoli_scripts() {
 	// Register and enqueue navigation.js.
 	wp_enqueue_script( 'napoli-jquery-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20170105' );
 
-	// Register and Enqueue Google Fonts.
-	wp_enqueue_style( 'napoli-default-fonts', napoli_google_fonts_url(), array(), null );
-
 	// Register Comment Reply Script for Threaded Comments.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -163,22 +160,15 @@ add_action( 'wp_enqueue_scripts', 'napoli_scripts' );
 
 
 /**
- * Retrieve Font URL to register default Google Fonts
+ * Enqueue custom fonts.
  */
-function napoli_google_fonts_url() {
+function napoli_custom_fonts() {
 
-	// Set default Fonts.
-	$font_families = array( 'Open Sans:400,400italic,700,700italic', 'Montserrat:400,400italic,700,700italic' );
+	// Register and Enqueue Theme Fonts.
+	wp_enqueue_style( 'napoli-custom-fonts', get_template_directory_uri() . '/assets/css/custom-fonts.css', array(), '20180413' );
 
-	// Build Fonts URL.
-	$query_args = array(
-		'family' => urlencode( implode( '|', $font_families ) ),
-		'subset' => urlencode( 'latin,latin-ext' ),
-	);
-	$fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
-
-	return apply_filters( 'napoli_google_fonts_url', $fonts_url );
 }
+add_action( 'wp_enqueue_scripts', 'napoli_custom_fonts', 1 );
 
 
 /**
