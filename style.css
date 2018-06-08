@@ -1907,6 +1907,12 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 	margin-bottom: 0.5em;
 }
 
+.comment-form input[type="checkbox"] + label {
+	display: inline;
+	padding-left: 0.5em;
+	font-weight: normal;
+}
+
 /* Comment Reply */
 .comment .comment-respond {
 	margin-top: 1.5em;
