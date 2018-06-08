@@ -303,20 +303,6 @@ if ( ! function_exists( 'napoli_entry_tags' ) ) :
 endif;
 
 
-if ( ! function_exists( 'napoli_more_link' ) ) :
-	/**
-	 * Displays the more link on posts
-	 */
-	function napoli_more_link() {
-		?>
-
-		<a href="<?php echo esc_url( get_permalink() ) ?>" class="more-link"><?php esc_html_e( 'Continue reading &raquo;', 'napoli' ); ?></a>
-
-		<?php
-	}
-endif;
-
-
 if ( ! function_exists( 'napoli_post_navigation' ) ) :
 	/**
 	 * Displays Single Post Navigation

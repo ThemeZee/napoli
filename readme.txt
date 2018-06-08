@@ -26,6 +26,10 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.5.1 =
+* improved styling of checkbox label in comment form
+* removed unused template function for read more link
+
 = 1.5 =
 * added default theme fonts as local fonts
 * use local fonts instead of Google fonts for GDPR compliance
