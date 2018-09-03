@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.5.2 =
+* fixed featured image size on fullwidth template
+
 = 1.5.1 =
 * improved styling of checkbox label in comment form
 * removed unused template function for read more link

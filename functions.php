@@ -176,6 +176,9 @@ add_action( 'wp_enqueue_scripts', 'napoli_custom_fonts', 1 );
  */
 function napoli_add_image_sizes() {
 
+	// Add image size for fullwidth posts and pages.
+	add_image_size( 'napoli-fullwidth-page', 1200, 500, true );
+
 	// Add different thumbnail sizes for Magazine Posts widgets.
 	add_image_size( 'napoli-thumbnail-small', 130, 100, true );
 	add_image_size( 'napoli-thumbnail-medium', 360, 200, true );
