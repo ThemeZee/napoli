@@ -32,32 +32,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 8.0 - Layout Structure
 9.0 - Header
 10.0 - Navigation
-	10.1 - Main Navigation
-	10.2 - Social Icon Menu
 11.0 - Widgets
-	11.1 - Default Widgets
-	11.2 - Magazine Posts Widgets
 12.0 - Posts and pages
-11.0 - Comments
-12.0 - Footer
-13.0 - Media
-	13.1 - Captions
-	13.2 - Galleries
-14.0 - Media Queries
-	14.1 - Desktop Large ( < 1120px )
-	14.2 - Desktop Medium ( < 1040px )
-	14.3 - Desktop Small ( < 960px )
-	14.4 - Tablet Large ( < 880px )
-	14.5 - Tablet Medium ( < 800px )
-	14.6 - Tablet Small ( < 720px )
-	14.7 - Mobile Extra Large ( < 640px )
-	14.8 - Mobile Large ( < 560px )
-	14.9 - Mobile Medium ( < 480px )
-	14.10 - Mobile Small ( < 320px )
-15.0 - Theme Option Styles
-	15.1 - Sidebar Left Layout
-	15.2 - Sticky Header
-16.0 - Media Query Fixes
+13.0 - Comments
+14.0 - Gutenberg Blocks
+15.0 - Footer
+16.0 - Media
+17.0 - Media Queries
+18.0 - Theme Option Styles
+19.0 - Media Query Fixes
+20.0 - CSS Hacks for Safari
+21.0 - Customizer Preview
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -126,11 +111,6 @@ strong {
 
 dfn {
 	font-style: italic;
-}
-
-h1 {
-	margin: 0.67em 0;
-	font-size: 2em;
 }
 
 mark {
@@ -301,6 +281,38 @@ h4,
 h5,
 h6 {
 	clear: both;
+	margin: 0.75em 0;
+	line-height: 1.4;
+}
+
+h1 {
+	font-size: 36px;
+	font-size: 2.25rem;
+}
+
+h2 {
+	font-size: 28px;
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 22px;
+	font-size: 1.375rem;
+}
+
+h5 {
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 19px;
+	font-size: 1.1875rem;
 }
 
 p {
@@ -415,7 +427,7 @@ hr {
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: #ccc;
+	background-color: #eee;
 }
 
 ul,
@@ -589,13 +601,11 @@ textarea {
 # 6.0 - Alignments
 --------------------------------------------------------------*/
 .alignleft {
-	display: inline;
 	float: left;
 	margin-right: 1.5em;
 }
 
 .alignright {
-	display: inline;
 	float: right;
 	margin-left: 1.5em;
 }
@@ -605,6 +615,7 @@ textarea {
 	clear: both;
 	margin-right: auto;
 	margin-left: auto;
+	text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -1772,7 +1783,117 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 }
 
 /*--------------------------------------------------------------
-# 11.0 - Comments
+# 13.0 - Gutenberg Blocks
+--------------------------------------------------------------*/
+
+/* Audio */
+.wp-block-audio audio {
+	width: 100%;
+}
+
+/* Separator */
+.wp-block-separator {
+	height: 2px;
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+	max-width: 100px;
+}
+
+/* Quote */
+.wp-block-quote.is-style-large {
+	border: none;
+	margin: 0 0 1.5em;
+	padding: 0;
+	font-size: 28px;
+	font-size: 1.75rem;
+}
+
+.wp-block-quote.is-style-large p {
+	margin-bottom: 0.5em;
+	font-size: inherit;
+	font-style: inherit;
+	line-height: inherit;
+}
+
+.wp-block-quote.is-style-large cite {
+	text-align: inherit;
+}
+
+/* Pullquote */
+.wp-block-pullquote {
+	margin-bottom: 1.5em;
+	padding: 1.5em 0;
+    border-bottom: 6px solid #eee;
+    border-top: 6px solid #eee;
+}
+
+.wp-block-pullquote blockquote {
+	border: none;
+	margin: 0;
+	padding: 0;
+	font-size: 28px;
+	font-size: 1.75rem;
+}
+
+.wp-block-pullquote blockquote p {
+	margin-bottom: 0.5em;
+}
+
+/* Cover */
+.wp-block-cover {
+	display: flex;
+}
+
+.wp-block-cover-text {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Block Text Colors */
+.has-primary-color {
+	color: #ee4455;
+}
+
+.has-white-color {
+	color: #ffffff;
+}
+
+.has-light-gray-color {
+	color: #f0f0f0;
+}
+
+.has-dark-gray-color {
+	color: #777777;
+}
+
+.has-black-color {
+	color: #303030;
+}
+
+/* Block Background Colors */
+.has-primary-background-color {
+	background-color: #ee4455;
+}
+
+.has-white-background-color {
+	background-color: #ffffff;
+}
+
+.has-light-gray-background-color {
+	background-color: #f0f0f0;
+}
+
+.has-dark-gray-background-color {
+	background-color: #777777;
+}
+
+.has-black-background-color {
+	background-color: #303030;
+}
+
+/*--------------------------------------------------------------
+# 14.0 - Comments
 --------------------------------------------------------------*/
 .comments-area,
 .comment-respond {
@@ -1942,7 +2063,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 }
 
 /*--------------------------------------------------------------
-# 12.0 - Footer
+# 15.0 - Footer
 --------------------------------------------------------------*/
 .footer-wrap {
 	background: #ee4455;
@@ -1972,7 +2093,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 }
 
 /*--------------------------------------------------------------
-# 13.0 - Media
+# 16.0 - Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
@@ -1991,7 +2112,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-## 13.1 - Captions
+## 16.1 - Captions
 --------------------------------------------------------------*/
 .wp-caption {
 	margin-bottom: 1.5em;
@@ -2014,7 +2135,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-## 13.2 - Galleries
+## 16.2 - Galleries
 --------------------------------------------------------------*/
 .gallery {
 	margin-bottom: 1em;
@@ -2070,11 +2191,11 @@ object {
 }
 
 /*--------------------------------------------------------------
-# 14.0 - Media Queries
+# 17.0 - Media Queries
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-## 14.1 - Desktop X-Large ( < 1200px )
+## 17.1 - Desktop X-Large ( < 1200px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 75em) {
 	.container {
@@ -2114,7 +2235,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-## 14.2 - Desktop Large ( < 1120px )
+## 17.2 - Desktop Large ( < 1120px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 70em) {
 	.content-area {
@@ -2127,14 +2248,14 @@ object {
 }
 
 /*--------------------------------------------------------------
-## 14.2 - Desktop Medium ( < 1040px )
+## 17.2 - Desktop Medium ( < 1040px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 65em) {
 
 }
 
 /*--------------------------------------------------------------
-## 14.3 - Desktop Small ( < 960px )
+## 17.3 - Desktop Small ( < 960px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 60em) {
 	.content-area,
@@ -2402,16 +2523,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-## 14.4 - Tablet Large ( < 880px )
---------------------------------------------------------------*/
-@media only screen and (max-width: 55em) {
-
-
-
-}
-
-/*--------------------------------------------------------------
-## 14.5 - Tablet Medium ( < 800px )
+## 17.5 - Tablet Medium ( < 800px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 50em) {
 	.site-branding {
@@ -2465,7 +2577,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-## 14.6 - Tablet Small ( < 720px )
+## 17.6 - Tablet Small ( < 720px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 45em) {
 	.widget-magazine-posts .small-post .entry-title {
@@ -2475,7 +2587,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-## 14.7 - Mobile Extra Large ( < 640px )
+## 17.7 - Mobile Extra Large ( < 640px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 40em) {
 	.header-social-icons {
@@ -2558,7 +2670,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-## 14.8 - Mobile Large ( < 560px )
+## 17.8 - Mobile Large ( < 560px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 35em) {
 	.widget-magazine-posts .small-post .entry-title {
@@ -2568,7 +2680,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-## 14.9 - Mobile Medium ( < 480px )
+## 17.9 - Mobile Medium ( < 480px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 30em) {
 	.site-branding {
@@ -2693,7 +2805,7 @@ object {
 	}
 }
 /*--------------------------------------------------------------
-## 14.10 - Mobile Small ( < 320px )
+## 17.10 - Mobile Small ( < 320px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 20em) {
 	.page-title,
@@ -2725,11 +2837,11 @@ object {
 
 
 /*--------------------------------------------------------------
-# 15.0 - Theme Option Styles
+# 18.0 - Theme Option Styles
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-## 15.1 - Sidebar Left Layout
+## 18.1 - Sidebar Left Layout
 --------------------------------------------------------------*/
 .sidebar-left .content-area {
 	float: right;
@@ -2764,7 +2876,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-# 16.0 - Media Query Fixes
+# 19.0 - Media Query Fixes
 --------------------------------------------------------------*/
 
 /* Ensure navigation is visible on desktop view */
@@ -2775,7 +2887,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-# 17.0 - CSS Hacks for Safari
+# 20.0 - CSS Hacks for Safari
 --------------------------------------------------------------*/
 
 /* Fix Flexbox issues for Safari 6.1-10.0 */
@@ -2799,7 +2911,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-18.0 Customizer Preview
+# 21.0 Customizer Preview
 --------------------------------------------------------------*/
 .magazine-widgets-placeholder {
 	position: relative;
