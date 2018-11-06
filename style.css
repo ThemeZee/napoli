@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/napoli/
 Author: ThemeZee
 Author URI: https://themezee.com
 Description: Napoli is a beautiful WordPress theme perfectly suited for a food magazine. It features a great featured post slider, smooth typography and a grid-layout for posts. Bon appétit!
-Version: 1.5.2
+Version: 1.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: napoli
@@ -153,10 +153,6 @@ figure {
 hr {
 	box-sizing: content-box;
 	height: 0;
-}
-
-pre {
-	overflow: auto;
 }
 
 code,
@@ -336,11 +332,11 @@ address {
 
 pre {
 	overflow: auto;
-	margin-bottom: 1.6em;
-	padding: 1.6em;
+	margin-bottom: 1.5em;
+	padding: 1.5em;
 	max-width: 100%;
-	border: 1px solid #ddd;
-	background: #fff;
+	border: 1px solid #e5e5e5;
+	background: #f5f5f5;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
@@ -720,6 +716,7 @@ textarea {
 	font-size: 32px;
 	font-size: 2rem;
 	font-family: 'Montserrat', sans-serif;
+	line-height: 1.75;
 }
 
 .site-title a:link,
@@ -1365,6 +1362,10 @@ textarea {
 
 .entry-content p:last-child {
 	margin-bottom: 0;
+}
+
+.entry-content a {
+	text-decoration: underline;
 }
 
 .sticky {}
