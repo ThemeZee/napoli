@@ -384,10 +384,12 @@ function napoli_footer_text() {
 	?>
 
 	<span class="credit-link">
-		<?php printf( esc_html__( 'Powered by %1$s and %2$s.', 'napoli' ),
-			'<a href="http://wordpress.org" title="WordPress">WordPress</a>',
+		<?php
+		// translators: Theme Name
+		printf( esc_html__( 'WordPress Theme: %s by ThemeZee.', 'napoli' ),
 			'<a href="https://themezee.com/themes/napoli/" title="Napoli WordPress Theme">Napoli</a>'
-		); ?>
+		);
+		?>
 	</span>
 
 	<?php
