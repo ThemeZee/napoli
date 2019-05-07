@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.6.2 =
+* added support for responsive embed blocks
+
 = 1.6.1 =
 * adjusted footer credit link with clearer wording
 
