@@ -385,9 +385,10 @@ function napoli_footer_text() {
 
 	<span class="credit-link">
 		<?php
-		// translators: Theme Name
-		printf( esc_html__( 'WordPress Theme: %s by ThemeZee.', 'napoli' ),
-			'<a href="https://themezee.com/themes/napoli/" title="Napoli WordPress Theme">Napoli</a>'
+		// translators: Theme Name and Link to ThemeZee.
+		printf( esc_html__( 'WordPress Theme: %1$s by %2$s.', 'napoli' ),
+			esc_html__( 'Napoli', 'napoli' ),
+			'<a href="https://themezee.com/" target="_blank" rel="nofollow">ThemeZee</a>'
 		);
 		?>
 	</span>
