@@ -262,3 +262,86 @@ body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
 .has-black-background-color {
 	background-color: #303030;
 }
+
+/*--------------------------------------------------------------
+# 6.0 - Magazine Blocks
+--------------------------------------------------------------*/
+:root {
+	--tz-column-gap: 1.5em;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-entry-image {
+    margin-bottom: 0.5em;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-entry-title {
+	font-family: 'Montserrat', Tahoma, Arial;
+	line-height: 1.4;
+    font-size: 20px;
+    font-size: 1.25rem;
+	font-weight: normal;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-entry-title a:link,
+.edit-post-visual-editor .tz-magazine-block .tz-entry-title a:visited {
+	color: #ee4455;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-entry-title a:hover,
+.edit-post-visual-editor .tz-magazine-block .tz-entry-title a:active {
+	color: #303030;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-magazine-grid-columns-3 .tz-entry-title {
+    font-size: 17px;
+    font-size: 1.0625rem;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-magazine-grid-columns-4 .tz-entry-title,
+.edit-post-visual-editor .tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-title {
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-entry-meta {
+	margin: 0.4em 0;
+	color: #444;
+	font-size: 14px;
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:link,
+.edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:visited {
+	color: #444;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:hover,
+.edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:active {
+	color: #999;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-meta-field {
+	margin-right: 1.5em;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-meta-field a {
+	text-decoration: none;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-entry-content {
+	margin-top: 1em;
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-read-more {
+	margin: 1em 0 0;
+}
+
+.edit-post-visual-editor .tz-magazine-block .tz-more-link {
+	font-size: 16px;
+	font-size: 1rem;
+}

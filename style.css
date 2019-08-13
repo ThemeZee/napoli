@@ -1308,6 +1308,67 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+## 11.3 - Magazine Blocks
+--------------------------------------------------------------*/
+:root {
+	--tz-column-gap: 1.5em;
+}
+
+.tz-magazine-block .tz-magazine-post {
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+
+.tz-magazine-block .tz-entry-image {
+	margin: 0 0 1em;
+}
+
+.tz-magazine-block .tz-entry-title {
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+.tz-magazine-block .tz-magazine-grid-columns-3 .tz-entry-title {
+    font-size: 17px;
+    font-size: 1.0625rem;
+}
+
+.tz-magazine-block .tz-magazine-grid-columns-4 .tz-entry-title,
+.tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-title {
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.tz-magazine-block .tz-entry-meta {
+	margin: 0.4em 0;
+	padding: 0;
+	border: none;
+	font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.tz-magazine-block .tz-entry-meta .tz-meta-field {
+	margin-right: 1em;
+}
+
+.tz-magazine-block .tz-meta-field a {
+	text-decoration: none;
+}
+
+.tz-magazine-block .tz-entry-content {
+	margin-top: 1em;
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+.tz-magazine-block .tz-read-more {
+	margin-top: -0.5em;
+}
+
+/*--------------------------------------------------------------
 # 12.0 - Posts and pages
 --------------------------------------------------------------*/
 .type-post,
