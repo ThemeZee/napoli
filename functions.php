@@ -224,6 +224,19 @@ add_action( 'after_setup_theme', 'napoli_add_image_sizes' );
 
 
 /**
+ * Make custom image sizes available in Gutenberg.
+ */
+function napoli_add_image_size_names( $sizes ) {
+	return array_merge( $sizes, array(
+		'post-thumbnail'         => esc_html__( 'Napoli Single Post', 'napoli' ),
+		'napoli-thumbnail-large' => esc_html__( 'Napoli Magazine Post', 'napoli' ),
+		'napoli-thumbnail-small' => esc_html__( 'Napoli Thumbnail', 'napoli' ),
+	) );
+}
+add_filter( 'image_size_names_choose', 'napoli_add_image_size_names' );
+
+
+/**
  * Include Files
  */
 
