@@ -1499,7 +1499,8 @@ body.comments-hidden .type-post .entry-meta .meta-comments {
 	 clip: rect(1px, 1px, 1px, 1px);
 }
 
-body.date-hidden.author-hidden .content-archive .type-post .entry-meta {
+body.date-hidden.author-hidden .content-archive .type-post .entry-meta,
+body.date-hidden.author-hidden .post-slider .type-post .entry-meta {
 	display: none;
 }
 
