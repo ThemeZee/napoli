@@ -43,13 +43,13 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 				</p>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/napoli/', 'napoli' ) ); ?>" target="_blank">
-						<?php esc_html_e( 'Support Forum', 'napoli' ); ?>
+					<a href="<?php echo esc_url( __( 'https://themezee.com/changelogs/?action=themezee-changelog&type=theme&slug=napoli/', 'napoli' ) ); ?>" target="_blank">
+						<?php esc_html_e( 'Theme Changelog', 'napoli' ); ?>
 					</a>
 				</p>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/napoli/reviews/?filter=5', 'napoli' ) ); ?>" target="_blank">
+					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/napoli/reviews/', 'napoli' ) ); ?>" target="_blank">
 						<?php esc_html_e( 'Rate this theme', 'napoli' ); ?>
 					</a>
 				</p>
