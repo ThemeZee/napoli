@@ -26,21 +26,21 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
-= 1.7.1 =
+= 1.7.1 - 2019-10-23 =
 * added improved Theme Info section to Customizer
 
-= 1.7 =
+= 1.7 - 2019-08-16 =
 * added custom styling for ThemeZee Magazine Blocks
 * added custom image sizes to select fields in Gutenberg Editor and Media Library
 * disabled post meta theme settings for Magazine blocks
 
-= 1.6.2 =
+= 1.6.2 - 2019-05-07 =
 * added support for responsive embed blocks
 
-= 1.6.1 =
+= 1.6.1 - 2019-03-25 =
 * adjusted footer credit link with clearer wording
 
-= 1.6 =
+= 1.6 - 2018-11-06 =
 * added styling for Gutenberg blocks
 * added custom color palette for Gutenberg
 * added editor styling for WordPress 5.0
