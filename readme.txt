@@ -26,6 +26,10 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.7.3 - 2019-11-18 =
+* fixed styling of captions in Image and Gallery block
+* improved styling of Latest Posts and Table block
+
 = 1.7.2 - 2019-11-12 =
 * added font display swap to default theme fonts
 
