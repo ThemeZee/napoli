@@ -26,6 +26,11 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 1.7.4 - 2020-01-31 =
+* improved styling for custom post types
+* added new wp_body_open tag
+* fixed display of comments meta even if comments are disabled
+
 = 1.7.3 - 2019-11-18 =
 * fixed styling of captions in Image and Gallery block
 * improved styling of Latest Posts and Table block
