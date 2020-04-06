@@ -27,7 +27,6 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 == Changelog ==
 
 = 1.7.5 - 2020-04-06 =
-* added new wp_body_open action hook
 * improved Block Editor styling for WordPress 5.4
 
 = 1.7.4 - 2020-01-31 =
