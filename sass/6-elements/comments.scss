@@ -1,0 +1,166 @@
+.comments-area,
+.comment-respond {
+	padding: 1rem 1.5rem;
+}
+
+/* Comment Header */
+.comments-header,
+.comment-reply-title {
+	margin: -1rem -1.5rem 1.5em;
+	background: #ee4455;
+}
+
+.comments-header .comments-title,
+.comment-reply-title {
+	display: inline-block;
+	margin: 0;
+	padding: 0.75em 1em;
+	color: #fff;
+	text-transform: uppercase;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	font-weight: normal;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-family: 'Montserrat', Tahoma, Arial;
+}
+
+.comment-reply-title {
+	display: block;
+	margin: -1rem -1.5rem 1.5em;
+}
+
+/* Comment List */
+.comment-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.comment {
+	margin: 0 0 1.5em;
+	padding: 1.5em 0 0;
+	border-top: 1px solid #eee;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.comment-meta {
+	float: left;
+	padding: 0;
+	width: 100%;
+}
+
+.comment-meta .comment-author img {
+	float: left;
+	margin-right: 1em;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.comment-meta .comment-metadata {
+	margin-top: 0.3em;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.comment-meta .comment-metadata a {
+	margin-right: 1em;
+}
+
+.comment-content {
+	clear: left;
+	padding: 0.2em 0 0;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.comment ol.children {
+	margin: 1.5em 0 0;
+	list-style: none;
+}
+
+/* Comment Pagination */
+.comment-navigation {
+	margin: 0 0 1.5em;
+	padding: 0;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.comment-navigation .nav-previous {
+	float: left;
+}
+
+.comment-navigation .nav-next {
+	float: right;
+}
+
+.comment-navigation .nav-previous a:before {
+	margin-right: 3px;
+	content: "\00AB";
+}
+
+.comment-navigation .nav-next a:after {
+	margin-left: 4px;
+	content: "\00BB";
+}
+
+/* Comment Form */
+.comment-form {
+	padding: 0;
+}
+
+.comment-form label {
+	display: inline-block;
+	min-width: 150px;
+	font-weight: bold;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+.comment-form textarea {
+	margin-top: 0.4em;
+}
+
+.comment-form .form-submit {
+	margin-bottom: 0.5em;
+}
+
+.comment-form input[type="checkbox"] + label {
+	display: inline;
+	padding-left: 0.5em;
+	font-weight: normal;
+}
+
+/* Comment Reply */
+.comment .comment-respond {
+	margin-top: 1.5em;
+	border: 1px solid #eee;
+	box-shadow: none;
+}
+
+.comment-reply-title small a {
+	float: right;
+	margin: -0.5rem -0.5rem 0 0;
+	padding: 0.75em 1em;
+	text-transform: none;
+	font-weight: normal;
+	font-size: 13px;
+	font-size: 0.8125rem;
+}
+
+.comment-reply-title small a:link,
+.comment-reply-title small a:visited {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.comment-reply-title small a:hover,
+.comment-reply-title small a:active {
+	text-decoration: none;
+}

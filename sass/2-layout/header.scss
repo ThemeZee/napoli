@@ -1,0 +1,71 @@
+.site-header {
+	background: #ee4455;
+	color: #fff;
+}
+
+.site-branding {
+	float: left;
+	margin: 1em 3em 1em 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+.site-branding a:link,
+.site-branding a:visited,
+.site-branding a:hover {
+	padding: 0;
+	border: none;
+	text-decoration: none;
+}
+
+.site-title {
+	display: inline-block;
+	margin: 0.25rem 0 0;
+	padding: 0;
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 32px;
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.75;
+}
+
+.site-title a:link,
+.site-title a:visited {
+	color: #fff;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.site-title a:hover,
+.site-title a:active {
+	color: #ccc;
+}
+
+.site-branding .custom-logo {
+	margin: 0.25em 1em 0 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: top;
+}
+
+.site-description {
+	margin: -0.25rem 0 0.5rem;
+	font-size: 13px;
+	font-size: 0.8125rem;
+}
+
+/* Custom Header Image */
+.header-image {
+	text-align: center;
+}
+
+.header-image img {
+	max-width: 2500px;
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}

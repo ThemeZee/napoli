@@ -1,0 +1,26 @@
+.footer-wrap {
+	background: #ee4455;
+}
+
+.site-footer {
+	color: #ddd;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+.site-footer .site-info {
+	float: left;
+	padding: 2.5em 0;
+}
+
+.site-footer a:link,
+.site-footer a:visited {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.site-footer a:hover,
+.site-footer a:focus,
+.site-footer a:active {
+	text-decoration: none;
+}
