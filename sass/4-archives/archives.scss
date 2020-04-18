@@ -1,0 +1,114 @@
+/* Archives and Search Heading */
+.page-header {
+	margin: 0 0 2em 0;
+	padding: 0;
+	background: #fff;
+	box-shadow: 0 1px 2px #bbb;
+}
+
+.page-header .archive-title {
+	display: block;
+	margin: 0;
+	padding: 0.75em 1em;
+	background: #ee4455;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-family: 'Montserrat', Tahoma, Arial;
+}
+
+.blog-description,
+.archive-description {
+	padding: 0.75em 1em;
+}
+
+.blog-description:empty {
+	display: none;
+}
+
+.archive-description p:first-child {
+	margin-top: 0;
+}
+
+.archive-description p:last-child {
+	margin-bottom: 0;
+}
+
+.search-form-wrap {
+	padding: 1.5em;
+}
+
+/* Post Columns */
+.post-layout-columns .post-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -2em;
+}
+
+.post-layout-columns .post-wrapper .post-column {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	box-sizing: border-box;
+	padding-right: 2em;
+}
+
+.post-layout-columns .post-wrapper .post-column article {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+}
+
+.post-layout-columns .post-wrapper .post-column article .post-content {
+	flex-grow: 1;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+}
+
+.post-layout-columns .post-wrapper .post-column article .entry-title {
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+.post-layout-columns .post-wrapper .post-column article .post-content .entry-content {
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+.post-layout-columns .post-wrapper .post-column article .more-link {
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+/* 2 Columns */
+.post-layout-two-columns .post-wrapper .post-column {
+	width: 50%;
+}
+
+/* 3 Columns */
+.post-layout-three-columns .content-archive {
+	float: none;
+	padding: 0;
+	width: 100%;
+}
+
+.post-layout-three-columns .post-wrapper .post-column {
+	width: 33.3333333333333%;
+}
+
+/* Post Columns Fixes for IE 10 and IE 11*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.post-layout-columns .post-wrapper .post-column,
+	.post-layout-columns .post-wrapper .post-column article {
+		display: block;
+	}
+}
