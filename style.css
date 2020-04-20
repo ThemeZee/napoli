@@ -1177,7 +1177,7 @@ textarea {
 }
 
 .sticky {
-	background: none;
+	border: none;
 }
 
 /* Page Links | wp_link_pages() */
@@ -2391,11 +2391,79 @@ object {
 }
 
 /*--------------------------------------------------------------
-# - Media Queries
+# - Media Queries for Typography
 --------------------------------------------------------------*/
+@media only screen and (max-width: 60em) {
+	.page-title,
+	.entry-title {
+		font-size: 26px;
+		font-size: 1.625rem;
+	}
+
+	.post-layout-columns .post-wrapper .post-column article .entry-title {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+}
+
+@media only screen and (max-width: 50em) {
+	.site-title {
+		font-size: 28px;
+		font-size: 1.75rem;
+	}
+
+	.page-title,
+	.entry-title {
+		font-size: 24px;
+		font-size: 1.5rem;
+	}
+
+	.post-layout-columns .post-wrapper .post-column article .entry-title {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	.page-title,
+	.entry-title,
+	.post-layout-columns .post-wrapper .post-column article .entry-title {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+
+	.entry-content {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 30em) {
+	.site-title {
+		font-size: 24px;
+		font-size: 1.5rem;
+	}
+
+	.page-title,
+	.entry-title,
+	.post-layout-columns .post-wrapper .post-column article .entry-title {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+}
+
+@media only screen and (max-width: 20em) {
+	.page-title,
+	.entry-title,
+	.post-layout-columns .post-wrapper .post-column article .entry-title {
+		margin: 0 0 0.5em;
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+}
 
 /*--------------------------------------------------------------
-## 17.1 - Desktop X-Large ( < 1200px )
+# - Media Queries for Layout
 --------------------------------------------------------------*/
 @media only screen and (max-width: 75em) {
 	.container {
@@ -2436,9 +2504,6 @@ object {
 	}
 }
 
-/*--------------------------------------------------------------
-## 17.2 - Desktop Large ( < 1120px )
---------------------------------------------------------------*/
 @media only screen and (max-width: 70em) {
 	.content-area {
 		width: 70%;
@@ -2449,13 +2514,6 @@ object {
 	}
 }
 
-/*--------------------------------------------------------------
-## 17.2 - Desktop Medium ( < 1040px )
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-## 17.3 - Desktop Small ( < 960px )
---------------------------------------------------------------*/
 @media only screen and (max-width: 60em) {
 	.content-area,
 	.site-content .content-fullwidth {
@@ -2498,22 +2556,6 @@ object {
 		width: 50%;
 	}
 
-	.page-title,
-	.entry-title {
-		font-size: 26px;
-		font-size: 1.625rem;
-	}
-
-	.post-layout-columns .post-wrapper .post-column article .entry-title {
-		font-size: 22px;
-		font-size: 1.375rem;
-	}
-
-	.widget-magazine-posts .large-post .entry-title {
-		font-size: 20px;
-		font-size: 1.25rem;
-	}
-
 	.header-main {
 		position: relative;
 	}
@@ -2526,8 +2568,110 @@ object {
 		float: none;
 		text-align: center;
 	}
+}
 
-	/*** Mobile Main Navigation ***/
+@media only screen and (max-width: 50em) {
+	.site-branding {
+		margin: 1em 1em 1.25em 3.5em;
+	}
+
+	.header-social-icons {
+		margin: 1.25em 0;
+	}
+
+	.header-social-icons .social-icons-menu li a::before {
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	.header-social-icons {
+		display: none;
+	}
+
+	.post-layout-columns .post-wrapper {
+		display: block;
+		margin-right: 0;
+	}
+
+	.post-layout-columns .post-wrapper .post-column {
+		display: block;
+		float: none;
+		padding-right: 0;
+	}
+
+	.post-layout-two-columns .post-wrapper .post-column,
+	.post-layout-three-columns .post-wrapper .post-column {
+		width: 100%;
+	}
+
+	.infinite-scroll #infinite-handle,
+	.infinite-scroll .infinite-loader {
+		margin-right: 0;
+	}
+
+	/* Sidebar */
+	.sidebar {
+		margin-right: 0;
+	}
+
+	.sidebar .widget-wrap {
+		float: none;
+		padding-right: 0;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 30em) {
+	.site-branding {
+		margin: 0.75em 0.75em 0.75em 3em;
+	}
+
+	.post-content {
+		padding: 1em 1.25em 1.25em;
+	}
+
+	.post-navigation {
+		padding: 1rem 1.5rem;
+		font-size: 14px;
+		font-size: 0.875rem;
+	}
+
+	.post-navigation .nav-links .entry-title {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+
+	.post-navigation .nav-links .nav-previous,
+	.post-navigation .nav-links .nav-next {
+		float: none;
+		padding: 0;
+		max-width: 100%;
+	}
+
+	.post-navigation .nav-links .nav-next {
+		text-align: right;
+	}
+
+	.post-navigation .nav-links a {
+		display: block;
+		margin-bottom: 0.5em;
+	}
+}
+
+@media only screen and (max-width: 20em) {
+	.entry-meta .meta-date,
+	.entry-meta .meta-author,
+	.entry-meta .meta-category,
+	.entry-meta .meta-comments {
+		display: block;
+	}
+}
+
+/*--------------------------------------------------------------
+# - Media Queries for Navigation
+--------------------------------------------------------------*/
+@media only screen and (max-width: 60em) {
 	/* Reset */
 	.primary-navigation {
 		float: none;
@@ -2719,63 +2863,40 @@ object {
 	}
 }
 
-/*--------------------------------------------------------------
-## 17.5 - Tablet Medium ( < 800px )
---------------------------------------------------------------*/
 @media only screen and (max-width: 50em) {
-	.site-branding {
-		margin: 1em 1em 1.25em 3.5em;
-	}
-
-	.site-title {
-		font-size: 28px;
-		font-size: 1.75rem;
-	}
-
 	.main-navigation-toggle:after {
 		font-size: 24px;
 	}
+}
 
-	.header-social-icons {
-		margin: 1.25em 0;
+@media only screen and (max-width: 30em) {
+	.main-navigation-toggle {
+		top: 1.5em;
+		left: 1.5em;
 	}
 
-	.header-social-icons .social-icons-menu li a:before {
+	.main-navigation-toggle:after {
 		font-size: 22px;
-	}
-
-	.page-title,
-	.entry-title {
-		font-size: 24px;
-		font-size: 1.5rem;
-	}
-
-	.post-layout-columns .post-wrapper .post-column article .entry-title {
-		font-size: 20px;
-		font-size: 1.25rem;
-	}
-
-	.widget-magazine-posts .large-post .entry-title {
-		font-size: 18px;
-		font-size: 1.125rem;
-	}
-
-	/* Gallery */
-	.gallery-item {
-		padding: 0 0.75em 0.5em 0;
-	}
-
-	.gallery-columns-6 .gallery-item,
-	.gallery-columns-7 .gallery-item,
-	.gallery-columns-8 .gallery-item,
-	.gallery-columns-9 .gallery-item {
-		max-width: 25%;
 	}
 }
 
 /*--------------------------------------------------------------
-## 17.6 - Tablet Small ( < 720px )
+# - Media Queries for Magazine widgets
 --------------------------------------------------------------*/
+@media only screen and (max-width: 60em) {
+	.widget-magazine-posts .large-post .entry-title {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+}
+
+@media only screen and (max-width: 50em) {
+	.widget-magazine-posts .large-post .entry-title {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+}
+
 @media only screen and (max-width: 45em) {
 	.widget-magazine-posts .small-post .entry-title {
 		font-size: 14px;
@@ -2783,58 +2904,7 @@ object {
 	}
 }
 
-/*--------------------------------------------------------------
-## 17.7 - Mobile Extra Large ( < 640px )
---------------------------------------------------------------*/
 @media only screen and (max-width: 40em) {
-	.header-social-icons {
-		display: none;
-	}
-
-	.post-layout-columns .post-wrapper {
-		display: block;
-		margin-right: 0;
-	}
-
-	.post-layout-columns .post-wrapper .post-column {
-		display: block;
-		float: none;
-		padding-right: 0;
-	}
-
-	.post-layout-two-columns .post-wrapper .post-column,
-	.post-layout-three-columns .post-wrapper .post-column {
-		width: 100%;
-	}
-
-	.infinite-scroll #infinite-handle,
-	.infinite-scroll .infinite-loader {
-		margin-right: 0;
-	}
-
-	.page-title,
-	.entry-title,
-	.post-layout-columns .post-wrapper .post-column article .entry-title {
-		font-size: 22px;
-		font-size: 1.375rem;
-	}
-
-	.entry-content {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-
-	/* Sidebar */
-	.sidebar {
-		margin-right: 0;
-	}
-
-	.sidebar .widget-wrap {
-		float: none;
-		padding-right: 0;
-		width: 100%;
-	}
-
 	/* Magazine Post Widgets */
 	.widget-magazine-posts .magazine-grid-three-columns .post-column {
 		width: 50%;
@@ -2857,17 +2927,8 @@ object {
 		font-size: 13px;
 		font-size: 0.8125rem;
 	}
-
-	/* Mega Menu Styling */
-	.mega-menu-item .mega-menu-four-columns > li,
-	.mega-menu-item .mega-menu-six-columns > li {
-		width: 100%;
-	}
 }
 
-/*--------------------------------------------------------------
-## 17.8 - Mobile Large ( < 560px )
---------------------------------------------------------------*/
 @media only screen and (max-width: 35em) {
 	.widget-magazine-posts .small-post .entry-title {
 		font-size: 15px;
@@ -2875,81 +2936,7 @@ object {
 	}
 }
 
-/*--------------------------------------------------------------
-## 17.9 - Mobile Medium ( < 480px )
---------------------------------------------------------------*/
 @media only screen and (max-width: 30em) {
-	.site-branding {
-		margin: 0.75em 0.75em 0.75em 3em;
-	}
-
-	.site-title {
-		font-size: 24px;
-		font-size: 1.5rem;
-	}
-
-	.main-navigation-toggle {
-		top: 1.5em;
-		left: 1.5em;
-	}
-
-	.main-navigation-toggle:after {
-		font-size: 22px;
-	}
-
-	.page-title,
-	.entry-title,
-	.post-layout-columns .post-wrapper .post-column article .entry-title {
-		font-size: 20px;
-		font-size: 1.25rem;
-	}
-
-	.post-content {
-		padding: 1em 1.25em 1.25em;
-	}
-
-	.alignright, .alignleft {
-		float: none;
-		margin: 1em 0;
-	}
-
-	.post-navigation {
-		padding: 1rem 1.5rem;
-		font-size: 14px;
-		font-size: 0.875rem;
-	}
-
-	.post-navigation .nav-links .entry-title {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-
-	.post-navigation .nav-links .nav-previous,
-	.post-navigation .nav-links .nav-next {
-		float: none;
-		padding: 0;
-		max-width: 100%;
-	}
-
-	.post-navigation .nav-links .nav-next {
-		text-align: right;
-	}
-
-	.post-navigation .nav-links a {
-		display: block;
-		margin-bottom: 0.5em;
-	}
-
-	/* Gallery */
-	.gallery-columns-4 .gallery-item,
-	.gallery-columns-5 .gallery-item,
-	.gallery-columns-6 .gallery-item,
-	.gallery-columns-7 .gallery-item,
-	.gallery-columns-8 .gallery-item,
-	.gallery-columns-9 .gallery-item {
-		max-width: 50%;
-	}
-
 	/* Magazine Post Widgets */
 	.widget-magazine-posts .magazine-grid-two-columns,
 	.widget-magazine-posts .magazine-grid-three-columns {
@@ -3001,25 +2988,7 @@ object {
 	}
 }
 
-/*--------------------------------------------------------------
-## 17.10 - Mobile Small ( < 320px )
---------------------------------------------------------------*/
 @media only screen and (max-width: 20em) {
-	.page-title,
-	.entry-title,
-	.post-layout-columns .post-wrapper .post-column article .entry-title {
-		margin: 0 0 0.5em;
-		font-size: 18px;
-		font-size: 1.125rem;
-	}
-
-	.entry-meta .meta-date,
-	.entry-meta .meta-author,
-	.entry-meta .meta-category,
-	.entry-meta .meta-comments {
-		display: block;
-	}
-
 	.widget-magazine-posts .large-post .entry-title,
 	.widget-magazine-posts .medium-post .entry-title {
 		font-size: 15px;
@@ -3033,20 +3002,39 @@ object {
 }
 
 /*--------------------------------------------------------------
-## - Media Queries for Typography
+# - Media Queries for Media
 --------------------------------------------------------------*/
+@media only screen and (max-width: 50em) {
+	/* Gallery */
+	.gallery-item {
+		padding: 0 0.75em 0.5em 0;
+	}
 
-/*--------------------------------------------------------------
-## - Media Queries for Layout
---------------------------------------------------------------*/
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item {
+		max-width: 25%;
+	}
+}
 
-/*--------------------------------------------------------------
-## - Media Queries for Navigation
---------------------------------------------------------------*/
+@media only screen and (max-width: 30em) {
+	.alignright,
+	.alignleft {
+		float: none;
+		margin: 1em 0;
+	}
 
-/*--------------------------------------------------------------
-## - Media Queries for Media
---------------------------------------------------------------*/
+	/* Gallery */
+	.gallery-columns-4 .gallery-item,
+	.gallery-columns-5 .gallery-item,
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item {
+		max-width: 50%;
+	}
+}
 
 /*--------------------------------------------------------------
 # - Theme Options
