@@ -31,9 +31,10 @@
 .widget-title a:visited {
 	color: #fff;
 }
+
 .widget-title a:hover,
 .widget-title a:active {
-	color: rgba(255,255,255,0.5);
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .widget ul {
@@ -52,10 +53,6 @@
 .widget select {
 	max-width: 100%;
 }
-
-/*--------------------------------------------------------------
-## 11.1 - Default Widgets
---------------------------------------------------------------*/
 
 /* Theme Search Widget */
 .search-form {
@@ -144,127 +141,4 @@
 
 .widget_calendar table tfoot tr #next {
 	text-align: right;
-}
-
-/*--------------------------------------------------------------
-## 11.2 - Magazine Posts Widgets
---------------------------------------------------------------*/
-.widget-magazine-posts {
-	margin-bottom: -1.5em;
-}
-
-.widget-magazine-posts .widget-header {
-	margin-bottom: 1.5em;
-}
-
-/* Magazine Post Reset */
-.widget-magazine-posts .type-post {
-	margin: 0 0 1.5em 0;
-	padding: 0;
-	border: 1px solid #eee;
-	background: none;
-	box-shadow: 0 0 2px #eee;
-}
-
-.widget-magazine-posts .type-post .wp-post-image {
-	margin: 0;
-}
-
-.widget-magazine-posts .type-post .post-content {
-	padding: 0.75em 1em 1em;
-}
-
-.widget-magazine-posts .type-post .entry-meta {
-	padding: 0;
-	border: none;
-	font-size: 13px;
-	font-size: 0.8125rem;
-}
-
-.widget-magazine-posts .type-post .entry-meta span:before {
-	font-size: 18px;
-}
-
-/* Magazine Large Post Styling */
-.widget-magazine-posts .large-post .entry-title {
-	font-size: 18px;
-	font-size: 1.125rem;
-}
-
-/* Magazine Medium Post Styling */
-.widget-magazine-posts .medium-post .entry-title {
-	font-size: 15px;
-	font-size: 0.9375rem;
-}
-
-.widget-magazine-posts .medium-post .post-content {
-	padding: 0.5em 1em;
-}
-
-/* Magazine Small Post Styling */
-.widget-magazine-posts .small-post {
-	display: block;
-	float: left;
-	box-sizing: border-box;
-	margin: 0 0 1em;
-	width: 100%;
-}
-
-.widget-magazine-posts .small-post .wp-post-image {
-	float: left;
-	margin: 0;
-	max-width: 30%;
-}
-
-.widget-magazine-posts .small-post .post-content {
-	float: right;
-	padding: 0.5em 1em;
-	width: 70%;
-}
-
-.widget-magazine-posts .small-post .entry-title {
-	font-size: 15px;
-	font-size: 0.9375rem;
-}
-
-/* Magazine Posts Grid Widget */
-.widget-magazine-posts .magazine-grid {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-right: -1.5em;
-}
-
-.widget-magazine-posts .magazine-grid .post-column {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	box-sizing: border-box;
-	padding-right: 1.5em;
-}
-
-.widget-magazine-posts .magazine-grid-two-columns .post-column {
-	width: 50%;
-}
-
-.widget-magazine-posts .magazine-grid-three-columns .post-column {
-	width: 33.3333333333333%;
-}
-
-.widget-magazine-posts .magazine-grid .post-column .type-post {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-}
-
-.widget-magazine-posts .magazine-grid .post-column .type-post .post-content {
-	flex-grow: 1;
-	-webkit-box-flex: 1;
-	-ms-flex-positive: 1;
 }
