@@ -89,12 +89,8 @@
 		width: 50%;
 	}
 
-	.header-main {
-		position: relative;
-	}
-
 	.site-branding {
-		margin: 1em 1em 1em 4em;
+		margin: 1em 0;
 	}
 
 	.site-footer .site-info {
@@ -103,25 +99,7 @@
 	}
 }
 
-@media only screen and (max-width: 50em) {
-	.site-branding {
-		margin: 1em 1em 1.25em 3.5em;
-	}
-
-	.header-social-icons {
-		margin: 1.25em 0;
-	}
-
-	.header-social-icons .social-icons-menu li a::before {
-		font-size: 22px;
-	}
-}
-
 @media only screen and (max-width: 40em) {
-	.header-social-icons {
-		display: none;
-	}
-
 	.post-layout-columns .post-wrapper {
 		display: block;
 		margin-right: 0;
@@ -156,10 +134,6 @@
 }
 
 @media only screen and (max-width: 30em) {
-	.site-branding {
-		margin: 0.75em 0.75em 0.75em 3em;
-	}
-
 	.post-content {
 		padding: 1em 1.25em 1.25em;
 	}

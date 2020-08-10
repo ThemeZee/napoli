@@ -181,7 +181,15 @@ function napoli_scripts() {
 	wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 
 	// Register and enqueue navigation.js.
-	wp_enqueue_script( 'napoli-jquery-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array( 'jquery' ), '20170105' );
+	if ( has_nav_menu( 'primary' ) ) {
+		wp_enqueue_script( 'napoli-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '20191114', true );
+		$napoli_l10n = array(
+			'expand'   => esc_html__( 'Expand child menu', 'napoli' ),
+			'collapse' => esc_html__( 'Collapse child menu', 'napoli' ),
+			'icon'     => napoli_get_svg( 'expand' ),
+		);
+		wp_localize_script( 'napoli-navigation', 'napoliScreenReaderText', $napoli_l10n );
+	}
 
 	// Register Comment Reply Script for Threaded Comments.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

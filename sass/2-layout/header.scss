@@ -3,8 +3,13 @@
 	color: #fff;
 }
 
+.header-main {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
 .site-branding {
-	float: left;
 	margin: 1em 3em 1em 0;
 	padding: 0;
 	max-width: 100%;

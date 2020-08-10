@@ -1,4 +1,216 @@
 .primary-navigation {
+	position: relative;
+	width: 100%;
+}
+
+.main-navigation ul {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	list-style: none;
+	@include font-size(15);
+	font-family: 'Montserrat', Tahoma, Arial;
+	text-transform: uppercase;
+}
+
+.main-navigation > ul {
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hide the menu on small screens when JavaScript is available. */
+.main-navigation ul,
+.main-navigation .menu-item-has-children > a > .icon,
+.main-navigation ul a > .icon,
+.header-social-icons {
+	display: none;
+}
+
+.primary-navigation.toggled-on .main-navigation > ul.menu,
+.primary-navigation.toggled-on .header-social-icons {
+	display: block;
+}
+
+/* Menu Items Styling */
+.main-navigation ul li {
+	position: relative;
+	margin: 0;
+}
+
+.main-navigation ul a {
+	display: block;
+	margin: 0;
+	padding: 1.2em;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	text-decoration: none;
+}
+
+.main-navigation ul a:link,
+.main-navigation ul a:visited {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.main-navigation ul a:hover,
+.main-navigation ul a:active,
+.main-navigation ul a:focus {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.main-navigation ul li.current-menu-item > a {
+	text-decoration: underline;
+}
+
+/* Submenus */
+.main-navigation ul ul {
+	@include font-size(13);
+	background: #fff;
+}
+
+.main-navigation ul ul a {
+	padding-left: 1.5em;
+	border-bottom: 1px solid #eee;
+}
+
+.main-navigation ul ul a:link,
+.main-navigation ul ul a:visited {
+	color: #444;
+}
+
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a:active,
+.main-navigation ul ul a:focus {
+	color: #999;
+}
+
+.is-amp-page .main-navigation ul ul,
+.main-navigation ul ul.toggled-on {
+	display: block;
+}
+
+.main-navigation ul ul ul a {
+	padding-left: 3em;
+}
+
+.main-navigation ul ul ul ul a {
+	padding-left: 4.5em;
+}
+
+/* Main Navigation Toggle */
+.primary-menu-toggle {
+	display: flex;
+	margin: 0;
+	margin-left: auto;
+	padding: 1em;
+	border: none;
+	background: none;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', Tahoma, Arial;
+	text-transform: uppercase;
+	text-align: left;
+	transition: all 0.2s ease;
+	align-items: center;
+}
+
+.primary-menu-toggle:focus {
+	outline: thin dotted;
+	color: #fff;
+	background: none;
+}
+
+.primary-menu-toggle:hover,
+.primary-menu-toggle:active {
+	color: rgba(255, 255, 255, 0.5);
+	background: none;
+	cursor: pointer;
+}
+
+.primary-menu-toggle .icon {
+	margin: 0;
+	width: 28px;
+	height: 28px;
+	vertical-align: top;
+	fill: #fff;
+	transition: fill 0.2s ease;
+}
+
+.primary-menu-toggle:hover .icon,
+.primary-menu-toggle:active .icon {
+	fill: rgba(255, 255, 255, 0.5);
+}
+
+.primary-menu-toggle[aria-expanded="true"] .icon-menu,
+.primary-menu-toggle[aria-expanded="false"] .icon-close {
+	display: none;
+}
+
+.primary-menu-toggle[aria-expanded="true"] .icon-close {
+	display: inline-block;
+}
+
+/* Submenu Dropdown Toggles */
+.main-navigation .dropdown-toggle {
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+	padding: 1em 1.5em;
+	background: none;
+	border: none;
+}
+
+.main-navigation .dropdown-toggle:focus {
+	outline: thin dotted;
+	color: #fff;
+	background: none;
+}
+
+.main-navigation .dropdown-toggle:hover,
+.main-navigation .dropdown-toggle:active {
+	background: none;
+}
+
+.main-navigation .dropdown-toggle .icon {
+	margin: 0.2em 0 0;
+	width: 24px;
+	height: 24px;
+	vertical-align: top;
+	fill: #fff;
+	transition: fill 0.2s ease;
+}
+
+.main-navigation .dropdown-toggle:hover .icon,
+.main-navigation .dropdown-toggle:active .icon,
+.main-navigation .dropdown-toggle:focus .icon {
+	fill: rgba(255, 255, 255, 0.5);
+}
+
+.main-navigation .dropdown-toggle.toggled-on .icon {
+	-ms-transform: rotate(-180deg); /* IE 9 */
+	-webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+	transform: rotate(-180deg);
+}
+
+.main-navigation ul ul .dropdown-toggle {
+	padding: 0.7em 1.25em;
+}
+
+.main-navigation ul ul .dropdown-toggle .icon {
+	width: 20px;
+	height: 20px;
+	fill: #444;
+}
+
+.main-navigation ul ul .dropdown-toggle:hover .icon,
+.main-navigation ul ul .dropdown-toggle:active .icon,
+.main-navigation ul ul .dropdown-toggle:focus .icon {
+	fill: #999;
+}
+
+/*
+
+.primary-navigation {
 	float: left;
 	margin: 1em 0;
 }
@@ -132,7 +344,6 @@
 	text-decoration: underline;
 }
 
-/* Mega Menu Styling */
 .mega-menu-content .mega-menu-widget a:link,
 .mega-menu-content .mega-menu-widget a:visited {
 	color: #fff;
@@ -173,3 +384,4 @@
 .mega-menu-content .mega-menu-widget .entry-meta span:before {
 	color: #ddd;
 }
+*/

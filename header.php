@@ -30,25 +30,6 @@
 
 			<div class="header-main container clearfix">
 
-				<?php if ( has_nav_menu( 'social' ) ) : ?>
-
-					<div id="header-social-icons" class="header-social-icons social-icons-navigation clearfix">
-						<?php
-							wp_nav_menu( array(
-								'theme_location' => 'social',
-								'container' => false,
-								'menu_class' => 'social-icons-menu',
-								'echo' => true,
-								'fallback_cb' => '',
-								'link_before' => '<span class="screen-reader-text">',
-								'link_after' => '</span>',
-								'depth' => 1,
-							) );
-						?>
-					</div>
-
-				<?php endif; ?>
-
 				<div id="logo" class="site-branding clearfix">
 
 					<?php napoli_site_logo(); ?>
@@ -57,22 +38,7 @@
 
 				</div><!-- .site-branding -->
 
-				<nav id="main-navigation" class="primary-navigation navigation clearfix" role="navigation">
-
-					<div class="main-navigation-menu-wrap">
-					<?php
-						// Display Main Navigation.
-						wp_nav_menu( array(
-							'theme_location' => 'primary',
-							'container' => false,
-							'menu_class' => 'main-navigation-menu',
-							'echo' => true,
-							'fallback_cb' => 'napoli_default_menu',
-						) );
-					?>
-					</div>
-
-				</nav><!-- #main-navigation -->
+				<?php get_template_part( 'template-parts/header/site', 'navigation' ); ?>
 
 			</div><!-- .header-main -->
 
