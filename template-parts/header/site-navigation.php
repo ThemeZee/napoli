@@ -7,9 +7,9 @@
  */
 ?>
 
-<?php if ( has_nav_menu( 'primary' ) ) : ?>
+<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) || has_nav_menu( 'social' ) ) : ?>
 
-	<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+	<button class="mobile-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 		<?php
 		echo napoli_get_svg( 'menu' );
 		echo napoli_get_svg( 'close' );
