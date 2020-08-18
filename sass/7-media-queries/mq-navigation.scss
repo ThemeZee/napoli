@@ -17,7 +17,8 @@
 	.primary-navigation {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		flex-grow: 1;
+		width: auto;
 	}
 
 	#masthead .main-navigation > ul.menu {
