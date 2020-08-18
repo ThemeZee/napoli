@@ -40,8 +40,6 @@
 
 		<?php endif; ?>
 
-		<?php do_action( 'napoli_header_search' ); ?>
-
 		<?php if ( has_nav_menu( 'social' ) ) : ?>
 
 			<div id="header-social-icons" class="header-social-icons social-icons-navigation clearfix">
