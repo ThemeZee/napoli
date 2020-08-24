@@ -26,9 +26,9 @@
 		});
 	}
 
-	function initNavigation( containerClass ) {
+	function initNavigation( containerClass, naviClass ) {
 		var container  = $( containerClass );
-		var navigation = container.find( 'nav[role=navigation]' );
+		var navigation = $( naviClass );
 
 		// Return early if navigation is missing.
 		if ( ! navigation.length || ! container.length ) {
@@ -114,10 +114,10 @@
 	}
 
 	// Init Main Navigation.
-	initNavigation( '.primary-navigation' );
+	initNavigation( '.primary-navigation', '.main-navigation' );
 
 	// Init Top Navigation.
-	initNavigation( '.secondary-navigation' );
+	initNavigation( '.secondary-navigation', '.header-navigation' );
 
 	// Init Mobile Menu Toggle
 	initMenuToggle( '.mobile-menu-toggle' );

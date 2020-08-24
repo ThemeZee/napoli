@@ -182,7 +182,7 @@ function napoli_scripts() {
 
 	// Register and enqueue navigation.min.js.
 	if ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) || has_nav_menu( 'social' ) ) {
-		wp_enqueue_script( 'napoli-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20200818', true );
+		wp_enqueue_script( 'napoli-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20200822', true );
 		$napoli_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'napoli' ),
 			'collapse' => esc_html__( 'Collapse child menu', 'napoli' ),
