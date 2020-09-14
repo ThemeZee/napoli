@@ -36,6 +36,9 @@ function napoli_theme_addons_setup() {
 		'posts_per_page' => 6,
 	) );
 
+	// Add theme support for AMP.
+	add_theme_support( 'amp' );
+
 }
 add_action( 'after_setup_theme', 'napoli_theme_addons_setup' );
 
@@ -74,10 +77,37 @@ add_action( 'wp_enqueue_scripts', 'napoli_theme_addons_scripts' );
  * Custom render function for Infinite Scroll.
  */
 function napoli_infinite_scroll_render() {
-
 	while ( have_posts() ) {
 		the_post();
 		get_template_part( 'template-parts/content' );
 	}
+}
 
+
+/**
+ * Checks if AMP page is rendered.
+ */
+function napoli_is_amp() {
+	return function_exists( 'is_amp_endpoint' ) && is_amp_endpoint();
+}
+
+
+/**
+ * Adds amp support for menu toggle.
+ */
+function napoli_amp_menu_toggle() {
+	if ( napoli_is_amp() ) {
+		echo "[aria-expanded]=\"primaryMenuExpanded? 'true' : 'false'\" ";
+		echo 'on="tap:AMP.setState({primaryMenuExpanded: !primaryMenuExpanded})"';
+	}
+}
+
+
+/**
+ * Adds amp support for mobile dropdown navigation menu.
+ */
+function napoli_amp_menu_is_toggled() {
+	if ( napoli_is_amp() ) {
+		echo "[class]=\"'primary-navigation' + ( primaryMenuExpanded ? ' toggled-on' : '' )\"";
+	}
 }

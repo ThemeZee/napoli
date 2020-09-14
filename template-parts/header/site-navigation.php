@@ -2,14 +2,14 @@
 /**
  * Main Navigation
  *
- * @version 1.0
+ * @version 1.1
  * @package Napoli
  */
 ?>
 
 <?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) || has_nav_menu( 'social' ) ) : ?>
 
-	<button class="mobile-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+	<button class="mobile-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false" <?php napoli_amp_menu_toggle(); ?>>
 		<?php
 		echo napoli_get_svg( 'menu' );
 		echo napoli_get_svg( 'close' );
@@ -21,7 +21,7 @@
 
 <?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
 
-	<div class="primary-navigation">
+	<div class="primary-navigation" <?php napoli_amp_menu_is_toggled(); ?>>
 
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 

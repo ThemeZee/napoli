@@ -59,6 +59,12 @@ function napoli_body_classes( $classes ) {
 	if ( false === $theme_options['meta_comments'] ) {
 		$classes[] = 'comments-hidden';
 	}
+
+	// Check for AMP pages.
+	if ( napoli_is_amp() ) {
+		$classes[] = 'is-amp-page';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'napoli_body_classes' );
