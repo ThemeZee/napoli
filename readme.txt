@@ -2,8 +2,8 @@
 Author URI: https://themezee.com
 Theme URI: https://themezee.com/themes/napoli/
 Contributors: themezee
-Tags: two-columns, custom-background, custom-header, custom-menu, editor-style, grid-layout, blog, food-and-drink, news, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, one-column, left-sidebar, right-sidebar, three-columns
-Requires at least: 4.7
+Tags: two-columns, custom-background, custom-header, custom-menu, editor-style, block-styles, grid-layout, blog, food-and-drink, news, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, one-column, left-sidebar, right-sidebar, three-columns
+Requires at least: 5.2
 Tested up to: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -26,7 +26,10 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
-= 1.9.2 - 2020-04-24 =
+= 2.0 - 2020-09-16 =
+* added support for the official AMP plugin
+
+= 1.9.2 - 2020-08-24 =
 * fixed styling of menu items with empty links
 * fixed undefined naviClass variable warning
 
@@ -34,8 +37,8 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 * added svgxuse polyfill to display SVG icons in Internet Explorer
 
 = 1.9 - 2020-08-18 =
-Changed implementation, styles and scripts of main navigation menu
-Important Update: Please read https://themezee.com/2020/08/updates-for-improved-navigation-menus/
+* Changed implementation, styles and scripts of main navigation menu
+* Important Update: Please read https://themezee.com/2020/08/updates-for-improved-navigation-menus/
 
 = 1.8 - 2020-04-21 =
 * added Retina Logo option
