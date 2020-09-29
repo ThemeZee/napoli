@@ -11,7 +11,7 @@
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<?php napoli_slider_image( 'post-thumbnail', array( 'class' => 'slide-image' ) ); ?>
+		<?php napoli_slider_image( 'post-thumbnail', array( 'class' => 'slide-image', 'loading' => false ) ); ?>
 
 		<div class="slide-content clearfix">
 
