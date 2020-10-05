@@ -26,6 +26,11 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 2.0.1 - 2020-10-05 =
+* added AMP dropdown toggles for sub menus
+* added CSS variables for typography styling
+* fixed lazy loading bug for slider images
+
 = 2.0 - 2020-09-16 =
 * added support for the official AMP plugin
 
