@@ -20,11 +20,11 @@
 	padding: 0.75em 1em;
 	background: #ee4455;
 	color: #fff;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 15px;
-	font-size: 0.9375rem;
-	font-family: 'Montserrat', Tahoma, Arial;
+	@include font-size(15);
+	@include font-family(--widget-title-font);
+	@include font-weight(--widget-title-font-weight);
+	@include text-transform(--widget-title-text-transform);
+	@include line-height(--title-line-height);
 }
 
 .widget-title a:link,

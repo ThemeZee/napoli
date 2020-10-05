@@ -18,10 +18,11 @@
 	color: #ee4455;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	font-weight: normal;
-	font-size: 28px;
-	font-size: 1.75rem;
-	font-family: 'Montserrat', Tahoma, Arial;
+	@include font-size(28);
+	@include font-family(--title-font);
+	@include font-weight(--title-font-weight);
+	@include text-transform(--title-text-transform);
+	@include line-height(--title-line-height);
 }
 
 .entry-title a:link,
