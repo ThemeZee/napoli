@@ -24,7 +24,7 @@
 	padding: 1em;
 	border: none;
 	background: none;
-	color: #fff;
+	@include color(--navi-color);
 	text-decoration: none;
 	@include font-size(15);
 	@include font-family(--navi-font);
@@ -37,13 +37,13 @@
 
 .mobile-menu-toggle:focus {
 	outline: thin dotted;
-	color: #fff;
+	@include color(--navi-color);
 	background: none;
 }
 
 .mobile-menu-toggle:hover,
 .mobile-menu-toggle:active {
-	color: rgba(255, 255, 255, 0.5);
+	@include color(--navi-hover-color);
 	background: none;
 	cursor: pointer;
 }
@@ -53,13 +53,13 @@
 	width: 28px;
 	height: 28px;
 	vertical-align: top;
-	fill: #fff;
+	@include fill(--navi-color);
 	transition: fill 0.2s ease;
 }
 
 .mobile-menu-toggle:hover .icon,
 .mobile-menu-toggle:active .icon {
-	fill: rgba(255, 255, 255, 0.5);
+	@include fill(--navi-hover-color);
 }
 
 .mobile-menu-toggle[aria-expanded="true"] .icon-menu,
@@ -75,7 +75,7 @@
 .main-navigation ul {
 	margin: 0;
 	padding: 0;
-	color: #fff;
+	@include color(--navi-color);
 	list-style: none;
 	@include font-size(15);
 	@include font-family(--navi-font);
@@ -84,7 +84,8 @@
 }
 
 .main-navigation > ul {
-	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-top: 1px solid;
+	@include border-color(--navi-border-color);
 }
 
 .main-navigation ul li {
@@ -96,14 +97,15 @@
 	display: block;
 	margin: 0;
 	padding: 1.2em;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid;
+	@include border-color(--navi-border-color);
 	text-decoration: none;
 }
 
 .main-navigation ul a,
 .main-navigation ul a:link,
 .main-navigation ul a:visited {
-	color: #fff;
+	@include color(--navi-color);
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -111,7 +113,7 @@
 .main-navigation ul a:hover,
 .main-navigation ul a:active,
 .main-navigation ul a:focus {
-	color: rgba(255, 255, 255, 0.5);
+	@include color(--navi-hover-color);
 }
 
 .main-navigation ul li.current-menu-item > a {
@@ -121,23 +123,24 @@
 /* Submenus */
 .main-navigation ul ul {
 	@include font-size(13);
-	background: #fff;
+	@include background(--navi-submenu-color);
 }
 
 .main-navigation ul ul a {
 	padding-left: 1.5em;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid;
+	@include border-color(--navi-submenu-border-color);
 }
 
 .main-navigation ul ul a:link,
 .main-navigation ul ul a:visited {
-	color: #444;
+	@include color(--navi-submenu-text-color);
 }
 
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a:active,
 .main-navigation ul ul a:focus {
-	color: #999;
+	@include color(--navi-submenu-hover-color);
 }
 
 .is-amp-page .main-navigation ul button.toggled-on + ul,
@@ -166,7 +169,7 @@
 
 .main-navigation .dropdown-toggle:focus {
 	outline: thin dotted;
-	color: #fff;
+	@include color(--navi-color);
 	background: none;
 }
 
@@ -180,14 +183,14 @@
 	width: 24px;
 	height: 24px;
 	vertical-align: top;
-	fill: #fff;
+	@include fill(--navi-color);
 	transition: fill 0.2s ease;
 }
 
 .main-navigation .dropdown-toggle:hover .icon,
 .main-navigation .dropdown-toggle:active .icon,
 .main-navigation .dropdown-toggle:focus .icon {
-	fill: rgba(255, 255, 255, 0.5);
+	@include fill(--navi-hover-color);
 }
 
 .main-navigation .dropdown-toggle.toggled-on .icon {
@@ -203,11 +206,11 @@
 .main-navigation ul ul .dropdown-toggle .icon {
 	width: 20px;
 	height: 20px;
-	fill: #444;
+	@include fill(--navi-submenu-text-color);
 }
 
 .main-navigation ul ul .dropdown-toggle:hover .icon,
 .main-navigation ul ul .dropdown-toggle:active .icon,
 .main-navigation ul ul .dropdown-toggle:focus .icon {
-	fill: #999;
+	@include fill(--navi-submenu-hover-color);
 }
