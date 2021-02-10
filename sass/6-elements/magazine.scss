@@ -11,7 +11,8 @@
 .widget-magazine-posts .type-post {
 	margin: 0 0 1.5em 0;
 	padding: 0;
-	border: 1px solid #eee;
+	border: 1px solid;
+	@include border-color(--light-border-color);
 	background: none;
 	box-shadow: 0 0 2px #eee;
 }

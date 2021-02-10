@@ -7,7 +7,7 @@
 .comments-header,
 .comment-reply-title {
 	margin: -1rem -1.5rem 1.5em;
-	background: #ee4455;
+	@include background(--widget-title-background-color);
 }
 
 .comments-header .comments-title,
@@ -15,7 +15,7 @@
 	display: inline-block;
 	margin: 0;
 	padding: 0.75em 1em;
-	color: #fff;
+	@include color(--widget-title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	@include font-size(15);
@@ -40,7 +40,8 @@
 .comment {
 	margin: 0 0 1.5em;
 	padding: 1.5em 0 0;
-	border-top: 1px solid #eee;
+	border-top: 1px solid;
+	@include border-color(--light-border-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 }
@@ -140,7 +141,8 @@
 /* Comment Reply */
 .comment .comment-respond {
 	margin-top: 1.5em;
-	border: 1px solid #eee;
+	border: 1px solid;
+	@include border-color(--light-border-color);
 	box-shadow: none;
 }
 

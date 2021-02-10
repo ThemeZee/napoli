@@ -2,7 +2,7 @@
 .page-header {
 	margin: 0 0 2em 0;
 	padding: 0;
-	background: #fff;
+	@include background(--page-background-color);
 	box-shadow: 0 1px 2px #bbb;
 }
 
@@ -10,8 +10,8 @@
 	display: block;
 	margin: 0;
 	padding: 0.75em 1em;
-	background: #ee4455;
-	color: #fff;
+	@include background(--widget-title-background-color);
+	@include color(--widget-title-color);
 	@include font-size(15);
 	@include font-family(--widget-title-font);
 	@include font-weight(--widget-title-font-weight);

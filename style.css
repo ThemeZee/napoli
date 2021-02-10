@@ -64,8 +64,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	--medium-text-color: #666;
 	--light-text-color: #999;
 	--dark-border-color: #303030;
-	--medium-border-color: #ccc;
-	--light-border-color: #ddd;
+	--medium-border-color: #c0c0c0;
+	--light-border-color: #e0e0e0;
 	--link-color: #ee4455;
 	--link-hover-color: #303030;
 	--button-color: #ee4455;
@@ -82,11 +82,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	--navi-submenu-text-color: #444;
 	--navi-submenu-hover-color: #999;
 	--navi-submenu-border-color: #eee;
-	--title-color: #111133;
-	--title-hover-color: #4477aa;
-	--widget-title-color: #111133;
-	--widget-title-hover-color: #4477aa;
-	--widget-title-border-color: #111133;
+	--page-background-color: #fff;
+	--title-color: #ee4455;
+	--title-hover-color: #303030;
+	--widget-background-color: #fff;
+	--widget-title-background-color: #ee4455;
+	--widget-title-color: #fff;
+	--widget-title-hover-color: rgba(255, 255, 255, 0.5);
 	--footer-background-color: #ee4455;
 	--footer-text-color: #ddd;
 	--footer-link-color: #fff;
@@ -492,7 +494,7 @@ hr {
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: #ddd;
+	background-color: #e0e0e0;
 	background-color: var(--light-border-color);
 }
 
@@ -540,7 +542,7 @@ th,
 td {
 	padding: 0.3em 0.6em;
 	border: 1px solid;
-	border-color: #ddd;
+	border-color: #e0e0e0;
 	border-color: var(--light-border-color);
 }
 
@@ -621,7 +623,7 @@ textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
 	border: 1px solid;
-	border-color: #ddd;
+	border-color: #e0e0e0;
 	border-color: var(--light-border-color);
 	color: #666;
 	color: var(--medium-text-color);
@@ -635,7 +637,7 @@ input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
 	border: 1px solid;
-	border-color: #ccc;
+	border-color: #c0c0c0;
 	border-color: var(--medium-border-color);
 	color: #303030;
 	color: var(--text-color);
@@ -1290,7 +1292,8 @@ textarea {
 .post-wrapper > .post-column > article:not(.type-post):not(.type-page):not(.type-attachment) {
 	margin: 0 0 2em 0;
 	max-width: 100%;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 	box-shadow: 0 1px 2px #bbb;
 }
 
@@ -1299,6 +1302,7 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #ee4455;
+	color: var(--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	font-size: 28px;
@@ -1316,6 +1320,7 @@ textarea {
 .entry-title a:link,
 .entry-title a:visited {
 	color: #ee4455;
+	color: var(--title-color);
 	text-decoration: none;
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
@@ -1324,6 +1329,7 @@ textarea {
 .entry-title a:hover,
 .entry-title a:active {
 	color: #303030;
+	color: var(--title-hover-color);
 }
 
 .wp-post-image {
@@ -1369,8 +1375,11 @@ textarea {
 .entry-meta {
 	margin: 0;
 	padding: 1em 1.5rem;
-	border-top: 1px solid #eee;
-	color: #444;
+	border-top: 1px solid;
+	border-color: #e0e0e0;
+	border-color: var(--light-border-color);
+	color: #303030;
+	color: var(--text-color);
 	font-size: 14px;
 	font-size: 0.875rem;
 }
@@ -1384,18 +1393,21 @@ textarea {
 
 .entry-meta a:link,
 .entry-meta a:visited {
-	color: #444;
+	color: #303030;
+	color: var(--text-color);
 }
 
 .entry-meta a:hover,
 .entry-meta a:active {
 	color: #999;
+	color: var(--light-text-color);
 }
 
 .entry-meta span::before {
 	display: inline-block;
 	margin-right: 0.2em;
 	color: #999;
+	color: var(--light-text-color);
 	vertical-align: middle;
 	font: normal 20px 'Genericons';
 	-webkit-font-smoothing: antialiased;
@@ -1465,7 +1477,8 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 	float: left;
 	margin: 0 2px 2px 0;
 	padding: 0.2em 0.5em;
-	background: #ee4455;
+	background-color: #ee4455;
+	background-color: var(--button-color);
 	text-decoration: none;
 	font-size: 13px !important;
 	font-size: 0.8125rem !important;
@@ -1476,6 +1489,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 .entry-tags .meta-tags a:link,
 .entry-tags .meta-tags a:visited {
 	color: #fff;
+	color: var(--button-text-color);
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
@@ -1484,15 +1498,19 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 .widget_tag_cloud .tagcloud a:active,
 .entry-tags .meta-tags a:hover,
 .entry-tags .meta-tags a:active {
-	background: #444;
+	background-color: #303030;
+	background-color: var(--button-hover-color);
 	color: #fff;
+	color: var(--button-hover-text-color);
 }
 
 /* Post Navigation */
 .post-navigation {
 	margin: 0;
 	padding: 1.5rem;
-	border-top: 1px solid #eee;
+	border-top: 1px solid;
+	border-color: #e0e0e0;
+	border-color: var(--light-border-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -1532,7 +1550,8 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 }
 
 .post-navigation .nav-links a:hover .entry-title {
-	color: #404040;
+	color: #303030;
+	color: var(--title-hover-color);
 }
 
 /*--------------------------------------------------------------
@@ -1543,7 +1562,8 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 .page-header {
 	margin: 0 0 2em 0;
 	padding: 0;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 	box-shadow: 0 1px 2px #bbb;
 }
 
@@ -1551,8 +1571,10 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 	display: block;
 	margin: 0;
 	padding: 0.75em 1em;
-	background: #ee4455;
+	background-color: #ee4455;
+	background-color: var(--widget-title-background-color);
 	color: #fff;
+	color: var(--widget-title-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Montserrat", arial, helvetica, sans-serif;
@@ -1669,23 +1691,28 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 	display: inline-block;
 	margin: 0 3px 3px 0;
 	padding: 0.4em 1em;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 	box-shadow: 0 1px 2px #bbb;
-	color: #444;
+	color: #303030;
+	color: var(--text-color);
 	text-align: center;
 	text-decoration: none;
 }
 
 .pagination a:link,
 .pagination a:visited {
-	color: #444;
+	color: #303030;
+	color: var(--text-color);
 }
 
 .pagination a:hover,
 .pagination a:active,
 .pagination .current {
-	background: #ee4455;
+	background-color: #ee4455;
+	background-color: var(--button-color);
 	color: #fff;
+	color: var(--button-text-color);
 }
 
 /* Infinite Scroll Pagination */
@@ -1711,14 +1738,20 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 	display: inline-block;
 	margin: 0 0 2em;
 	padding: 0.4em 1em;
-	background: #303030;
+	background-color: #303030;
+	background-color: var(--button-hover-color);
+	color: #fff;
+	color: var(--button-hover-text-color);
 	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
 }
 
 .infinite-scroll #infinite-handle span:hover {
-	background: #ee4455;
+	background-color: #ee4455;
+	background-color: var(--button-color);
+	color: #fff;
+	color: var(--button-text-color);
 }
 
 /*--------------------------------------------------------------
@@ -1870,7 +1903,8 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 	margin: 0 0 2em 0;
 	padding: 1rem 1.5rem 1.5rem;
 	max-width: 100%;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--widget-background-color);
 	box-shadow: 0 1px 2px #bbb;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
@@ -1886,8 +1920,10 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 	display: block;
 	margin: 0;
 	padding: 0.75em 1em;
-	background: #ee4455;
+	background-color: #ee4455;
+	background-color: var(--widget-title-background-color);
 	color: #fff;
+	color: var(--widget-title-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Montserrat", arial, helvetica, sans-serif;
@@ -1903,11 +1939,13 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 .widget-title a:link,
 .widget-title a:visited {
 	color: #fff;
+	color: var(--widget-title-color);
 }
 
 .widget-title a:hover,
 .widget-title a:active {
 	color: rgba(255, 255, 255, 0.5);
+	color: var(--widget-title-hover-color);
 }
 
 .widget ul {
@@ -2031,7 +2069,9 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 .widget-magazine-posts .type-post {
 	margin: 0 0 1.5em 0;
 	padding: 0;
-	border: 1px solid #eee;
+	border: 1px solid;
+	border-color: #e0e0e0;
+	border-color: var(--light-border-color);
 	background: none;
 	box-shadow: 0 0 2px #eee;
 }
@@ -2151,7 +2191,8 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 .comments-header,
 .comment-reply-title {
 	margin: -1rem -1.5rem 1.5em;
-	background: #ee4455;
+	background-color: #ee4455;
+	background-color: var(--widget-title-background-color);
 }
 
 .comments-header .comments-title,
@@ -2160,6 +2201,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 	margin: 0;
 	padding: 0.75em 1em;
 	color: #fff;
+	color: var(--widget-title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	font-size: 15px;
@@ -2189,7 +2231,9 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 .comment {
 	margin: 0 0 1.5em;
 	padding: 1.5em 0 0;
-	border-top: 1px solid #eee;
+	border-top: 1px solid;
+	border-color: #e0e0e0;
+	border-color: var(--light-border-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 }
@@ -2289,7 +2333,9 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 /* Comment Reply */
 .comment .comment-respond {
 	margin-top: 1.5em;
-	border: 1px solid #eee;
+	border: 1px solid;
+	border-color: #e0e0e0;
+	border-color: var(--light-border-color);
 	box-shadow: none;
 }
 
@@ -2917,6 +2963,7 @@ object {
 		width: 12px;
 		height: 12px;
 		fill: #fff;
+		fill: var(--navi-color);
 		transition: fill 0.2s ease;
 	}
 
@@ -2927,6 +2974,7 @@ object {
 		top: 50%;
 		margin-top: -0.4rem;
 		fill: #444;
+		fill: var(--navi-submenu-text-color);
 		-webkit-transform: rotate(-90deg);
 		-ms-transform: rotate(-90deg);
 		transform: rotate(-90deg);
@@ -2934,10 +2982,12 @@ object {
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon {
 		fill: rgba(255, 255, 255, 0.5);
+		fill: var(--navi-hover-color);
 	}
 
 	.main-navigation ul ul .menu-item-has-children > a:hover > .icon {
 		fill: #999;
+		fill: var(--navi-submenu-hover-color);
 	}
 }
 

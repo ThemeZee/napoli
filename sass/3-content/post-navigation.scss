@@ -2,7 +2,8 @@
 .post-navigation {
 	margin: 0;
 	padding: 1.5rem;
-	border-top: 1px solid #eee;
+	border-top: 1px solid;
+	@include border-color(--light-border-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -42,5 +43,5 @@
 }
 
 .post-navigation .nav-links a:hover .entry-title {
-	color: #404040;
+	@include color(--title-hover-color);
 }

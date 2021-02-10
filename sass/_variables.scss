@@ -26,8 +26,8 @@ $themeColors: (
 	--medium-text-color              : #666,
 	--light-text-color               : #999,
 	--dark-border-color              : #303030,
-	--medium-border-color            : #ccc,
-	--light-border-color             : #ddd,
+	--medium-border-color            : #c0c0c0,
+	--light-border-color             : #e0e0e0,
 
 	// Links and Buttons
 	--link-color                     : #ee4455,
@@ -53,13 +53,14 @@ $themeColors: (
 
 	// Content
 	--page-background-color          : #fff,
-	--title-color                    : #111133,
-	--title-hover-color              : #4477aa,
+	--title-color                    : #ee4455,
+	--title-hover-color              : #303030,
 
 	// Widgets
-	--widget-title-color             : #111133,
-	--widget-title-hover-color       : #4477aa,
-	--widget-title-border-color      : #111133,
+	--widget-background-color        : #fff,
+	--widget-title-background-color  : #ee4455,
+	--widget-title-color             : #fff,
+	--widget-title-hover-color       : rgba(255, 255, 255, 0.5),
 
 	// Footer
 	--footer-background-color        : #ee4455,

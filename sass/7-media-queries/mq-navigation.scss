@@ -80,7 +80,7 @@
 		top: 0.05rem;
 		width: 12px;
 		height: 12px;
-		fill: #fff;
+		@include fill(--navi-color);
 		transition: fill 0.2s ease;
 	}
 
@@ -90,17 +90,17 @@
 		right: 1em;
 		top: 50%;
 		margin-top: -0.4rem;
-		fill: #444;
+		@include fill(--navi-submenu-text-color);
 		-webkit-transform: rotate(-90deg);
 		-ms-transform: rotate(-90deg);
 		transform: rotate(-90deg);
 	}
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon {
-		fill: rgba(255, 255, 255, 0.5);
+		@include fill(--navi-hover-color);
 	}
 
 	.main-navigation ul ul .menu-item-has-children > a:hover > .icon {
-		fill: #999;
+		@include fill(--navi-submenu-hover-color);
 	}
 }
