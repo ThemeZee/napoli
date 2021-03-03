@@ -45,6 +45,8 @@
 	@include variable(--footer-background-color, $themeColors);
 	@include variable(--footer-text-color, $themeColors);
 	@include variable(--footer-link-color, $themeColors);
+	@include variable(--footer-link-hover-color, $themeColors);
+	@include variable(--footer-border-color, $themeColors);
 
 	// Typography Styling
 	@include variable(--text-font, $themeFonts);

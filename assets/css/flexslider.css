@@ -180,8 +180,10 @@ html[xmlns] .zeeflexslider .zeeslides {
 }
 
 .post-slider-controls .zeeflex-direction-nav a:hover {
-	background: #ee4455;
+	background-color: #ee4455;
+	background-color: var(--button-color);
 	color: #fff;
+	color: var(--button-text-color);
 	text-decoration: none;
 }
 
@@ -196,6 +198,7 @@ html[xmlns] .zeeflexslider .zeeslides {
 
 .post-slider-controls .zeeflex-direction-nav a:hover:before {
 	color: #fff;
+	color: var(--button-text-color);
 }
 
 .post-slider-controls .zeeflex-direction-nav a.zeeflex-next:before {

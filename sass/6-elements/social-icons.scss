@@ -25,7 +25,7 @@
 }
 
 /* Add Genericons */
-.social-icons-menu li a:before {
+.social-icons-menu li a::before {
 	display: inline-block;
 	vertical-align: top;
 	text-decoration: inherit;
@@ -77,12 +77,13 @@
 
 .header-social-icons .social-icons-menu li a {
 	padding: 0.7em;
+	@include color(--header-text-color);
 }
 
-.header-social-icons .social-icons-menu li a:before {
+.header-social-icons .social-icons-menu li a::before {
 	font-size: 24px;
 }
 
 .header-social-icons .social-icons-menu li a:hover {
-	color: #ccc;
+	@include color(--header-text-hover-color);
 }

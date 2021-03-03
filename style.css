@@ -81,7 +81,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	--navi-submenu-color: #fff;
 	--navi-submenu-text-color: #444;
 	--navi-submenu-hover-color: #999;
-	--navi-submenu-border-color: #eee;
+	--navi-submenu-border-color: rgba(0, 0, 0, 0.1);
 	--page-background-color: #fff;
 	--title-color: #ee4455;
 	--title-hover-color: #303030;
@@ -92,6 +92,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	--footer-background-color: #ee4455;
 	--footer-text-color: #ddd;
 	--footer-link-color: #fff;
+	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
+	--footer-border-color: rgba(255, 255, 255, 0.1);
 	--text-font: "Open Sans", arial, helvetica, sans-serif;
 	--title-font: "Montserrat", arial, helvetica, sans-serif;
 	--navi-font: "Montserrat", arial, helvetica, sans-serif;
@@ -1016,7 +1018,7 @@ textarea {
 .main-navigation ul ul a {
 	padding-left: 1.5em;
 	border-bottom: 1px solid;
-	border-color: #eee;
+	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--navi-submenu-border-color);
 }
 
@@ -1140,7 +1142,7 @@ textarea {
 }
 
 /* Add Genericons */
-.social-icons-menu li a:before {
+.social-icons-menu li a::before {
 	display: inline-block;
 	vertical-align: top;
 	text-decoration: inherit;
@@ -1270,14 +1272,17 @@ textarea {
 
 .header-social-icons .social-icons-menu li a {
 	padding: 0.7em;
+	color: #fff;
+	color: var(--header-text-color);
 }
 
-.header-social-icons .social-icons-menu li a:before {
+.header-social-icons .social-icons-menu li a::before {
 	font-size: 24px;
 }
 
 .header-social-icons .social-icons-menu li a:hover {
 	color: #ccc;
+	color: var(--header-text-hover-color);
 }
 
 /*--------------------------------------------------------------
@@ -2002,7 +2007,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 .search-form .search-submit .genericon-search {
 	display: inline-block;
 	padding: 0.05em 0 0.55em 0.45em;
-	color: #fff;
+	color: currentColor;
 	content: '\f400';
 	vertical-align: middle;
 	text-decoration: inherit;
