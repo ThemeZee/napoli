@@ -18,12 +18,12 @@ function napoli_gutenberg_support() {
 
 	// Define block color palette.
 	$color_palette = apply_filters( 'napoli_color_palette', array(
-		'primary_color'    => '#cc5555',
-		'secondary_color'  => '#5d7b94',
-		'tertiary_color'   => '#90aec7',
-		'accent_color'     => '#60945d',
-		'highlight_color'  => '#915d94',
-		'light_gray_color' => '#f0f0f0',
+		'primary_color'    => '#ee4455',
+		'secondary_color'  => '#d52b3c',
+		'tertiary_color'   => '#bb1122',
+		'accent_color'     => '#4466ee',
+		'highlight_color'  => '#eee644',
+		'light_gray_color' => '#e0e0e0',
 		'gray_color'       => '#999999',
 		'dark_gray_color'  => '#303030',
 	) );
