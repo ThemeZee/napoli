@@ -4,9 +4,9 @@ Theme URI: https://themezee.com/themes/napoli/
 Author: ThemeZee
 Author URI: https://themezee.com
 Description: Napoli is a beautiful WordPress theme perfectly suited for a food magazine. It features a great featured post slider, smooth typography and a grid-layout for posts. Bon appetit!
-Version: 2.1
+Version: 2.1.1
 Requires at least: 5.2
-Tested up to: 5.5
+Tested up to: 5.7
 Requires PHP: 5.6
 AMP: true
 License: GNU General Public License v2 or later
@@ -60,12 +60,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #cc5555;
-	--secondary-color: #5d7b94;
-	--tertiary-color: #90aec7;
-	--accent-color: #60945d;
-	--highlight-color: #915d94;
-	--light-gray-color: #f0f0f0;
+	--primary-color: #ee4455;
+	--secondary-color: #d52b3c;
+	--tertiary-color: #bb1122;
+	--accent-color: #4466ee;
+	--highlight-color: #eee644;
+	--light-gray-color: #e0e0e0;
 	--gray-color: #999;
 	--dark-gray-color: #303030;
 	--text-color: #303030;
@@ -1870,31 +1870,31 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 /* Block Text Colors */
 .has-primary-color,
 .wp-block-button__link.has-primary-color {
-	color: #cc5555;
+	color: #ee4455;
 	color: var(--primary-color);
 }
 
 .has-secondary-color,
 .wp-block-button__link.has-secondary-color {
-	color: #5d7b94;
+	color: #d52b3c;
 	color: var(--secondary-color);
 }
 
 .has-tertiary-color,
 .wp-block-button__link.has-tertiary-color {
-	color: #90aec7;
+	color: #bb1122;
 	color: var(--tertiary-color);
 }
 
 .has-accent-color,
 .wp-block-button__link.has-accent-color {
-	color: #60945d;
+	color: #4466ee;
 	color: var(--accent-color);
 }
 
 .has-highlight-color,
 .wp-block-button__link.has-highlight-color {
-	color: #915d94;
+	color: #eee644;
 	color: var(--highlight-color);
 }
 
@@ -1905,7 +1905,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 
 .has-light-gray-color,
 .wp-block-button__link.has-light-gray-color {
-	color: #f0f0f0;
+	color: #e0e0e0;
 	color: var(--light-gray-color);
 }
 
@@ -1929,31 +1929,31 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 /* Block Background Colors */
 .has-primary-background-color,
 .has-primary-background-color[class] {
-	background-color: #cc5555;
+	background-color: #ee4455;
 	background-color: var(--primary-color);
 }
 
 .has-secondary-background-color,
 .has-secondary-background-color[class] {
-	background-color: #5d7b94;
+	background-color: #d52b3c;
 	background-color: var(--secondary-color);
 }
 
 .has-tertiary-background-color,
 .has-tertiary-background-color[class] {
-	background-color: #90aec7;
+	background-color: #bb1122;
 	background-color: var(--tertiary-color);
 }
 
 .has-accent-background-color,
 .has-accent-background-color[class] {
-	background-color: #60945d;
+	background-color: #4466ee;
 	background-color: var(--accent-color);
 }
 
 .has-highlight-background-color,
 .has-highlight-background-color[class] {
-	background-color: #915d94;
+	background-color: #eee644;
 	background-color: var(--highlight-color);
 }
 
@@ -1964,7 +1964,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .content-single
 
 .has-light-gray-background-color,
 .has-light-gray-background-color[class] {
-	background-color: #f0f0f0;
+	background-color: #e0e0e0;
 	background-color: var(--light-gray-color);
 }
 
