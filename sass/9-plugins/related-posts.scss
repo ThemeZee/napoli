@@ -1,17 +1,4 @@
-/*
- * Themezee Related Posts CSS
- * https://themezee.com/plugins/related-posts/
- *
- * Copyright(C) 2015, ThemeZee.com - support@themezee.com
- * License: GPL v3
- * License URI: http://www.gnu.org/licenses/gpl-3.0.html
- *
- * @package Napoli
- */
-
-/*--------------------------------------------------------------
-# General Styling
----------------------------------------------------------------- */
+/* Related Posts */
 .related-posts {
 	margin: 0 0 2em;
 }
@@ -29,9 +16,6 @@
 	font-family: 'Montserrat', Tahoma, Arial;
 }
 
-/*--------------------------------------------------------------
-# List Layout
----------------------------------------------------------------- */
 ul.related-posts-list {
 	margin: 1.5em 1.5em 0;
 	padding: 0;
@@ -68,9 +52,6 @@ ul.related-posts-list {
 	border-top: none;
 }
 
-/*--------------------------------------------------------------
-# Grid Layouts
----------------------------------------------------------------- */
 .related-posts-grid {
 	margin: 1.5em 1.5em 0;
 }
@@ -131,13 +112,12 @@ ul.related-posts-list {
 	font-size: 0.75rem;
 }
 
-
 .related-posts-four-columns .related-post-column .entry-meta .meta-date,
-.related-posts-four-columns .related-post-column .entry-meta .meta-author  {
+.related-posts-four-columns .related-post-column .entry-meta .meta-author {
 	display: block;
 }
 
-.related-posts-four-columns .related-post-column .entry-meta .meta-date:after {
+.related-posts-four-columns .related-post-column .entry-meta .meta-date::after {
 	display: none;
 }
 
@@ -153,11 +133,8 @@ ul.related-posts-list {
 	border-top: none;
 }
 
-/*--------------------------------------------------------------
-# Media Queries
----------------------------------------------------------------- */
-
 @media only screen and (max-width: 80em) {
+
 	/* Columns */
 	.related-posts-two-columns .related-post-column .entry-title {
 		font-size: 22px;
@@ -167,6 +144,7 @@ ul.related-posts-list {
 }
 
 @media only screen and (max-width: 70em) {
+
 	/* Columns */
 	.related-posts-two-columns .related-post-column .entry-title {
 		font-size: 20px;
@@ -176,6 +154,7 @@ ul.related-posts-list {
 }
 
 @media only screen and (max-width: 50em) {
+
 	/* Columns */
 	.related-posts-four-columns .related-post-column {
 		width: 50%;
@@ -197,11 +176,11 @@ ul.related-posts-list {
 	}
 
 	.related-posts-four-columns .related-post-column .entry-meta .meta-date,
-	.related-posts-four-columns .related-post-column .entry-meta .meta-author  {
+	.related-posts-four-columns .related-post-column .entry-meta .meta-author {
 		display: inline;
 	}
 
-	.related-posts-four-columns .related-post-column .entry-meta .meta-date:after {
+	.related-posts-four-columns .related-post-column .entry-meta .meta-date::after {
 		display: inline-block;
 	}
 
@@ -226,10 +205,10 @@ ul.related-posts-list {
 		font-size: 16px;
 		font-size: 1rem;
 	}
-
 }
 
 @media only screen and (max-width: 35em) {
+
 	/* Columns */
 	.related-posts-three-columns {
 		margin: 0;
@@ -240,10 +219,10 @@ ul.related-posts-list {
 		padding-right: 0;
 		width: 100%;
 	}
-
 }
 
 @media only screen and (max-width: 25em) {
+
 	/* Columns */
 	.related-posts-two-columns,
 	.related-posts-four-columns {
@@ -263,18 +242,16 @@ ul.related-posts-list {
 		margin: 0 0 0.5em 0;
 		max-width: 100%;
 	}
-
 }
 
 @media only screen and (max-width: 20em) {
 	.related-posts .entry-meta .meta-date,
-	.related-posts .entry-meta .meta-author  {
+	.related-posts .entry-meta .meta-author {
 		display: block;
 		margin: 0;
 	}
 
-	.related-posts-four-columns .related-post-column .entry-meta .meta-date:after {
+	.related-posts-four-columns .related-post-column .entry-meta .meta-date::after {
 		display: none;
 	}
-
 }
