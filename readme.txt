@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 2.1.2 - 2021-03-11 =
+* added CSS variables for Widget Bundle and Related Posts plugin styling
+
 = 2.1.1 - 2021-03-09 =
 * updated CSS variables for colors
 * updated Block Editor color palette
