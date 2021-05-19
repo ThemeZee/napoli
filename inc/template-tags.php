@@ -224,7 +224,9 @@ if ( ! function_exists( 'napoli_meta_date' ) ) :
 			esc_html( get_the_date() )
 		);
 
-		return '<span class="meta-date">' . $time_string . '</span>';
+		$posted_on = napoli_get_svg( 'day' ) . $time_string;
+
+		return '<span class="meta-date">' . $posted_on . '</span>';
 	}
 endif;
 
@@ -241,7 +243,9 @@ if ( ! function_exists( 'napoli_meta_author' ) ) :
 			esc_html( get_the_author() )
 		);
 
-		return '<span class="meta-author"> ' . $author_string . '</span>';
+		$posted_by = napoli_get_svg( 'edit' ) . $author_string;
+
+		return '<span class="meta-author"> ' . $posted_by . '</span>';
 	}
 endif;
 
@@ -252,8 +256,14 @@ if ( ! function_exists( 'napoli_meta_category' ) ) :
 	 */
 	function napoli_meta_category() {
 
-		return '<span class="meta-category"> ' . get_the_category_list( ', ' ) . '</span>';
+		// Return early if post has no category.
+		if ( ! has_category() ) {
+			return;
+		}
 
+		$posted_in = napoli_get_svg( 'category' ) . get_the_category_list( ', ' );
+
+		return '<span class="meta-category"> ' . $posted_in . '</span>';
 	}
 endif;
 
@@ -279,7 +289,7 @@ if ( ! function_exists( 'napoli_meta_comments' ) ) :
 		// End Output Buffering.
 		ob_end_clean();
 
-		return '<span class="meta-comments"> ' . $comments . '</span>';
+		return '<span class="meta-comments"> ' . napoli_get_svg( 'comment' ) . $comments . '</span>';
 	}
 endif;
 
