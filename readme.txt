@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 2.2.1 - 2021-06-06 =
+* fixed styling of Social Icons widget from Widget Bundle plugin
+
 = 2.2 - 2021-06-05 =
 * added SVG icons for all theme icons
 * removed Genericons icon font
