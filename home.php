@@ -27,6 +27,8 @@ endif;
 			// Display Magazine Homepage Widgets.
 			napoli_magazine_widgets();
 
+			do_action( 'napoli_before_blog' );
+
 			if ( have_posts() ) :
 
 				// Display Blog Title.

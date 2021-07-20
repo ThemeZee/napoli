@@ -22,9 +22,13 @@
 <body <?php body_class(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 
+	<?php do_action( 'napoli_before_site' ); ?>
+
 	<div id="page" class="hfeed site">
 
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'napoli' ); ?></a>
+
+		<?php do_action( 'napoli_before_header' ); ?>
 
 		<header id="masthead" class="site-header clearfix" role="banner">
 
@@ -45,6 +49,8 @@
 			<?php do_action( 'napoli_header_menu' ); ?>
 
 		</header><!-- #masthead -->
+
+		<?php do_action( 'napoli_after_header' ); ?>
 
 		<?php napoli_breadcrumbs(); ?>
 
