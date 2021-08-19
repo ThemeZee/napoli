@@ -746,10 +746,12 @@ p.has-background {
 
 /* Editor Block Styles */
 .editor-styles-wrapper .wp-block-heading.is-style-widget-title {
-	padding: 0.5rem 0.75rem;
-	color: var(--widget-title-text-color);
+	margin-top: 0;
+	padding: 0.75em 1em;
 	background-color: #ee4455;
 	background-color: var(--widget-title-background-color);
+	color: #fff;
+	color: var(--widget-title-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Montserrat", arial, helvetica, sans-serif;

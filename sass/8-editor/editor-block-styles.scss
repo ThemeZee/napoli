@@ -1,8 +1,9 @@
 /* Editor Block Styles */
 .editor-styles-wrapper .wp-block-heading.is-style-widget-title {
-	padding: 0.5rem 0.75rem;
-	@include color(--widget-title-text-color);
+	margin-top: 0;
+	padding: 0.75em 1em;
 	@include background(--widget-title-background-color);
+	@include color(--widget-title-color);
 	@include font-size(15);
 	@include font-family(--widget-title-font);
 	@include font-weight(--widget-title-font-weight);

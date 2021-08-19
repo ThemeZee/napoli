@@ -13,9 +13,6 @@
  */
 function napoli_gutenberg_support() {
 
-	// Add theme support for wide and full images.
-	#add_theme_support( 'align-wide' );
-
 	// Define block color palette.
 	$color_palette = apply_filters( 'napoli_color_palette', array(
 		'primary_color'    => '#ee4455',
@@ -81,6 +78,17 @@ function napoli_gutenberg_support() {
 			'color' => '#000000',
 		),
 	) ) );
+
+	// Check if block style functions are available.
+	if ( function_exists( 'register_block_style' ) ) {
+
+		// Register Widget Title Block style.
+		register_block_style( 'core/heading', array(
+			'name'         => 'widget-title',
+			'label'        => esc_html__( 'Widget Title', 'napoli' ),
+			'style_handle' => 'napoli-stylesheet',
+		) );
+	}
 }
 add_action( 'after_setup_theme', 'napoli_gutenberg_support' );
 
