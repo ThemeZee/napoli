@@ -50,10 +50,10 @@
 
 		</header><!-- #masthead -->
 
-		<?php do_action( 'napoli_after_header' ); ?>
-
 		<?php napoli_breadcrumbs(); ?>
 
 		<?php napoli_header_image(); ?>
+
+		<?php do_action( 'napoli_after_header' ); ?>
 
 		<div id="content" class="site-content container clearfix">
