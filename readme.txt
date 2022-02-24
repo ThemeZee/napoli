@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/napoli/
 Contributors: themezee
 Tags: two-columns, custom-background, custom-header, custom-menu, editor-style, block-styles, grid-layout, blog, food-and-drink, news, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, one-column, left-sidebar, right-sidebar, three-columns
 Requires at least: 5.2
-Tested up to: 5.8
+Tested up to: 5.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
 == Changelog ==
+
+= 2.2.5 - 2022-02-24 =
+* updated navigation.js to use vanilla js instead of jQuery
 
 = 2.2.4 - 2021-08-26 =
 * changed position of after header action hook
