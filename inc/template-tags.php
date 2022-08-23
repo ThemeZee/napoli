@@ -403,7 +403,7 @@ function napoli_footer_text() {
 		// translators: Theme Name and Link to ThemeZee.
 		printf( esc_html__( 'WordPress Theme: %1$s by %2$s.', 'napoli' ),
 			esc_html__( 'Napoli', 'napoli' ),
-			'<a href="https://themezee.com/" target="_blank" rel="nofollow">ThemeZee</a>'
+			'ThemeZee'
 		);
 		?>
 	</span>

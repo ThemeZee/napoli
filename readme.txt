@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 2.2.7 - 2022-08-23 =
+* updated footer credit link
+
 = 2.2.6 - 2022-07-12 =
 * added block support for custom spacing and line heights
 * improved styling of columns block
