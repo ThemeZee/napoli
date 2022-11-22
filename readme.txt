@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 2.2.9 - 2022-11-22 =
+* added Mastodon to social icons menu
+
 = 2.2.8 - 2022-10-19 =
 * improved accessibility of search form
 
