@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/napoli/
 Contributors: themezee
 Tags: two-columns, custom-background, custom-header, custom-menu, editor-style, block-styles, grid-layout, blog, food-and-drink, news, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, one-column, left-sidebar, right-sidebar, three-columns
 Requires at least: 5.2
-Tested up to: 6.1
+Tested up to: 6.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
 == Changelog ==
+
+= 2.3 - 2024-01-24 =
+* added X to social icons menu
 
 = 2.2.9 - 2022-11-22 =
 * added Mastodon to social icons menu
