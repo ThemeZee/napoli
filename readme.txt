@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/napoli/
 Contributors: themezee
 Tags: two-columns, custom-background, custom-header, custom-menu, editor-style, block-styles, grid-layout, blog, food-and-drink, news, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, one-column, left-sidebar, right-sidebar, three-columns
 Requires at least: 5.2
-Tested up to: 6.7
+Tested up to: 6.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,11 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
 == Changelog ==
+
+= 2.3.2 - 2025-12-18 =
+* added Bluesky to social icons menu
+* remove legacy html5shiv to support Internet Explorer
+* fix deprecated PHP warning in WordPress 6.9
 
 = 2.3.1 - 2025-01-04 =
 * fixed deprecated warning with PHP 8.2
