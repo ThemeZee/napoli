@@ -181,7 +181,7 @@ function napoli_theme_fonts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'napoli_theme_fonts', 1 );
-add_action( 'enqueue_block_editor_assets', 'napoli_theme_fonts', 1 );
+add_action( 'enqueue_block_assets', 'napoli_theme_fonts', 1 );
 
 
 /**
