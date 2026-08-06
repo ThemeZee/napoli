@@ -63,7 +63,7 @@ function napoli_get_social_svg( $icon = null ) {
 
 	// Create SVG markup.
 	$svg  = '<svg class="icon icon-' . esc_attr( $icon ) . '" aria-hidden="true" role="img">';
-	$svg .= ' <use xlink:href="' . get_parent_theme_file_uri( '/assets/icons/social-icons.svg?ver=20251218#icon-' ) . esc_html( $icon ) . '"></use> ';
+	$svg .= ' <use xlink:href="' . get_parent_theme_file_uri( '/assets/icons/social-icons.svg?ver=20260806#icon-' ) . esc_html( $icon ) . '"></use> ';
 	$svg .= '</svg>';
 
 	return $svg;
@@ -156,6 +156,7 @@ function napoli_supported_social_icons() {
 		'stumbleupon.com' => 'stumbleupon',
 		'telegram'        => 'telegram',
 		't.me'            => 'telegram',
+		'tiktok.com'      => 'tiktok',
 		'tumblr.com'      => 'tumblr',
 		'twitch.tv'       => 'twitch',
 		'twitter.com'     => 'twitter',

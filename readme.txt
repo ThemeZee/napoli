@@ -26,6 +26,9 @@ For more information about Napoli please go to https://themezee.com/themes/napol
 
 == Changelog ==
 
+= 2.3.4 - 2026-08-06 =
+* added TikTok to social icons menu
+
 = 2.3.3 - 2026-06-13 =
 * Fix theme styling in block editor with WordPress 7.0
 
